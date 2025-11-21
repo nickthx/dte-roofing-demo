@@ -80,9 +80,7 @@ export default function Contact() {
       newErrors.address = 'Property address is required';
     }
 
-    if (!formData.projectDescription.trim()) {
-      newErrors.projectDescription = 'Project description is required';
-    } else if (formData.projectDescription.trim().length < 10) {
+    if (formData.projectDescription.trim() && formData.projectDescription.trim().length < 10) {
       newErrors.projectDescription = 'Project description must be at least 10 characters';
     }
 
@@ -322,19 +320,18 @@ export default function Contact() {
                   {/* Project Description Field */}
                   <div>
                     <label htmlFor="projectDescription" className="block text-charcoal-900 font-semibold mb-2">
-                      Project Description <span className="text-red-600">*</span>
+                      Project Description
                     </label>
                     <textarea
                       id="projectDescription"
                       name="projectDescription"
                       value={formData.projectDescription}
                       onChange={handleChange}
-                      required
                       rows={5}
                       className={`w-full px-4 py-3 rounded-lg border-2 ${
                         errors.projectDescription ? 'border-red-500' : 'border-gray-300'
                       } focus:border-primary-700 focus:ring-2 focus:ring-primary-700 focus:outline-none text-charcoal-900 transition-colors resize-none`}
-                      placeholder="Tell us about your roofing needs... (minimum 10 characters)"
+                      placeholder="Tell us about your roofing needs... (optional)"
                       aria-invalid={errors.projectDescription ? 'true' : 'false'}
                       aria-describedby={errors.projectDescription ? 'project-error' : undefined}
                     />
