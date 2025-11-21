@@ -15,6 +15,7 @@ interface FormErrors {
   name?: string;
   email?: string;
   phone?: string;
+  address?: string;
   projectDescription?: string;
 }
 
@@ -36,9 +37,24 @@ export default function Contact() {
     return emailRegex.test(email);
   };
 
+  const formatPhoneNumber = (value: string): string => {
+    // Remove all non-digit characters
+    const phoneNumber = value.replace(/\D/g, '');
+
+    // Format as (XXX)-XXX-XXXX
+    if (phoneNumber.length <= 3) {
+      return phoneNumber;
+    } else if (phoneNumber.length <= 6) {
+      return `(${phoneNumber.slice(0, 3)})-${phoneNumber.slice(3)}`;
+    } else {
+      return `(${phoneNumber.slice(0, 3)})-${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6, 10)}`;
+    }
+  };
+
   const validatePhone = (phone: string): boolean => {
-    const phoneRegex = /^[\d\s\-\(\)]+$/;
-    return phone.length === 0 || (phone.length >= 10 && phoneRegex.test(phone));
+    // Remove all non-digit characters and check for exactly 10 digits
+    const phoneNumber = phone.replace(/\D/g, '');
+    return phoneNumber.length === 10;
   };
 
   const validateForm = (): boolean => {
@@ -54,8 +70,14 @@ export default function Contact() {
       newErrors.email = 'Please enter a valid email address';
     }
 
-    if (formData.phone && !validatePhone(formData.phone)) {
-      newErrors.phone = 'Please enter a valid phone number';
+    if (!formData.phone.trim()) {
+      newErrors.phone = 'Phone number is required';
+    } else if (!validatePhone(formData.phone)) {
+      newErrors.phone = 'Please enter a valid 10-digit phone number';
+    }
+
+    if (!formData.address.trim()) {
+      newErrors.address = 'Property address is required';
     }
 
     if (!formData.projectDescription.trim()) {
@@ -118,7 +140,14 @@ export default function Contact() {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+
+    // Apply phone formatting if it's the phone field
+    if (name === 'phone') {
+      const formatted = formatPhoneNumber(value);
+      setFormData(prev => ({ ...prev, [name]: formatted }));
+    } else {
+      setFormData(prev => ({ ...prev, [name]: value }));
+    }
 
     if (errors[name as keyof FormErrors]) {
       setErrors(prev => ({ ...prev, [name]: undefined }));
@@ -237,7 +266,7 @@ export default function Contact() {
 
                     <div>
                       <label htmlFor="phone" className="block text-charcoal-900 font-semibold mb-2">
-                        Phone Number
+                        Phone Number <span className="text-red-600">*</span>
                       </label>
                       <input
                         type="tel"
@@ -245,10 +274,12 @@ export default function Contact() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
+                        required
+                        maxLength={14}
                         className={`w-full px-4 py-3 rounded-lg border-2 ${
                           errors.phone ? 'border-red-500' : 'border-gray-300'
                         } focus:border-primary-700 focus:ring-2 focus:ring-primary-700 focus:outline-none text-charcoal-900 transition-colors`}
-                        placeholder="614-971-6028"
+                        placeholder="(614)-971-6028"
                         aria-invalid={errors.phone ? 'true' : 'false'}
                         aria-describedby={errors.phone ? 'phone-error' : undefined}
                       />
@@ -264,18 +295,28 @@ export default function Contact() {
                   {/* Address Field */}
                   <div>
                     <label htmlFor="address" className="block text-charcoal-900 font-semibold mb-2">
-                      Property Address
+                      Property Address <span className="text-red-600">*</span>
                     </label>
                     <textarea
                       id="address"
                       name="address"
                       value={formData.address}
                       onChange={handleChange}
+                      required
                       rows={2}
-                      className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-primary-700 focus:ring-2 focus:ring-primary-700 focus:outline-none text-charcoal-900 transition-colors resize-none"
+                      className={`w-full px-4 py-3 rounded-lg border-2 ${
+                        errors.address ? 'border-red-500' : 'border-gray-300'
+                      } focus:border-primary-700 focus:ring-2 focus:ring-primary-700 focus:outline-none text-charcoal-900 transition-colors resize-none`}
                       placeholder="123 Main St, Columbus, OH 43026"
+                      aria-invalid={errors.address ? 'true' : 'false'}
+                      aria-describedby={errors.address ? 'address-error' : undefined}
                     />
-                    <p className="mt-1 text-sm text-charcoal-500">Optional - helps us provide accurate estimates</p>
+                    {errors.address && (
+                      <p id="address-error" className="mt-2 text-sm text-red-600 flex items-center">
+                        <AlertCircle className="w-4 h-4 mr-1" />
+                        {errors.address}
+                      </p>
+                    )}
                   </div>
 
                   {/* Project Description Field */}
