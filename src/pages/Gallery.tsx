@@ -21,9 +21,7 @@ export default function Gallery() {
   const categories = [
     { value: 'all', label: 'All Projects' },
     { value: 'installations', label: 'Installations' },
-    { value: 'repairs', label: 'Repairs' },
-    { value: 'commercial', label: 'Commercial' },
-    { value: 'residential', label: 'Residential' }
+    { value: 'repairs', label: 'Repairs' }
   ];
 
   const projects: GalleryProject[] = [
