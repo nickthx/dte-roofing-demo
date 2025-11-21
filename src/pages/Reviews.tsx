@@ -27,10 +27,10 @@ export default function Reviews() {
       verified: true
     },
     {
-      name: 'Robert T.',
+      name: 'Sean K.',
       rating: 5,
-      date: 'January 2024',
-      text: 'I\'ve used DTE Roofing for both my home and rental properties. Their consistency and reliability are unmatched. Whether it\'s a small repair or complete replacement, they treat every job with the same level of professionalism and care.',
+      date: 'November 2025',
+      text: 'Great experience working with DTE - very responsive and helpful in explaining the necessary repairs, and were flexible and communicative on the timing of what ended up being a tricky project.',
       verified: true
     },
     {
