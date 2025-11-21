@@ -161,7 +161,7 @@ export default function Gallery() {
               {filteredProjects.map((project, index) => (
                 <div
                   key={project.id}
-                  className="group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+                  className="group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out cursor-pointer hover:scale-105"
                   onClick={() => openLightbox(index)}
                   role="button"
                   tabIndex={0}
@@ -173,13 +173,21 @@ export default function Gallery() {
                     <img
                       src={project.image}
                       alt={project.alt}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-cover transition-transform duration-300 ease-in-out"
                       loading="lazy"
                     />
 
-                    {/* Hover Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-8">
-                      <span className="text-white font-semibold text-lg">Click to View</span>
+                    {/* Hover Overlay with Content */}
+                    <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex flex-col items-center justify-center p-6">
+                      <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 ease-in-out text-center">
+                        <h3 className="text-white font-bold text-2xl mb-3">
+                          {project.title}
+                        </h3>
+                        <div className="flex items-center justify-center text-white/90">
+                          <MapPin className="w-5 h-5 mr-2" />
+                          <span className="text-lg font-medium">{project.location}</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
