@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Calculator } from 'lucide-react';
 
 interface RoofQuoteButtonProps {
@@ -12,12 +13,6 @@ const RoofQuoteButton: React.FC<RoofQuoteButtonProps> = ({
   variant = 'primary',
   icon = true
 }) => {
-  const handleClick = () => {
-    if (typeof window !== 'undefined' && (window as any).RoofleWidget) {
-      (window as any).RoofleWidget.open();
-    }
-  };
-
   const baseClasses = "px-8 py-4 rounded-lg font-semibold text-lg inline-flex items-center justify-center gap-2 transition-all shadow-xl hover:shadow-2xl transform hover:-translate-y-1";
 
   const variantClasses = {
@@ -27,13 +22,13 @@ const RoofQuoteButton: React.FC<RoofQuoteButtonProps> = ({
   };
 
   return (
-    <button
-      onClick={handleClick}
+    <Link
+      to="/instant-quote"
       className={`${baseClasses} ${variantClasses[variant]}`}
     >
       {icon && <Calculator className="w-5 h-5" />}
       {text}
-    </button>
+    </Link>
   );
 };
 
