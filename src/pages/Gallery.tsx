@@ -69,11 +69,11 @@ export default function Gallery() {
     },
     {
       id: 6,
-      title: 'Asphalt Shingle Installation',
-      category: 'residential',
-      location: 'Dublin, OH',
-      image: 'https://images.pexels.com/photos/210617/pexels-photo-210617.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      alt: 'Asphalt shingle roof installed by DTE Roofing'
+      title: 'Premium Designer Shingles',
+      category: 'installations',
+      location: 'Gahanna, OH',
+      image: '/PXL_20241126_192222147.jpg',
+      alt: 'High-end blue-tinted architectural shingle installation'
     }
   ];
 
