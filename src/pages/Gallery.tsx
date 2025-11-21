@@ -29,11 +29,11 @@ export default function Gallery() {
   const projects: GalleryProject[] = [
     {
       id: 1,
-      title: 'Architectural Shingle Replacement',
+      title: 'Residential Roof Replacement',
       category: 'installations',
       location: 'Columbus, OH',
-      image: 'https://images.pexels.com/photos/209296/pexels-photo-209296.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      alt: 'Architectural shingle roof installation by DTE Roofing in Columbus Ohio'
+      image: '/IMG_20240614_162239.jpg',
+      alt: 'Completed residential roof with dark architectural shingles, aerial view'
     },
     {
       id: 2,
