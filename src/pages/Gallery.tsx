@@ -37,11 +37,11 @@ export default function Gallery() {
     },
     {
       id: 2,
-      title: 'Modern Black Shingle Installation',
+      title: 'Premium Asphalt Shingles',
       category: 'installations',
       location: 'Dublin, OH',
-      image: 'https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      alt: 'Black architectural shingle roof installed by DTE Roofing Columbus Ohio'
+      image: '/PXL_20240910_193642307.jpg',
+      alt: 'Close-up view of high-quality dark architectural shingle installation'
     },
     {
       id: 3,
