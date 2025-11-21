@@ -34,10 +34,10 @@ export default function Reviews() {
       verified: true
     },
     {
-      name: 'Amanda L.',
+      name: 'Tim H.',
       rating: 5,
-      date: 'January 2024',
-      text: 'The inspection report DTE Roofing provided was incredibly detailed with photos and clear explanations. As a first-time homebuyer, I really appreciated how they took time to answer all my questions without any pressure. Their honesty about what needed immediate attention versus what could wait saved me thousands.',
+      date: 'September 2025',
+      text: 'I had an excellent experience with DTE Roofing. Very good communication, helped with Insurance claim and overall very knowledgeable and professional. I would recommend for my next roofing and gutter project. Andrew is honest and hardworking, would definitely use them again.',
       verified: true
     },
     {
