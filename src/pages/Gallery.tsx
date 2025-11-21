@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { ChevronRight, X, MapPin, ChevronLeft, ChevronRight as ChevronRightIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
@@ -17,6 +17,8 @@ export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+  const galleryRef = useRef<HTMLDivElement>(null);
 
   const categories = [
     { value: 'all', label: 'All Projects' },
@@ -105,6 +107,29 @@ export default function Gallery() {
     if (e.key === 'ArrowLeft') goToPrevious();
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (galleryRef.current) {
+      observer.observe(galleryRef.current);
+    }
+
+    return () => {
+      if (galleryRef.current) {
+        observer.unobserve(galleryRef.current);
+      }
+    };
+  }, []);
+
   return (
     <>
       <MobileStickyCall />
@@ -155,7 +180,10 @@ export default function Gallery() {
         {/* Gallery Grid */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <div
+              ref={galleryRef}
+              className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto transition-opacity duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+            >
               {filteredProjects.map((project, index) => (
                 <div
                   key={project.id}
@@ -167,7 +195,7 @@ export default function Gallery() {
                   aria-label={`View ${project.title} in lightbox`}
                 >
                   {/* Image Container */}
-                  <div className="relative h-72 overflow-hidden bg-gray-200">
+                  <div className="relative h-64 md:h-72 overflow-hidden bg-gray-200">
                     <img
                       src={project.image}
                       alt={project.alt}
@@ -190,7 +218,7 @@ export default function Gallery() {
                   </div>
 
                   {/* Card Content */}
-                  <div className="p-5">
+                  <div className="p-4 md:p-5">
                     <h3 className="text-xl font-bold text-charcoal-900 mb-3 group-hover:text-primary-700 transition-colors">
                       {project.title}
                     </h3>
@@ -215,15 +243,15 @@ export default function Gallery() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-br from-primary-700 to-primary-800 text-white">
+        <section className="py-16 md:py-20 bg-gradient-to-br from-primary-700 to-primary-800 text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto opacity-95">
+            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-95">
               Let's work together to create something amazing for your home or business. Get your free estimate today.
             </p>
             <Link
               to="/contact"
-              className="bg-white text-primary-700 px-8 py-4 rounded-lg hover:bg-gray-100 transition-all font-semibold text-lg inline-flex items-center justify-center shadow-xl hover:shadow-2xl hover:scale-105"
+              className="bg-white text-primary-700 px-6 py-3 md:px-8 md:py-4 rounded-lg hover:bg-gray-100 transition-all font-semibold text-base md:text-lg inline-flex items-center justify-center shadow-xl hover:shadow-2xl hover:scale-105 min-h-[48px]"
             >
               Get Free Estimate <ChevronRight className="ml-2 w-5 h-5" />
             </Link>
@@ -244,7 +272,7 @@ export default function Gallery() {
           {/* Close Button */}
           <button
             onClick={closeLightbox}
-            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors p-2 z-10"
+            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors p-3 z-10 min-h-[48px] min-w-[48px] flex items-center justify-center"
             aria-label="Close lightbox"
           >
             <X className="w-8 h-8" />
@@ -257,10 +285,10 @@ export default function Gallery() {
                 e.stopPropagation();
                 goToPrevious();
               }}
-              className="absolute left-4 text-white hover:text-gray-300 transition-colors p-2 z-10"
+              className="absolute left-2 md:left-4 text-white hover:text-gray-300 transition-colors p-3 z-10 min-h-[48px] min-w-[48px] flex items-center justify-center"
               aria-label="Previous image"
             >
-              <ChevronLeft className="w-10 h-10" />
+              <ChevronLeft className="w-8 md:w-10 h-8 md:h-10" />
             </button>
           )}
 
@@ -271,10 +299,10 @@ export default function Gallery() {
                 e.stopPropagation();
                 goToNext();
               }}
-              className="absolute right-4 text-white hover:text-gray-300 transition-colors p-2 z-10"
+              className="absolute right-2 md:right-4 text-white hover:text-gray-300 transition-colors p-3 z-10 min-h-[48px] min-w-[48px] flex items-center justify-center"
               aria-label="Next image"
             >
-              <ChevronRightIcon className="w-10 h-10" />
+              <ChevronRightIcon className="w-8 md:w-10 h-8 md:h-10" />
             </button>
           )}
 
@@ -287,6 +315,7 @@ export default function Gallery() {
               src={filteredProjects[currentImageIndex].image}
               alt={filteredProjects[currentImageIndex].alt}
               className="max-w-full max-h-[75vh] object-contain rounded-lg shadow-2xl"
+              loading="eager"
             />
 
             {/* Image Info */}
