@@ -61,11 +61,11 @@ export default function Gallery() {
     },
     {
       id: 5,
-      title: 'Commercial TPO Flat Roof',
-      category: 'commercial',
-      location: 'Columbus, OH',
-      image: 'https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      alt: 'Commercial flat roof TPO installation by DTE Roofing'
+      title: 'Roof Repair & Maintenance',
+      category: 'repairs',
+      location: 'New Albany, OH',
+      image: '/PXL_20241123_193437816.jpg',
+      alt: 'Professional roof inspection and repair services'
     },
     {
       id: 6,
