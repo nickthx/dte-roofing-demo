@@ -45,11 +45,11 @@ export default function Gallery() {
     },
     {
       id: 3,
-      title: 'Storm Damage Restoration',
-      category: 'repairs',
-      location: 'Hilliard, OH',
-      image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      alt: 'Storm damage roof repair by DTE Roofing Columbus Ohio'
+      title: 'Ridge Cap Installation',
+      category: 'installations',
+      location: 'Westerville, OH',
+      image: '/PXL_20240223_174412521.jpg',
+      alt: 'Professional ridge cap and flashing work on residential roof'
     },
     {
       id: 4,
