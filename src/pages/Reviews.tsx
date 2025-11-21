@@ -41,10 +41,10 @@ export default function Reviews() {
       verified: true
     },
     {
-      name: 'Lisa R.',
+      name: 'Kortnie Y.',
       rating: 5,
-      date: 'November 2023',
-      text: 'Had a leak that three other companies couldn\'t solve. DTE Roofing found the problem in minutes—it was a flashing issue around the chimney. Their expertise and attention to detail is impressive. Two months later, still bone dry even after heavy rains!',
+      date: 'September 2025',
+      text: 'I had the pleasure of working with DTE and I cannot recommend them enough. They are a company that provides top notch customer service, quality work, and educates along the way. We will use their services again while selecting our next home.',
       verified: true
     },
     {
