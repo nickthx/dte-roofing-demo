@@ -46,13 +46,6 @@ export default function Reviews() {
       date: 'September 2025',
       text: 'I had the pleasure of working with DTE and I cannot recommend them enough. They are a company that provides top notch customer service, quality work, and educates along the way. We will use their services again while selecting our next home.',
       verified: true
-    },
-    {
-      name: 'James H.',
-      rating: 5,
-      date: 'October 2023',
-      text: 'From quote to completion, everything was handled professionally. Donovan and his team were courteous, skilled, and clearly take pride in their work. Our metal roof installation looks stunning and we\'ve received so many compliments from neighbors. Worth every penny!',
-      verified: true
     }
   ];
 
@@ -140,7 +133,7 @@ export default function Reviews() {
       </section>
 
       {/* Reviews Grid Section */}
-      <section className="py-20 bg-white">
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-charcoal-900 mb-12 text-center">
