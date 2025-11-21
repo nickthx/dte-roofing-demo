@@ -13,10 +13,10 @@ export default function Reviews() {
       verified: true
     },
     {
-      name: 'Michael D.',
+      name: 'Ryan R.',
       rating: 5,
-      date: 'February 2024',
-      text: 'After getting quotes from multiple companies, DTE Roofing offered the best value without compromising quality. What impressed me most was their transparency—no hidden fees, clear timeline, and they walked me through every step. The roof looks fantastic and I\'ve already recommended them to three neighbors.',
+      date: 'November 2025',
+      text: 'Wonderful experience with DTE and Mitch! The whole process was seamless start to finish. It\'s hard to make a decision when choosing a Roofing company and I am extremely happy I chose DTE. Would recommend to anyone who needs an honest opinion on anything on the exterior of your home.',
       verified: true
     },
     {
