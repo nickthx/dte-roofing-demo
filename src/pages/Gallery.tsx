@@ -53,11 +53,11 @@ export default function Gallery() {
     },
     {
       id: 4,
-      title: 'Standing Seam Metal Roof',
+      title: 'Architectural Shingle Design',
       category: 'installations',
-      location: 'Columbus, OH',
-      image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      alt: 'Metal roof installation by DTE Roofing Columbus Ohio'
+      location: 'Powell, OH',
+      image: '/PXL_20241117_184811431.jpg',
+      alt: 'Multi-tone architectural shingles showing dimensional pattern'
     },
     {
       id: 5,
