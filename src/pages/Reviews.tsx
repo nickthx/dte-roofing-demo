@@ -8,8 +8,8 @@ export default function Reviews() {
     {
       name: 'Sarah M.',
       rating: 5,
-      date: 'March 2024',
-      text: 'DTE Roofing exceeded all my expectations with our roof replacement. The crew was professional, arrived on time every day, and completed the job in just two days. They even helped me select the perfect shingle color that matches my home beautifully. The cleanup was immaculate—you would never know they were here except for the gorgeous new roof!',
+      date: 'November 2025',
+      text: 'Andrew was fantastic! He went above and beyond inspecting the cause of my leak on my roof. We weren\'t able to replace the roof at this time but he was more than willing to fix all areas of concern. Would high recommend them to do any roof work!',
       verified: true
     },
     {
