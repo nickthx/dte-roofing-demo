@@ -20,10 +20,10 @@ export default function Reviews() {
       verified: true
     },
     {
-      name: 'Jennifer K.',
+      name: 'Ron M.',
       rating: 5,
-      date: 'February 2024',
-      text: 'We had emergency storm damage and called DTE Roofing late on a Saturday night. They had someone out within an hour to tarp our roof and prevent further water damage. The permanent repairs were completed the following week, and they handled all the insurance paperwork. Absolutely saved us from a disaster!',
+      date: 'November 2025',
+      text: 'I had Mitch and Chandler from DTE roofing company come and do a free roof inspection. I had a new roof installed 2 years ago, they let me know what problems they have found. I am so glad I was able to get them repaired before it became a bigger problem. Thanks for your help.',
       verified: true
     },
     {
