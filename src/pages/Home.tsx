@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Phone, Shield, Clock, Award, CheckCircle, Star, ChevronRight, BadgeCheck, Search, FileText, Wrench, CheckCircle2, MapPin, ExternalLink } from 'lucide-react';
+import { Phone, Shield, Clock, Award, CheckCircle, Star, ChevronRight, BadgeCheck, Search, FileText, Wrench, CheckCircle2, MapPin, ExternalLink, Home } from 'lucide-react';
 import SEO from '../components/SEO';
 import MobileStickyCall from '../components/MobileStickyCall';
 import RoofQuoteButton from '../components/RoofQuoteButton';
@@ -167,11 +167,11 @@ export default function Home() {
                 icon: Clock
               },
               {
-                title: 'Gutter Services',
-                description: 'Seamless gutters & guards that protect roof edge and foundation.',
-                proof: 'Leak-free miters',
-                link: '/services/gutter-services',
-                icon: Award
+                title: 'Siding Services',
+                description: 'Professional siding installation and repair to protect and beautify your home.',
+                proof: 'Quality materials',
+                link: '/services/siding',
+                icon: Home
               },
               {
                 title: 'Maintenance Plans',
