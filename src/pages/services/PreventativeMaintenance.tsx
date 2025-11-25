@@ -6,7 +6,7 @@ export default function PreventativeMaintenance() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Preventative Roof Maintenance Columbus OH | Extend Roof Life"
+        title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description="Preventative roof maintenance in Columbus, OH. Catch problems early, extend roof lifespan, save money. Annual maintenance plans. Licensed professionals. Call 614-971-6028."
         keywords="preventative maintenance, preventive roof care, roof maintenance program, annual roof service, proactive roof care"
         canonical="https://dteroofing.com/services/preventative-maintenance"

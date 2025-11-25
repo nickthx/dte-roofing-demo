@@ -6,7 +6,7 @@ export default function EmergencyServices() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="24/7 Emergency Roof Repair Columbus OH | Fast Response"
+        title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description="24/7 emergency roof repair in Columbus, OH. Immediate response for storm damage, leaks, and urgent roofing issues. Same-day service available. Call 614-971-6028 now!"
         keywords="emergency roof repair, 24/7 roofing, storm damage, emergency leak repair, urgent roof repair, Columbus emergency roofing"
         canonical="https://dteroofing.com/services/emergency-services"

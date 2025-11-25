@@ -105,7 +105,7 @@ export default function FAQ() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Roofing FAQ - Common Questions Answered | DTE Roofing OH"
+        title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description="Get answers to common roofing questions. Learn about costs, timelines, warranties, insurance claims, and more. Expert guidance from Columbus's trusted roofing contractor."
         keywords="roofing FAQ, roof repair questions, roof cost, roofing warranty, insurance claims, how long does roof last, Columbus roofer FAQ"
         canonical="https://dteroofing.com/faq"

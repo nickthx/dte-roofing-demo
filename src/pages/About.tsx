@@ -1,10 +1,17 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, Award, Users, Target, Heart, ChevronRight, Mail } from 'lucide-react';
 import MobileStickyCall from '../components/MobileStickyCall';
+import SEO from '../components/SEO';
 
 export default function About() {
   return (
     <>
+      <SEO
+        title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
+        description="Learn about DTE Roofing, Columbus's most trusted roofing company. Quality workmanship, honest service, and dedication to excellence since 2023."
+        keywords="about DTE Roofing, Columbus roofing company, local roofer, family-owned roofing business"
+        canonical="https://dteroofing.com/about"
+      />
       <MobileStickyCall />
       <div className="min-h-screen bg-white">
       <section className="relative bg-gradient-to-br from-charcoal-900 via-charcoal-800 to-charcoal-900 text-white py-20">

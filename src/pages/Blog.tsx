@@ -45,7 +45,7 @@ export default function Blog() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Roofing Blog - Tips, Guides & Advice | DTE Roofing Columbus"
+        title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description="Expert roofing advice from DTE Roofing. Learn about roof maintenance, winter prep, signs you need a new roof, and more."
         keywords="roofing blog, roof maintenance tips, Ohio roofing advice"
         canonical="https://dteroofing.com/blog"

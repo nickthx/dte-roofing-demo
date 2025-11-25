@@ -6,7 +6,7 @@ export default function Gutters() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Gutters Columbus OH | Seamless Gutter Installation & Guards"
+        title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description="Professional seamless gutter installation in Columbus, OH. Custom fabricated gutters, gutter guards, repairs. Protect your foundation. Licensed & insured. Call 614-971-6028."
         keywords="gutters Columbus, seamless gutters, gutter installation, gutter guards, custom gutters, aluminum gutters"
         canonical="https://dteroofing.com/services/gutters"

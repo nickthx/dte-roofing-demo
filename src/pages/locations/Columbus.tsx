@@ -6,7 +6,7 @@ export default function Columbus() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Roofing Services Columbus OH | Local Roof Repair & Replacement"
+        title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description="Professional roofing services in Columbus, OH. Local experts serving Columbus with roof repair, replacement, installation. Fast response times. Free estimates. Call 614-971-6028."
         keywords="roofing Columbus OH, Columbus roofer, roof repair Columbus, roof replacement Columbus, Columbus roofing contractor"
         canonical="https://dteroofing.com/locations/columbus"

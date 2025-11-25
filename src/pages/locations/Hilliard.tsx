@@ -6,7 +6,7 @@ export default function Hilliard() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Roofing Services Hilliard OH | Local Roof Repair & Installation"
+        title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description="Professional roofing services in Hilliard, OH. Local experts serving Hilliard with roof repair, replacement, installation. Family-owned business. Free estimates. Call 614-971-6028."
         keywords="roofing Hilliard OH, Hilliard roofer, roof repair Hilliard, roof replacement Hilliard, Hilliard roofing contractor"
         canonical="https://dteroofing.com/locations/hilliard"

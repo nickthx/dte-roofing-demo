@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Star, ChevronRight, MessageCircle, ExternalLink } from 'lucide-react';
 import { useReviewData } from '../hooks/useReviewData';
+import SEO from '../components/SEO';
 
 export default function Reviews() {
   const { reviewData } = useReviewData();
@@ -68,7 +69,14 @@ export default function Reviews() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <SEO
+        title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
+        description={`Read ${totalReviews} verified five-star reviews from Columbus homeowners. See why DTE Roofing is the highest-rated roofing company in Columbus, OH.`}
+        keywords="DTE Roofing reviews, Columbus roofing reviews, customer testimonials, five-star roofer"
+        canonical="https://dteroofing.com/reviews"
+      />
+      <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-charcoal-900 via-charcoal-800 to-charcoal-900 text-white py-20">
         <div className="container mx-auto px-4">
@@ -241,6 +249,7 @@ export default function Reviews() {
           </Link>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

@@ -6,7 +6,7 @@ export default function RoofInstallation() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Professional Roof Installation Columbus OH | New Roof Installation"
+        title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description="Expert new roof installation services in Columbus, OH. Premium materials, skilled craftsmanship, and warranty protection. Residential & commercial installations. Free estimates. Call 614-971-6028."
         keywords="roof installation Columbus, new roof installation, residential roof installation, commercial roof installation, asphalt shingle installation, metal roof installation"
         canonical="https://dteroofing.com/services/roof-installation"
