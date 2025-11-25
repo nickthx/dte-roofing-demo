@@ -12,7 +12,7 @@ export default function Home() {
       <MobileStickyCall />
       <div className="min-h-screen bg-white">
       <SEO
-        title={`DTE Roofing – Columbus Roofing Experts | Founded 2023 | ${reviewData?.totalReviews || 86} Five-Star Reviews`}
+        title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description={`Founded by roofers who refused to cut corners. Honest inspections, precision repairs, and a perfect ${reviewData?.totalReviews || 86} five-star rating.`}
         keywords="roof inspection Columbus OH, Columbus roofing company, roof repair near me, roofing contractor Columbus, roof repair Columbus, roof replacement Columbus, residential roofing, commercial roofing, emergency roof repair"
         canonical="https://dteroofing.com/"
