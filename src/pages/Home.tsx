@@ -446,15 +446,33 @@ export default function Home() {
           </div>
 
           <div className="bg-white p-8 md:p-10 rounded-xl border border-gray-200 shadow-md mb-12 max-w-4xl mx-auto">
-            <div className="flex items-start gap-4 mb-6">
+            <div className="flex items-start gap-4">
               <div className="bg-primary-100 p-3 rounded-lg">
-                <CheckCircle className="w-8 h-8 text-primary-700" />
+                <MapPin className="w-8 h-8 text-primary-700" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-charcoal-900 mb-3">Our Warranty & Guarantee</h3>
-                <p className="text-lg text-charcoal-700 leading-relaxed">
-                  We stand behind our work with comprehensive warranties on both materials and workmanship. Every roofing project includes our 100% customer satisfaction guarantee. If you're not completely satisfied with our service, we'll make it right—no questions asked. Contact us at <a href="tel:614-971-6028" className="text-primary-700 hover:text-primary-800 font-semibold">614-971-6028</a> for warranty claims or questions.
+                <h3 className="text-2xl font-bold text-charcoal-900 mb-3">DTE Roofing</h3>
+                <p className="text-lg text-charcoal-700 mb-2">
+                  615 Hilliard Rome Rd, Columbus, OH 43228
                 </p>
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 text-yellow-500 fill-current" />
+                    ))}
+                  </div>
+                  <span className="text-charcoal-700 font-semibold">5.0</span>
+                  <span className="text-charcoal-600">({reviewData?.totalReviews || 89} reviews)</span>
+                </div>
+                <a
+                  href="https://www.google.com/maps/dir//DTE+Roofing+615+Hilliard+Rome+Rd+Columbus,+OH+43228"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-700 hover:text-primary-800 font-semibold inline-flex items-center gap-1"
+                >
+                  Directions
+                  <ChevronRight className="w-4 h-4" />
+                </a>
               </div>
             </div>
           </div>
