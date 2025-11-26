@@ -66,7 +66,7 @@ export default function Blog() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-charcoal-900 mb-12 text-center">
-              Latest Articles
+              Tips on Maintenance, Winter Prep, Roof Inspection, Storm Damage, Energy Efficiency, Materials, Installation & Repairs
             </h2>
 
             <div className="grid md:grid-cols-2 gap-12">
