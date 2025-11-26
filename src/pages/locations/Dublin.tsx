@@ -38,7 +38,7 @@ export default function Dublin() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             <div>
-              <h2 className="text-3xl font-bold text-charcoal-900 mb-6">Dublin's Premier Roofing Contractor</h2>
+              <h2 className="text-3xl font-bold text-charcoal-900 mb-6">Roof Installation · Roof Repair · Inspections · Emergency Services in Dublin</h2>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
                 Dublin is known for its beautiful homes and commitment to quality, and we're proud to uphold
                 that standard with our roofing services. From historic Bridge Street to newer developments,
