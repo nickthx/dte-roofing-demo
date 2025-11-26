@@ -245,7 +245,7 @@ export default function Gallery() {
         {/* CTA Section */}
         <section className="py-16 md:py-20 bg-gradient-to-br from-primary-700 to-primary-800 text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Residential Roof Replacement Projects · Premium Asphalt & Designer Shingles · Ridge Cap & Architectural Designs · Roof Repair & Maintenance Examples</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">RReady to Start Your Project?</h2>
             <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-95">
               Let's work together to create something amazing for your home or business. Get your free estimate today.
             </p>
