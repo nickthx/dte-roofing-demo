@@ -38,7 +38,7 @@ export default function Hilliard() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             <div>
-              <h2 className="text-3xl font-bold text-charcoal-900 mb-6">Roofing Services in Hilliard</h2>
+              <h2 className="text-3xl font-bold text-charcoal-900 mb-6">Roof Installation · Roof Repair · Inspections · Emergency Services in Hilliard</h2>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
                 Hilliard is a wonderful community with beautiful homes, and we're proud to serve this area
                 with professional roofing services. Whether you live in one of Hilliard's established
