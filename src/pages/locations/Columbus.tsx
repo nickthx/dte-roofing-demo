@@ -111,7 +111,7 @@ export default function Columbus() {
           </div>
 
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-charcoal-900 mb-8 text-center">Columbus Neighborhoods We Serve</h2>
+            <h2 className="text-3xl font-bold text-charcoal-900 mb-8 text-center">Roof Installation · Roof Repair · Inspections · Emergency Services in Columbus</h2>
             <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
               {[
                 'German Village',
