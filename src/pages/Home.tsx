@@ -445,35 +445,34 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-white p-8 md:p-10 rounded-xl border border-gray-200 shadow-md mb-12 max-w-4xl mx-auto">
-            <div className="flex items-start gap-4">
-              <div className="bg-primary-100 p-3 rounded-lg">
-                <MapPin className="w-8 h-8 text-primary-700" />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-charcoal-900 mb-3">DTE Roofing</h3>
-                <p className="text-lg text-charcoal-700 mb-2">
-                  615 Hilliard Rome Rd, Columbus, OH 43228
-                </p>
-                <div className="flex items-center gap-2 mb-3">
-                  <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-yellow-500 fill-current" />
-                    ))}
-                  </div>
-                  <span className="text-charcoal-700 font-semibold">5.0</span>
-                  <span className="text-charcoal-600">({reviewData?.totalReviews || 89} reviews)</span>
-                </div>
-                <a
-                  href="https://www.google.com/maps/dir//DTE+Roofing+615+Hilliard+Rome+Rd+Columbus,+OH+43228"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary-700 hover:text-primary-800 font-semibold inline-flex items-center gap-1"
-                >
-                  Directions
-                  <ChevronRight className="w-4 h-4" />
-                </a>
-              </div>
+          <div className="max-w-6xl mx-auto mb-12">
+            <h2 className="text-3xl font-bold text-charcoal-900 mb-8 text-center">Visit Our Location</h2>
+            <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.5419919506203!2d-83.14945649272185!3d39.96345808424561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883897c3548f20bf%3A0xdd1da18d4d7ccf43!2sDTE%20Roofing!5e0!3m2!1sen!2sus!4v1763415438244!5m2!1sen!2sus"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="DTE Roofing LLC Location - 615 Hilliard Rome Rd, Columbus, OH 43228"
+                className="w-full"
+              />
+            </div>
+            <div className="mt-6 text-center">
+              <p className="text-charcoal-600 mb-4">
+                Serving Columbus, Hilliard, Dublin, and surrounding areas
+              </p>
+              <a
+                href="https://www.google.com/maps/place/DTE+Roofing+LLC/@39.9637636,-83.1476323,17z/data=!3m1!4b1!4m6!3m5!1s0x883897c3548f20bf:0xdd1da18d4d7ccf43!8m2!3d39.9637636!4d-83.1476323!16s%2Fg%2F11vrcm8sdz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-primary-700 hover:text-primary-800 font-semibold transition-colors"
+              >
+                <MapPin className="w-5 h-5 mr-2" />
+                View on Google Maps
+              </a>
             </div>
           </div>
 
