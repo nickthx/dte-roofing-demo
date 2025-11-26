@@ -87,7 +87,8 @@ export default function Home() {
             <div className="order-1 md:order-2">
               <p className="text-primary-700 font-semibold text-sm uppercase tracking-wider mb-3">Our Story</p>
               <h2 className="text-4xl md:text-5xl font-bold text-charcoal-900 mb-6 leading-tight">
-               Roof Inspection – Repair – Replacement · Emergency Services · Siding · Maintenance Plans · Gutters & Drainage
+              We Started DTE Roofing to Do It Right.
+
               </h2>
               <p className="text-lg text-charcoal-700 leading-relaxed mb-6">
                 In 2023, Donovan and Mitchell left a roofing company where they saw corners cut and homeowners overcharged. We built DTE Roofing to deliver honest diagnostics, <Link to="/services/roof-repair" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">precision repairs</Link>, and roofs that last. We still meet homeowners personally, explain exactly what your roof needs—and never sell work you don't.
