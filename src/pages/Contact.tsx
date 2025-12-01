@@ -99,7 +99,7 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://n8n.whitflow.com/webhook/dte-form-submissions', {
+      const response = await fetch('https://n8n.whitflow.com/webhook-test/dte-form-submissions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
