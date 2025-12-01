@@ -1,22 +1,7 @@
-import { useEffect } from 'react';
 import SEO from '../components/SEO';
 import { Calculator, CheckCircle, Clock, Shield } from 'lucide-react';
 
 export default function InstantQuote() {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://app.roofle.com/roof-quote-pro-embedded-widget.js?id=zEGtbFpfjh6Snz6t4Tz23';
-    script.async = true;
-
-    document.body.appendChild(script);
-
-    return () => {
-      if (script.parentNode) {
-        document.body.removeChild(script);
-      }
-    };
-  }, []);
-
   return (
     <>
       <SEO
@@ -64,8 +49,14 @@ export default function InstantQuote() {
         <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <div className="bg-white rounded-2xl shadow-2xl overflow-hidden p-4">
-                <div id="roofle-embedded-container" className="w-full min-h-[700px]"></div>
+              <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+                <iframe
+                  src="/roofle-embed.html"
+                  className="w-full border-0"
+                  style={{ minHeight: '700px', height: '100%' }}
+                  title="Roof Quote Tool"
+                  allow="geolocation"
+                />
               </div>
 
               <div className="mt-8 bg-blue-50 border-2 border-blue-200 rounded-xl p-6">
