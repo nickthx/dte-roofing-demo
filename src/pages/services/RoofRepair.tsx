@@ -19,7 +19,7 @@ We personally inspect every roof, identify the root cause of your problem (not j
         'Flashing repairs around chimneys, vents, and skylights',
         'Storm and wind damage restoration',
         'Valley and ridge cap repairs',
-        'Decking and structural repairs',
+        'Professional Decking',
         'Ice dam damage remediation',
         'Gutter and downspout repairs'
       ]}
