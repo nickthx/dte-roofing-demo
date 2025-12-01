@@ -42,10 +42,6 @@ export default function FAQ() {
           answer: 'Yes, we provide 24/7 emergency roofing services for urgent situations such as storm damage, fallen trees, severe leaks, or structural damage. Our emergency response team can quickly assess the damage, provide temporary repairs or tarping to prevent further damage, and develop a plan for permanent restoration.'
         },
         {
-          question: 'Can you match my existing roof shingles?',
-          answer: 'In most cases, yes. We work with all major roofing manufacturers and maintain relationships that allow us to source matching or very similar shingles for repairs. We bring samples to help you make the best choice and ensure color consistency with your existing roof.'
-        },
-        {
           question: 'Do you handle both residential and commercial projects?',
           answer: 'Absolutely. Our experienced team handles both residential and commercial roofing projects throughout Columbus and surrounding areas. We have expertise with various commercial roofing systems including TPO, EPDM, modified bitumen, built-up roofing, and metal roofing for flat and low-slope commercial buildings.'
         }
