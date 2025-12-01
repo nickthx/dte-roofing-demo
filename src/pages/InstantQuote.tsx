@@ -7,30 +7,39 @@ export default function InstantQuote() {
   const [widgetError, setWidgetError] = useState(false);
 
   useEffect(() => {
-    const checkWidgetLoad = () => {
-      const script = document.querySelector('script[src*="roof-quote-pro-embedded-widget"]');
+    const container = document.getElementById('roofle-embedded-container');
 
-      if (script) {
-        script.addEventListener('load', () => {
-          setWidgetLoaded(true);
-        });
+    if (!container) {
+      setWidgetError(true);
+      return;
+    }
 
-        script.addEventListener('error', () => {
-          setWidgetError(true);
-        });
-      }
+    const script = document.createElement('script');
+    script.src = 'https://app.roofle.com/roof-quote-pro-embedded-widget.js?id=zEGtbFpfjh6Snz6t4Tz23';
+    script.async = true;
 
-      const timeout = setTimeout(() => {
-        const container = document.getElementById('roofle-embedded-container');
-        if (container && container.children.length === 0) {
-          setWidgetError(true);
-        }
-      }, 10000);
-
-      return () => clearTimeout(timeout);
+    script.onload = () => {
+      setWidgetLoaded(true);
     };
 
-    checkWidgetLoad();
+    script.onerror = () => {
+      setWidgetError(true);
+    };
+
+    const timeout = setTimeout(() => {
+      if (container.children.length === 0) {
+        setWidgetError(true);
+      }
+    }, 10000);
+
+    document.body.appendChild(script);
+
+    return () => {
+      clearTimeout(timeout);
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    };
   }, []);
 
   return (
