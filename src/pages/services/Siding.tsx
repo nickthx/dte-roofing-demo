@@ -7,8 +7,8 @@ export default function Siding() {
     <div className="min-h-screen bg-white">
       <SEO
         title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
-        description="Professional siding installation and repair in Columbus, OH. Vinyl siding, fiber cement, storm damage repair. Enhance curb appeal and protection. Free estimates. Call 614-971-6028."
-        keywords="siding installation Columbus, vinyl siding, fiber cement siding, siding repair, siding replacement, Columbus siding contractor"
+        description="Professional siding installation and repair in Columbus, OH. Vinyl siding, LP Smart Siding, storm damage repair. Enhance curb appeal and protection. Free estimates. Call 614-971-6028."
+        keywords="siding installation Columbus, vinyl siding, LP Smart Siding, siding repair, siding replacement, Columbus siding contractor"
         canonical="https://dteroofing.com/services/siding"
       />
 
@@ -104,7 +104,7 @@ export default function Siding() {
                   ]
                 },
                 {
-                  title: 'Fiber Cement Siding',
+                  title: 'LP Smart Siding',
                   description: 'Premium option that mimics wood but offers superior durability and fire resistance.',
                   features: [
                     'Extremely durable',
