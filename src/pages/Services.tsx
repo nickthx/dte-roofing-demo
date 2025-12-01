@@ -31,7 +31,7 @@ export default function Services() {
     {
       title: 'Siding Installation & Repair',
       description: 'Transform your home\'s exterior with professional siding services. Enhance beauty, durability, and energy efficiency.',
-      features: ['Vinyl & Fiber Cement', 'Complete Installation', 'Siding Repair', 'Storm Damage', 'Custom Trim', 'Color Selection'],
+      features: ['Vinyl & LP Smart Siding', 'Complete Installation', 'Siding Repair', 'Storm Damage', 'Custom Trim', 'Color Selection'],
       link: '/services/siding'
     },
     {
