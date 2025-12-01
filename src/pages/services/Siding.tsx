@@ -68,7 +68,7 @@ export default function Siding() {
                   'Siding repair and restoration',
                   'Storm damage repair',
                   'Vinyl siding installation',
-                  'Fiber cement siding',
+                  'LP Smart Siding',
                   'Wood siding repair',
                   'Trim and fascia work',
                   'Soffit and fascia installation',
