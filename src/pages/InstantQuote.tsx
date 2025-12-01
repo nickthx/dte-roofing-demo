@@ -8,14 +8,11 @@ export default function InstantQuote() {
     script.src = 'https://app.roofle.com/roof-quote-pro-embedded-widget.js?id=zEGtbFpfjh6Snz6t4Tz23';
     script.async = true;
 
-    const container = document.getElementById('roofle-widget-container');
-    if (container) {
-      container.appendChild(script);
-    }
+    document.body.appendChild(script);
 
     return () => {
       if (script.parentNode) {
-        script.parentNode.removeChild(script);
+        document.body.removeChild(script);
       }
     };
   }, []);
@@ -68,7 +65,7 @@ export default function InstantQuote() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden p-4">
-                <div id="roofle-widget-container" className="w-full min-h-[700px]"></div>
+                <div id="roofle-embedded-container" className="w-full min-h-[700px]"></div>
               </div>
 
               <div className="mt-8 bg-blue-50 border-2 border-blue-200 rounded-xl p-6">
