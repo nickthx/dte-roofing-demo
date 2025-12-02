@@ -91,7 +91,7 @@ export default function Home() {
 
               </h2>
               <p className="text-lg text-charcoal-700 leading-relaxed mb-6">
-                In 2023, Donovan and Mitchell left a roofing company where they saw corners cut and homeowners overcharged. We built DTE Roofing to deliver honest diagnostics, <Link to="/services/roof-repair" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">precision repairs</Link>, and roofs that last. We still meet homeowners personally, explain exactly what your roof needs—and never sell work you don't.
+                DTE Roofing was founded by two brothers, Donovan and Mitchell, who were both raised in Hilliard Ohio and graduated from Hilliard Davidson High School. We built DTE Roofing to deliver honest diagnostics, <Link to="/services/roof-repair" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">precision repairs</Link>, precision repairs, and roofs that last. 
               </p>
 
               <div className="space-y-4 mb-8">
