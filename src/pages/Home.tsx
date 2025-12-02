@@ -61,7 +61,7 @@ export default function Home() {
 
               <div className="inline-flex items-center gap-2 text-white text-base">
                 <BadgeCheck className="w-5 h-5 text-primary-400" />
-                <span className="font-medium">Licensed & Insured • Locally Owned Since 2023</span>
+                <span className="font-medium">Licensed & Insured • Locally Owned</span>
               </div>
             </div>
           </div>

@@ -145,7 +145,6 @@ export default function SEO({
           "name": "Hilliard"
         }
       ],
-      "foundingDate": "2023",
       "founders": [
         {
           "@type": "Person",

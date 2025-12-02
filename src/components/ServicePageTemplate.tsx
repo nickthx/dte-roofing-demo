@@ -177,7 +177,7 @@ export default function ServicePageTemplate({
               </div>
               <div className="mt-6 bg-gray-50 p-6 rounded-xl border border-gray-200">
                 <p className="text-charcoal-700 leading-relaxed">
-                  <strong className="text-charcoal-900">Our Guarantee:</strong> We stand behind every job with comprehensive warranties. Founded in 2023 by roofers who left a company where corners were cut, we built DTE Roofing to do it right. Learn more <Link to="/about" className="text-primary-700 hover:text-primary-800 font-semibold underline">about our story</Link>.
+                  <strong className="text-charcoal-900">Our Guarantee:</strong> We stand behind every job with comprehensive warranties. Founded by two brothers from Hilliard, Ohio who built DTE Roofing to deliver honest diagnostics, precision repairs, and roofs that last. Learn more <Link to="/about" className="text-primary-700 hover:text-primary-800 font-semibold underline">about our story</Link>.
                 </p>
               </div>
             </section>

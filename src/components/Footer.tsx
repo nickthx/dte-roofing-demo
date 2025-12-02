@@ -18,7 +18,7 @@ export default function Footer() {
               height="48"
             />
             <p className="text-gray-400">
-              Locally owned and operated since 2023 by Donovan & Mitchell. Premium craftsmanship. Honest pricing.
+              Locally owned and operated by Donovan & Mitchell. Premium craftsmanship. Honest pricing.
             </p>
           </div>
 
@@ -93,7 +93,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="text-center text-gray-400">
-            <p>&copy; 2023 DTE Roofing. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} DTE Roofing. All rights reserved.</p>
           </div>
         </div>
       </div>

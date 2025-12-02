@@ -5,12 +5,12 @@ export default function RoofRepair() {
     <ServicePageTemplate
       serviceName="Roof Repair"
       slug="roof-repair"
-      subheadline="Honest diagnostics by hands-on experts. Since 2023."
+      subheadline="Honest diagnostics by hands-on experts."
       metaDescription="Honest roof repair by hands-on experts in Columbus. 81 five-star reviews. Book a free inspection today."
       keywords="roof repair Columbus OH, Columbus roofing company, roof repair near me, emergency roof repair Columbus, leak repair Columbus, storm damage repair, shingle replacement Columbus, roofing contractor Columbus"
       problemPromise={`Every homeowner dreads finding a water stain on their ceiling or discovering missing shingles after a storm. Too many Columbus roofers will try to sell you a full replacement when a targeted repair would solve the problem—or worse, slap on a quick patch that fails in six months.
 
-At DTE Roofing, we take a different approach. Founded in 2023 by Donovan and Mitchell—two roofers who left a company where corners were cut and homeowners were overcharged—we built our business to deliver honest diagnostics and precision repairs.
+At DTE Roofing, we take a different approach. Founded by two brothers, Donovan and Mitchell, who were both raised in Hilliard Ohio and graduated from Hilliard Davidson High School. They built DTE Roofing to deliver honest diagnostics and precision repairs.
 
 We personally inspect every roof, identify the root cause of your problem (not just the symptoms), and fix only what's needed. Whether it's damaged flashing, worn shingles, or a stubborn leak, we use premium materials and proven techniques to restore your roof's integrity. Our repairs blend seamlessly with your existing roof and come with comprehensive workmanship warranties.`}
       whatWeDo={[

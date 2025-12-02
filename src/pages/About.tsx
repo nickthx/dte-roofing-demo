@@ -8,7 +8,7 @@ export default function About() {
     <>
       <SEO
         title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
-        description="Learn about DTE Roofing, Columbus's most trusted roofing company. Quality workmanship, honest service, and dedication to excellence since 2023."
+        description="Learn about DTE Roofing, Columbus's most trusted roofing company. Quality workmanship, honest service, and dedication to excellence."
         keywords="about DTE Roofing, Columbus roofing company, local roofer, family-owned roofing business"
         canonical="https://dteroofing.com/about"
       />

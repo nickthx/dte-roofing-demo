@@ -209,7 +209,7 @@ export default function ServiceLeadForm() {
           </div>
           <div className="flex items-center gap-2 text-charcoal-700">
             <Award className="w-5 h-5 text-primary-600 flex-shrink-0" />
-            <span className="font-semibold">Locally Owned Since 2023</span>
+            <span className="font-semibold">Locally Owned</span>
           </div>
         </div>
 
