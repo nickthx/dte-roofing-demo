@@ -13,7 +13,7 @@ export default function Home() {
       <div className="min-h-screen bg-white">
       <SEO
         title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
-        description={`Founded by roofers who refused to cut corners. Honest inspections, precision repairs, and a perfect ${reviewData?.totalReviews || 89} five-star rating.`}
+        description={`Founded by two brothers from Hilliard, Ohio. Honest inspections, precision repairs, and a perfect ${reviewData?.totalReviews || 89} five-star rating.`}
         keywords="roof inspection Columbus OH, Columbus roofing company, roof repair near me, roofing contractor Columbus, roof repair Columbus, roof replacement Columbus, residential roofing, commercial roofing, emergency roof repair"
         canonical="https://dteroofing.com/"
       />
@@ -34,7 +34,7 @@ export default function Home() {
             </h1>
             <div className="w-24 h-1 bg-primary-600 mb-6"></div>
             <p className="text-xl md:text-2xl lg:text-3xl mb-10 text-white drop-shadow-md font-light">
-              Founded by roofers who saw the industry's flaws and built something better. We inspect every roof personally, fix only what's needed, and guarantee long-lasting quality.
+              Founded by two brothers from Hilliard, Ohio who built DTE Roofing to deliver honest diagnostics, precision repairs, and roofs that last.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <Link
