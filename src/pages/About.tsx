@@ -196,7 +196,7 @@ export default function About() {
             <div className="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
               <div className="w-48 h-48 rounded-lg mb-6 mx-auto overflow-hidden">
                 <img
-                  src="/Screenshot 2025-11-17 204544.png"
+                  src="/Screenshot 2025-11-17 204715.png"
                   alt="Donovan Davis - DTE Roofing Owner inspecting roof shingles"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -242,7 +242,7 @@ export default function About() {
             <div className="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
               <div className="w-48 h-48 rounded-lg mb-6 mx-auto overflow-hidden">
                 <img
-                  src="/Screenshot 2025-11-17 204715.png"
+                  src="/Screenshot 2025-11-17 204544.png"
                   alt="Andrew Watts - DTE Roofing Consultant on residential roof"
                   className="w-full h-full object-cover"
                   loading="lazy"
