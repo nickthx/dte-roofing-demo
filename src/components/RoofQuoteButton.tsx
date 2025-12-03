@@ -23,7 +23,7 @@ const RoofQuoteButton: React.FC<RoofQuoteButtonProps> = ({
 
   return (
     <Link
-      to="/instant-quote"
+      to="/get-a-quote-consultation"
       className={`${baseClasses} ${variantClasses[variant]}`}
     >
       {icon && <Calculator className="w-5 h-5" />}

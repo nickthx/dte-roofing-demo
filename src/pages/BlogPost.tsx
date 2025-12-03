@@ -171,7 +171,7 @@ export default function BlogPostPage() {
                     Schedule Free Inspection
                   </Link>
                   <Link
-                    to="/instant-quote"
+                    to="/get-a-quote-consultation"
                     className="inline-flex items-center bg-white text-primary-700 px-6 py-3 rounded-lg font-semibold border-2 border-primary-700 hover:bg-primary-50 transition-colors"
                   >
                     Get Instant Quote
@@ -198,7 +198,7 @@ export default function BlogPostPage() {
                     Get Your Free Inspection
                   </Link>
                   <Link
-                    to="/instant-quote"
+                    to="/get-a-quote-consultation"
                     className="inline-flex items-center bg-white text-charcoal-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg"
                   >
                     Try Our Instant Quote Tool

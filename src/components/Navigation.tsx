@@ -118,7 +118,7 @@ export default function Navigation() {
             <Link to="/faq" className="text-charcoal-700 hover:text-primary-700 font-medium transition-colors">
               FAQ
             </Link>
-            <Link to="/instant-quote" className="bg-primary-700 text-white px-6 py-2 rounded-lg hover:bg-primary-800 transition-all font-semibold inline-flex items-center gap-2">
+            <Link to="/get-a-quote-consultation" className="bg-primary-700 text-white px-6 py-2 rounded-lg hover:bg-primary-800 transition-all font-semibold inline-flex items-center gap-2">
               <Calculator className="w-4 h-4" />
               Instant Quote
             </Link>
@@ -191,7 +191,7 @@ export default function Navigation() {
                 FAQ
               </Link>
               <Link
-                to="/instant-quote"
+                to="/get-a-quote-consultation"
                 className="bg-primary-700 text-white px-6 py-2.5 rounded-lg hover:bg-primary-800 transition-colors font-semibold text-center mt-2 flex items-center justify-center gap-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >

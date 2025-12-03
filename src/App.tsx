@@ -60,7 +60,7 @@ function App() {
             <Route path="/locations/columbus" element={<Columbus />} />
             <Route path="/locations/hilliard" element={<Hilliard />} />
             <Route path="/locations/dublin" element={<Dublin />} />
-            <Route path="/instant-quote" element={<InstantQuote />} />
+            <Route path="/get-a-quote-consultation" element={<InstantQuote />} />
           </Routes>
         </main>
         <Footer />
