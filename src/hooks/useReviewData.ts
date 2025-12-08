@@ -20,10 +20,22 @@ export const useReviewData = () => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    fetch('https://n8n.whitflow.com/webhook/dte-reviews')
-      .then(res => res.json())
-      .then(data => {
-        setReviewData(data);
+    fetch('https://docs.google.com/spreadsheets/d/1ZZ3-sLfyRXhls8tPGe6hxK_W5vEfkO0XnHCxbwBNtCY/gviz/tq?tqx=out:json&range=A2:D2')
+      .then(res => res.text())
+      .then(text => {
+        const parsed = JSON.parse(text.slice(47, -2));
+        const row = parsed.table.rows[0].c;
+
+        const totalReviews = row[1]?.v || 86;
+        const averageRating = row[2]?.v || 5.0;
+
+        setReviewData({
+          totalReviews: totalReviews,
+          averageRating: averageRating,
+          ratingBreakdown: { 5: totalReviews, 4: 0, 3: 0, 2: 0, 1: 0 },
+          lastUpdated: new Date().toISOString(),
+          businessName: 'DTE Roofing'
+        });
         setLoading(false);
       })
       .catch(err => {
