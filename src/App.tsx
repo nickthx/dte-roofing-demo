@@ -26,6 +26,8 @@ import CommercialRoofing from './pages/services/CommercialRoofing';
 import Columbus from './pages/locations/Columbus';
 import Hilliard from './pages/locations/Hilliard';
 import Dublin from './pages/locations/Dublin';
+import NewAlbany from './pages/locations/NewAlbany';
+import UpperArlington from './pages/locations/UpperArlington';
 import InstantQuote from './pages/InstantQuote';
 
 function App() {
@@ -61,6 +63,8 @@ function App() {
             <Route path="/locations/columbus" element={<Columbus />} />
             <Route path="/locations/hilliard" element={<Hilliard />} />
             <Route path="/locations/dublin" element={<Dublin />} />
+            <Route path="/locations/new-albany" element={<NewAlbany />} />
+            <Route path="/locations/upper-arlington" element={<UpperArlington />} />
             <Route path="/get-a-quote-consultation" element={<InstantQuote />} />
           </Routes>
         </main>
