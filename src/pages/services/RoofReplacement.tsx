@@ -50,7 +50,9 @@ export default function RoofReplacement() {
                 From the initial consultation to the final cleanup, our experienced local team handles every
                 detail with care. We work efficiently to minimize disruption to your daily life while delivering
                 a roof that protects your home for decades. Every installation is backed by comprehensive
-                manufacturer and workmanship warranties for your complete peace of mind.
+                manufacturer and workmanship warranties for your complete peace of mind. Not every roof needs
+                full replacement—sometimes <Link to="/services/roof-repair" className="text-primary-700 hover:text-primary-800 font-semibold">targeted repairs</Link> can extend your roof's life by several years, which is
+                why we always provide honest assessments of your options.
               </p>
               <div className="grid md:grid-cols-3 gap-4 mt-8">
                 <div className="text-center p-4 bg-gray-50 rounded-lg">
@@ -98,6 +100,82 @@ export default function RoofReplacement() {
           </div>
 
           <div className="mb-16">
+            <h2 className="text-3xl font-bold text-charcoal-900 mb-8">Understanding Roof Replacement Costs in Columbus, OH</h2>
+            <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
+              One of the first questions homeowners ask is about cost. In Columbus and throughout Central Ohio,
+              residential roof replacement typically ranges from $8,000 to $25,000 or more, depending on several key factors.
+              Understanding these variables helps you budget appropriately and make informed decisions about your investment.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="bg-gray-50 p-6 rounded-xl">
+                <h3 className="text-xl font-bold text-charcoal-900 mb-4">Primary Cost Factors</h3>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-bold text-charcoal-800 mb-2">Roof Size</h4>
+                    <p className="text-charcoal-600 text-sm">
+                      Measured in squares (100 square feet each), most Columbus homes range from 15-30 squares.
+                      A typical 2,000 square foot home with a standard pitched roof usually requires 20-22 squares of material.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-charcoal-800 mb-2">Pitch Complexity</h4>
+                    <p className="text-charcoal-600 text-sm">
+                      Steeper roofs require additional safety equipment and take longer to complete. Complex designs with
+                      multiple valleys, dormers, or skylights increase labor time and material waste, affecting overall cost.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-charcoal-800 mb-2">Material Selection</h4>
+                    <p className="text-charcoal-600 text-sm">
+                      Basic 3-tab shingles are the most affordable option, while architectural shingles offer better
+                      durability and aesthetics at a moderate price increase. Premium materials like metal roofing or
+                      designer shingles command higher costs but provide extended lifespans.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 p-6 rounded-xl">
+                <h3 className="text-xl font-bold text-charcoal-900 mb-4">Additional Considerations</h3>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-bold text-charcoal-800 mb-2">Tear-Off Layers</h4>
+                    <p className="text-charcoal-600 text-sm">
+                      Columbus building codes allow a maximum of two shingle layers. If your home has multiple existing
+                      layers, removal costs increase due to additional labor and disposal fees. Single-layer tear-offs
+                      are more straightforward and economical.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-charcoal-800 mb-2">Deck Repairs</h4>
+                    <p className="text-charcoal-600 text-sm">
+                      During tear-off, we may discover damaged decking that requires replacement. While this adds to the
+                      project cost, addressing deck issues is essential for long-term roof performance and cannot be
+                      postponed without risking structural problems.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-charcoal-800 mb-2">Permits and Inspections</h4>
+                    <p className="text-charcoal-600 text-sm">
+                      In Columbus, Hilliard, and Dublin, residential roof replacements require building permits,
+                      typically costing $100-300. We handle all permitting and inspections to ensure your project
+                      meets local code requirements.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p className="text-lg text-charcoal-600 leading-relaxed">
+              Before committing to a full replacement, consider scheduling a <Link to="/services/roof-inspection" className="text-primary-700 hover:text-primary-800 font-semibold">professional roof inspection</Link> to
+              assess your roof's true condition. Sometimes what appears to be replacement-level damage might be
+              addressable with targeted repairs, saving you thousands. If you've experienced recent severe weather,
+              our <Link to="/services/storm-damage" className="text-primary-700 hover:text-primary-800 font-semibold">storm damage assessment</Link> can help you understand whether insurance might cover some or all of the replacement cost.
+            </p>
+          </div>
+
+          <div className="mb-16">
             <h2 className="text-3xl font-bold text-charcoal-900 mb-8 text-center">Our Replacement Process</h2>
             <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
               {[
@@ -116,6 +194,216 @@ export default function RoofReplacement() {
                   <p className="text-charcoal-600 text-xs">{item.description}</p>
                 </div>
               ))}
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-charcoal-900 mb-8">Best Roofing Materials for Ohio Weather</h2>
+            <p className="text-lg text-charcoal-600 mb-8 leading-relaxed">
+              Central Ohio's climate presents unique challenges for roofing materials. Our region experiences hot, humid
+              summers with temperatures reaching the 90s, cold winters that can drop below zero, significant temperature
+              fluctuations between seasons, and severe weather including hail storms, high winds, and heavy snow loads.
+              Choosing the right material means selecting one that can handle all these conditions while providing decades
+              of reliable protection.
+            </p>
+
+            <div className="space-y-8">
+              <div className="bg-gray-50 p-8 rounded-xl border-l-4 border-primary-700">
+                <h3 className="text-2xl font-bold text-charcoal-900 mb-4">Asphalt Shingles (3-Tab)</h3>
+                <p className="text-charcoal-600 mb-4 leading-relaxed">
+                  The most economical option, 3-tab asphalt shingles have served Columbus homeowners for decades.
+                  These single-layer shingles provide basic protection at an accessible price point, making them
+                  popular for rental properties and budget-conscious homeowners.
+                </p>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-bold text-green-700 mb-3">Pros for Ohio Climate:</h4>
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-700 flex-shrink-0 mt-1" />
+                        <span className="text-charcoal-600 text-sm">Most affordable initial investment</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-700 flex-shrink-0 mt-1" />
+                        <span className="text-charcoal-600 text-sm">Readily available and easy to match for repairs</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-700 flex-shrink-0 mt-1" />
+                        <span className="text-charcoal-600 text-sm">Adequate performance in moderate weather conditions</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-700 flex-shrink-0 mt-1" />
+                        <span className="text-charcoal-600 text-sm">Lightweight design reduces structural load</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-red-700 mb-3">Cons for Ohio Climate:</h4>
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-700 font-bold flex-shrink-0">•</span>
+                        <span className="text-charcoal-600 text-sm">Shorter lifespan (15-20 years) in Ohio's temperature extremes</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-700 font-bold flex-shrink-0">•</span>
+                        <span className="text-charcoal-600 text-sm">Less wind resistance, vulnerable to storm damage</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-700 font-bold flex-shrink-0">•</span>
+                        <span className="text-charcoal-600 text-sm">More susceptible to algae growth in humid conditions</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-700 font-bold flex-shrink-0">•</span>
+                        <span className="text-charcoal-600 text-sm">Lower impact resistance against hail</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-700 font-bold flex-shrink-0">•</span>
+                        <span className="text-charcoal-600 text-sm">Basic appearance may limit curb appeal</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 p-8 rounded-xl border-l-4 border-primary-700">
+                <h3 className="text-2xl font-bold text-charcoal-900 mb-4">Architectural Shingles</h3>
+                <p className="text-charcoal-600 mb-4 leading-relaxed">
+                  Also called dimensional or laminated shingles, architectural shingles are the most popular choice
+                  among Columbus area homeowners. These multi-layer shingles offer enhanced durability, attractive
+                  dimensional appearance, and excellent value for their performance characteristics.
+                </p>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-bold text-green-700 mb-3">Pros for Ohio Climate:</h4>
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-700 flex-shrink-0 mt-1" />
+                        <span className="text-charcoal-600 text-sm">Extended lifespan (25-35 years) withstands seasonal extremes</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-700 flex-shrink-0 mt-1" />
+                        <span className="text-charcoal-600 text-sm">Superior wind resistance (110+ mph ratings) protects against Ohio storms</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-700 flex-shrink-0 mt-1" />
+                        <span className="text-charcoal-600 text-sm">Better impact resistance for hail protection</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-700 flex-shrink-0 mt-1" />
+                        <span className="text-charcoal-600 text-sm">Enhanced thermal performance reduces energy costs</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-700 flex-shrink-0 mt-1" />
+                        <span className="text-charcoal-600 text-sm">Algae-resistant options prevent staining in humidity</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-700 flex-shrink-0 mt-1" />
+                        <span className="text-charcoal-600 text-sm">Attractive appearance increases home value</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-red-700 mb-3">Cons for Ohio Climate:</h4>
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-700 font-bold flex-shrink-0">•</span>
+                        <span className="text-charcoal-600 text-sm">Moderate price increase over 3-tab shingles (typically 20-40% more)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-700 font-bold flex-shrink-0">•</span>
+                        <span className="text-charcoal-600 text-sm">Slightly heavier weight requires adequate structural support</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-700 font-bold flex-shrink-0">•</span>
+                        <span className="text-charcoal-600 text-sm">Still susceptible to damage in extreme hail events</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="mt-4 p-4 bg-primary-50 rounded-lg">
+                  <p className="text-charcoal-700 text-sm">
+                    <strong>Our recommendation:</strong> For most Columbus area homes, architectural shingles offer
+                    the best balance of performance, longevity, and value. They handle our climate extremes well and
+                    typically pay for themselves through extended service life and reduced maintenance needs.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 p-8 rounded-xl border-l-4 border-primary-700">
+                <h3 className="text-2xl font-bold text-charcoal-900 mb-4">Metal Roofing</h3>
+                <p className="text-charcoal-600 mb-4 leading-relaxed">
+                  Metal roofing has gained popularity in Central Ohio for its exceptional durability and energy
+                  efficiency. Available in standing seam, metal shingles, or corrugated panels, metal roofs represent
+                  a premium investment that can outlast multiple asphalt roof replacements.
+                </p>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-bold text-green-700 mb-3">Pros for Ohio Climate:</h4>
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-700 flex-shrink-0 mt-1" />
+                        <span className="text-charcoal-600 text-sm">Exceptional lifespan (40-70 years) outlasts other materials significantly</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-700 flex-shrink-0 mt-1" />
+                        <span className="text-charcoal-600 text-sm">Superior performance in extreme weather including heavy snow loads</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-700 flex-shrink-0 mt-1" />
+                        <span className="text-charcoal-600 text-sm">Excellent hail and impact resistance protects against storm damage</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-700 flex-shrink-0 mt-1" />
+                        <span className="text-charcoal-600 text-sm">Highly wind resistant (up to 140 mph)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-700 flex-shrink-0 mt-1" />
+                        <span className="text-charcoal-600 text-sm">Reflective properties reduce cooling costs in summer</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-700 flex-shrink-0 mt-1" />
+                        <span className="text-charcoal-600 text-sm">Snow sheds easily, reducing ice dam formation</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-700 flex-shrink-0 mt-1" />
+                        <span className="text-charcoal-600 text-sm">Fire resistant and environmentally friendly</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-red-700 mb-3">Cons for Ohio Climate:</h4>
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-700 font-bold flex-shrink-0">•</span>
+                        <span className="text-charcoal-600 text-sm">Higher upfront cost (2-3 times more than architectural shingles)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-700 font-bold flex-shrink-0">•</span>
+                        <span className="text-charcoal-600 text-sm">Can be noisy during heavy rain or hail without proper insulation</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-700 font-bold flex-shrink-0">•</span>
+                        <span className="text-charcoal-600 text-sm">Requires specialized installation expertise</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-700 font-bold flex-shrink-0">•</span>
+                        <span className="text-charcoal-600 text-sm">Limited color options compared to shingles</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-700 font-bold flex-shrink-0">•</span>
+                        <span className="text-charcoal-600 text-sm">May dent in severe hail (though still functional)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="mt-4 p-4 bg-primary-50 rounded-lg">
+                  <p className="text-charcoal-700 text-sm">
+                    <strong>Best suited for:</strong> Homeowners planning long-term ownership who want minimal
+                    maintenance and maximum durability. Metal roofing's higher initial cost is offset by its
+                    exceptional lifespan and energy savings over time.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -160,6 +448,124 @@ export default function RoofReplacement() {
                   </ul>
                 </div>
               ))}
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-charcoal-900 mb-8 text-center">Common Questions About Roof Replacement</h2>
+            <div className="space-y-6">
+              <div className="bg-gray-50 p-8 rounded-xl">
+                <h3 className="text-2xl font-bold text-charcoal-900 mb-4">How long does a roof replacement take?</h3>
+                <p className="text-charcoal-600 mb-4 leading-relaxed">
+                  Most residential roof replacements in Columbus take 1-3 days to complete, depending on roof size,
+                  complexity, and weather conditions. A typical single-family home with a straightforward design
+                  usually takes 1-2 days from tear-off to final cleanup.
+                </p>
+                <p className="text-charcoal-600 mb-4 leading-relaxed">
+                  Factors that can extend the timeline include complex roof designs with multiple levels, valleys,
+                  or dormers, larger square footage requiring more material and labor, significant deck repair needs
+                  discovered during tear-off, or weather delays due to rain or extreme temperatures. Homes in
+                  Hilliard and Dublin with multi-story designs or steep pitches may require an additional day for
+                  safe, quality installation.
+                </p>
+                <p className="text-charcoal-600 leading-relaxed">
+                  We complete the work in continuous days whenever possible to minimize disruption to your daily
+                  routine. Your home remains fully weatherproofed each night, and we maintain thorough communication
+                  throughout the process. If unexpected repairs are needed, we discuss options and timeline impacts
+                  with you before proceeding. For projects requiring more extensive work, such as addressing
+                  structural issues, we provide detailed schedules upfront.
+                </p>
+              </div>
+
+              <div className="bg-gray-50 p-8 rounded-xl">
+                <h3 className="text-2xl font-bold text-charcoal-900 mb-4">What's the best time of year for roof replacement in Columbus?</h3>
+                <p className="text-charcoal-600 mb-4 leading-relaxed">
+                  Late spring through early fall (May through October) represents the ideal window for roof
+                  replacement in Central Ohio. During these months, moderate temperatures allow roofing materials
+                  to seal properly, crews can work efficiently without weather interruptions, and extended daylight
+                  hours maximize productivity.
+                </p>
+                <p className="text-charcoal-600 mb-4 leading-relaxed">
+                  Fall (September-October) is particularly popular among Columbus homeowners. Cooler temperatures
+                  make for comfortable working conditions, there's typically less rain than spring, and completing
+                  the project before winter ensures your home is protected from snow and ice. However, this
+                  increased demand means scheduling requires more advance notice.
+                </p>
+                <p className="text-charcoal-600 mb-4 leading-relaxed">
+                  While winter installations are possible in Ohio, cold temperatures below 40°F can affect shingle
+                  adhesion and require special installation techniques. Snow and ice on the roof create safety
+                  concerns and work delays. If you need emergency replacement during winter months due to
+                  <Link to="/services/storm-damage" className="text-primary-700 hover:text-primary-800 font-semibold ml-1">storm damage</Link> or critical leaks, we take extra precautions to ensure proper installation despite
+                  challenging conditions.
+                </p>
+                <p className="text-charcoal-600 leading-relaxed">
+                  Spring (April-May) offers another excellent window, though April showers can cause occasional
+                  scheduling adjustments. Summer installations work well too, though extremely hot days may require
+                  early morning start times to protect both workers and materials from excessive heat.
+                </p>
+              </div>
+
+              <div className="bg-gray-50 p-8 rounded-xl">
+                <h3 className="text-2xl font-bold text-charcoal-900 mb-4">Do I need a permit for roof replacement?</h3>
+                <p className="text-charcoal-600 mb-4 leading-relaxed">
+                  Yes, most municipalities in Central Ohio require building permits for roof replacement projects.
+                  Columbus, Hilliard, Dublin, and surrounding communities mandate permits to ensure work meets
+                  current building codes and safety standards. Permit costs typically range from $100-300 depending
+                  on your specific location and project scope.
+                </p>
+                <p className="text-charcoal-600 mb-4 leading-relaxed">
+                  The good news: we handle all permitting on your behalf. Our team submits the necessary
+                  applications, provides required documentation, schedules inspections, and ensures your project
+                  complies with all local codes. You don't need to visit municipal offices or navigate the
+                  permitting process yourself.
+                </p>
+                <p className="text-charcoal-600 mb-4 leading-relaxed">
+                  The permitting process typically takes 1-3 business days for approval in most Columbus area
+                  municipalities. Once work begins, a building inspector will visit to verify proper installation
+                  methods, material quality, and code compliance. This inspection protects your investment by
+                  ensuring everything meets official standards.
+                </p>
+                <p className="text-charcoal-600 leading-relaxed">
+                  Some homeowners wonder about skipping permits to save money or time. We strongly advise against
+                  this approach. Unpermitted work can create serious problems when selling your home, void
+                  manufacturer warranties, complicate insurance claims, and expose you to fines if discovered. As a
+                  licensed contractor, we always obtain proper permits to protect both you and the integrity of
+                  your investment.
+                </p>
+              </div>
+
+              <div className="bg-gray-50 p-8 rounded-xl">
+                <h3 className="text-2xl font-bold text-charcoal-900 mb-4">Will insurance cover my roof replacement?</h3>
+                <p className="text-charcoal-600 mb-4 leading-relaxed">
+                  Insurance coverage depends primarily on the cause of damage. Storm-related damage from wind, hail,
+                  fallen trees, or severe weather events is typically covered under standard homeowners policies,
+                  subject to your deductible. Columbus area homes frequently experience hail damage and wind events
+                  that qualify for insurance claims.
+                </p>
+                <p className="text-charcoal-600 mb-4 leading-relaxed">
+                  Age-related wear, gradual deterioration, and lack of maintenance are generally not covered.
+                  Insurance companies expect homeowners to maintain their roofs and replace them at the end of their
+                  useful life as a normal ownership expense. However, if recent storm damage has compromised a roof
+                  already nearing replacement age, you may still have valid claim potential.
+                </p>
+                <p className="text-charcoal-600 mb-4 leading-relaxed">
+                  We have extensive experience working with insurance companies and can help you navigate the claims
+                  process. After <Link to="/services/roof-inspection" className="text-primary-700 hover:text-primary-800 font-semibold">inspecting your roof</Link>, we document any storm damage with detailed photos and measurements.
+                  We can attend your insurance adjuster's inspection, provide comprehensive repair estimates, and
+                  communicate directly with your insurance company to ensure all damage is properly documented.
+                </p>
+                <p className="text-charcoal-600 mb-4 leading-relaxed">
+                  Many Columbus area homeowners don't realize they have covered damage. If you've experienced recent
+                  severe weather, it's worth having us conduct a thorough inspection. We identify storm damage that
+                  may not be obvious from the ground, including hail impacts, wind damage, and related issues. Our
+                  detailed documentation helps support valid insurance claims.
+                </p>
+                <p className="text-charcoal-600 leading-relaxed">
+                  For more information about insurance claims and storm damage, visit our <Link to="/faq" className="text-primary-700 hover:text-primary-800 font-semibold">FAQ page</Link> or
+                  <Link to="/contact" className="text-primary-700 hover:text-primary-800 font-semibold ml-1">contact us</Link> for a free inspection. We'll provide honest assessment of whether your damage likely
+                  qualifies for coverage and guide you through next steps if you have a valid claim.
+                </p>
+              </div>
             </div>
           </div>
 
