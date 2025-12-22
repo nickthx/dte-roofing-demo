@@ -1,15 +1,28 @@
 import ServicePageTemplate from '../../components/ServicePageTemplate';
+import SchemaMarkup from '../../components/SchemaMarkup';
 import { useReviewData } from '../../hooks/useReviewData';
 
 export default function RoofRepair() {
   const { reviewData } = useReviewData();
   return (
-    <ServicePageTemplate
-      serviceName="Roof Repair"
-      slug="roof-repair"
-      subheadline="Honest diagnostics by hands-on experts."
-      metaDescription={`Honest roof repair by hands-on experts in Columbus. ${reviewData?.totalReviews || 86}+ five-star reviews. Book a free inspection today.`}
-      keywords="roof repair Columbus OH, Columbus roofing company, roof repair near me, emergency roof repair Columbus, leak repair Columbus, storm damage repair, shingle replacement Columbus, roofing contractor Columbus"
+    <>
+      <SchemaMarkup
+        type="service"
+        service={{
+          name: 'Roof Repair',
+          description: 'Professional roof repair services in Columbus, OH. We provide honest diagnostics, precision repairs for leaks, storm damage, missing shingles, and all roofing issues. Emergency repairs available.',
+          url: '/services/roof-repair'
+        }}
+        pageTitle="Roof Repair Columbus OH - Expert Leak & Storm Damage Repair"
+        pageDescription={`Honest roof repair by hands-on experts in Columbus. ${reviewData?.totalReviews || 86}+ five-star reviews. Book a free inspection today.`}
+        pageUrl="https://www.dteroofingllc.com/services/roof-repair"
+      />
+      <ServicePageTemplate
+        serviceName="Roof Repair"
+        slug="roof-repair"
+        subheadline="Honest diagnostics by hands-on experts."
+        metaDescription={`Honest roof repair by hands-on experts in Columbus. ${reviewData?.totalReviews || 86}+ five-star reviews. Book a free inspection today.`}
+        keywords="roof repair Columbus OH, Columbus roofing company, roof repair near me, emergency roof repair Columbus, leak repair Columbus, storm damage repair, shingle replacement Columbus, roofing contractor Columbus"
       problemPromise={`Every homeowner dreads finding a water stain on their ceiling or discovering missing shingles after a storm. Too many Columbus roofers will try to sell you a full replacement when a targeted repair would solve the problem—or worse, slap on a quick patch that fails in six months.
 
 At DTE Roofing, we take a different approach. Founded by two brothers, Donovan and Mitchell, who were both raised in Hilliard Ohio and graduated from Hilliard Davidson High School. They built DTE Roofing to deliver honest diagnostics and precision repairs.
@@ -80,5 +93,6 @@ We personally inspect every roof, identify the root cause of your problem (not j
         { name: 'Storm Damage Repair', link: '/services/storm-damage' }
       ]}
     />
+    </>
   );
 }

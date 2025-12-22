@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown, Phone, Mail, MessageCircle } from 'lucide-react';
 import SEO from '../components/SEO';
+import SchemaMarkup from '../components/SchemaMarkup';
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -98,6 +99,8 @@ export default function FAQ() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const allFAQs = faqSections.flatMap(section => section.faqs);
+
   return (
     <div className="min-h-screen bg-white">
       <SEO
@@ -105,6 +108,13 @@ export default function FAQ() {
         description="Get answers to common roofing questions. Learn about costs, timelines, warranties, insurance claims, and more. Expert guidance from Columbus's trusted roofing contractor."
         keywords="roofing FAQ, roof repair questions, roof cost, roofing warranty, insurance claims, how long does roof last, Columbus roofer FAQ"
         canonical="https://www.dteroofingllc.com/faq"
+      />
+      <SchemaMarkup
+        type="faq"
+        faqs={allFAQs}
+        pageTitle="Frequently Asked Questions"
+        pageDescription="Get answers to common roofing questions. Learn about costs, timelines, warranties, insurance claims, and more."
+        pageUrl="https://www.dteroofingllc.com/faq"
       />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-charcoal-900 via-charcoal-800 to-charcoal-900 text-white py-20">

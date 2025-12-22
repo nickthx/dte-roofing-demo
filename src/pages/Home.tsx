@@ -3,6 +3,7 @@ import { Phone, Shield, Clock, Award, CheckCircle, Star, ChevronRight, BadgeChec
 import SEO from '../components/SEO';
 import MobileStickyCall from '../components/MobileStickyCall';
 import RoofQuoteButton from '../components/RoofQuoteButton';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { useReviewData } from '../hooks/useReviewData';
 
 export default function Home() {
@@ -16,6 +17,12 @@ export default function Home() {
         description={`Founded by two brothers from Hilliard, Ohio. Honest inspections, precision repairs, and a perfect ${reviewData?.totalReviews || 89} five-star rating.`}
         keywords="roof inspection Columbus OH, Columbus roofing company, roof repair near me, roofing contractor Columbus, roof repair Columbus, roof replacement Columbus, residential roofing, commercial roofing, emergency roof repair"
         canonical="https://www.dteroofingllc.com/"
+      />
+      <SchemaMarkup
+        type="home"
+        pageTitle="DTE Roofing LLC - Columbus's Highest-Rated Roofing Contractor"
+        pageDescription={`Founded by two brothers from Hilliard, Ohio. Honest inspections, precision repairs, and a perfect ${reviewData?.totalReviews || 89} five-star rating.`}
+        pageUrl="https://www.dteroofingllc.com/"
       />
       <section className="relative bg-gradient-to-br from-charcoal-900 via-charcoal-800 to-charcoal-900 text-white py-32 md:py-40 overflow-hidden">
         <div

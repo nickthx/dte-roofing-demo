@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Phone, MapPin } from 'lucide-react';
 import SEO from '../../components/SEO';
+import SchemaMarkup from '../../components/SchemaMarkup';
 
 export default function Columbus() {
   return (
@@ -10,6 +11,13 @@ export default function Columbus() {
         description="Professional roofing services in Columbus, OH. Local experts serving Columbus with roof repair, replacement, installation. Fast response times. Free estimates. Call 614-971-6028."
         keywords="roofing Columbus OH, Columbus roofer, roof repair Columbus, roof replacement Columbus, Columbus roofing contractor"
         canonical="https://www.dteroofingllc.com/locations/columbus"
+      />
+      <SchemaMarkup
+        type="location"
+        locationName="Columbus"
+        pageTitle="Roofing Services in Columbus, OH - DTE Roofing LLC"
+        pageDescription="Professional roofing services in Columbus, OH. Local experts serving Columbus with roof repair, replacement, installation. Fast response times."
+        pageUrl="https://www.dteroofingllc.com/locations/columbus"
       />
 
       <section className="relative bg-gradient-to-br from-charcoal-900 via-charcoal-800 to-charcoal-900 text-white py-20">

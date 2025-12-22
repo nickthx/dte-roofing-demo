@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Home, DollarSign, Calendar } from 'lucide-react';
 import SEO from '../../components/SEO';
+import SchemaMarkup from '../../components/SchemaMarkup';
 
 export default function RoofReplacement() {
   return (
@@ -10,6 +11,17 @@ export default function RoofReplacement() {
         description="Expert roof replacement services in Columbus, OH. Complete tear-off and installation with premium materials. Financing available. Licensed & insured. Free estimates. Call 614-971-6028."
         keywords="roof replacement Columbus, complete roof replacement, tear off replacement, new roof, roof replacement cost, residential roof replacement"
         canonical="https://dteroofing.com/services/roof-replacement"
+      />
+      <SchemaMarkup
+        type="service"
+        service={{
+          name: 'Roof Replacement',
+          description: 'Complete roof replacement services in Columbus, OH. Professional tear-off and installation with premium materials. Transform your property with a new roof built to last decades. Licensed, insured, and financing available.',
+          url: '/services/roof-replacement'
+        }}
+        pageTitle="Roof Replacement Columbus OH - Complete Roof Installation"
+        pageDescription="Expert roof replacement services in Columbus, OH. Complete tear-off and installation with premium materials. Financing available. Licensed & insured."
+        pageUrl="https://www.dteroofingllc.com/services/roof-replacement"
       />
 
       <section className="relative bg-gradient-to-br from-charcoal-900 via-charcoal-800 to-charcoal-900 text-white py-20">
