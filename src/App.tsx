@@ -28,6 +28,14 @@ import Hilliard from './pages/locations/Hilliard';
 import Dublin from './pages/locations/Dublin';
 import NewAlbany from './pages/locations/NewAlbany';
 import UpperArlington from './pages/locations/UpperArlington';
+import Westerville from './pages/locations/Westerville';
+import Gahanna from './pages/locations/Gahanna';
+import Reynoldsburg from './pages/locations/Reynoldsburg';
+import GroveCity from './pages/locations/GroveCity';
+import Pickerington from './pages/locations/Pickerington';
+import Worthington from './pages/locations/Worthington';
+import Delaware from './pages/locations/Delaware';
+import Powell from './pages/locations/Powell';
 import InstantQuote from './pages/InstantQuote';
 
 function App() {
@@ -65,6 +73,14 @@ function App() {
             <Route path="/locations/dublin" element={<Dublin />} />
             <Route path="/locations/new-albany" element={<NewAlbany />} />
             <Route path="/locations/upper-arlington" element={<UpperArlington />} />
+            <Route path="/locations/westerville" element={<Westerville />} />
+            <Route path="/locations/gahanna" element={<Gahanna />} />
+            <Route path="/locations/reynoldsburg" element={<Reynoldsburg />} />
+            <Route path="/locations/grove-city" element={<GroveCity />} />
+            <Route path="/locations/pickerington" element={<Pickerington />} />
+            <Route path="/locations/worthington" element={<Worthington />} />
+            <Route path="/locations/delaware" element={<Delaware />} />
+            <Route path="/locations/powell" element={<Powell />} />
             <Route path="/get-a-quote-consultation" element={<InstantQuote />} />
           </Routes>
         </main>
