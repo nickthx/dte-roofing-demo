@@ -70,7 +70,7 @@ export default function ServicePageTemplate({
           title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
           description={metaDescription}
           keywords={keywords}
-          canonical={`https://dteroofing.com/services/${slug}`}
+          canonical={`https://www.dteroofingllc.com/services/${slug}`}
         />
 
       <script type="application/ld+json">

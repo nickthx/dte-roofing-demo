@@ -74,7 +74,7 @@ export default function Reviews() {
         title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description={`Read ${totalReviews} verified five-star reviews from Columbus homeowners. See why DTE Roofing is the highest-rated roofing company in Columbus, OH.`}
         keywords="DTE Roofing reviews, Columbus roofing reviews, customer testimonials, five-star roofer"
-        canonical="https://dteroofing.com/reviews"
+        canonical="https://www.dteroofingllc.com/reviews"
       />
       <div className="min-h-screen bg-white">
       {/* Hero Section */}

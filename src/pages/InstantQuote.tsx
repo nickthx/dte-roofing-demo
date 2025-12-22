@@ -10,7 +10,7 @@ export default function InstantQuote() {
         title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description="Get an accurate roof replacement quote in 30 seconds. AI-powered estimates using satellite imagery. No inspection needed to get started."
         keywords="instant roof quote, roof cost calculator, roof estimate, roof replacement cost, free roof quote"
-        canonical="https://dteroofingllc.com/get-a-quote-consultation"
+        canonical="https://www.dteroofingllc.com/get-a-quote-consultation"
       />
 
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">

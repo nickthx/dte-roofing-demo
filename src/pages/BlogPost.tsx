@@ -82,7 +82,7 @@ export default function BlogPostPage() {
         title={`${post.title} | DTE Roofing Blog`}
         description={post.excerpt}
         keywords={post.tags?.join(', ') || 'roofing, Columbus, Ohio'}
-        canonical={`https://dteroofingllc.com/blog/${post.slug}`}
+        canonical={`https://www.dteroofingllc.com/blog/${post.slug}`}
       />
 
       {/* Header */}

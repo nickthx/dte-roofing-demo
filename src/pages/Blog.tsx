@@ -55,7 +55,7 @@ export default function Blog() {
         title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description="Expert roofing advice from DTE Roofing. Learn about roof maintenance, winter prep, signs you need a new roof, and more."
         keywords="roofing blog, roof maintenance tips, Ohio roofing advice"
-        canonical="https://dteroofing.com/blog"
+        canonical="https://www.dteroofingllc.com/blog"
       />
       
       <section className="relative bg-gradient-to-br from-charcoal-900 via-charcoal-800 to-charcoal-900 text-white py-20">

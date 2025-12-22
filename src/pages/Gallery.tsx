@@ -138,7 +138,7 @@ export default function Gallery() {
           title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
           description="View our portfolio of completed roofing projects in Columbus, Dublin, and Hilliard OH. See quality roof installations, repairs, and commercial roofing work by DTE Roofing."
           keywords="roofing gallery Columbus, roof installation photos, before after roofing, Columbus roofing projects, DTE Roofing portfolio"
-          canonical="https://dteroofing.com/gallery"
+          canonical="https://www.dteroofingllc.com/gallery"
         />
 
         {/* Hero Section */}

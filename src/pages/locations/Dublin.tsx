@@ -9,7 +9,7 @@ export default function Dublin() {
         title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description="Professional roofing services in Dublin, OH. Local experts serving Dublin with premium roof repair, replacement, installation. Quality workmanship. Free estimates. Call 614-971-6028."
         keywords="roofing Dublin OH, Dublin roofer, roof repair Dublin, roof replacement Dublin, Dublin roofing contractor"
-        canonical="https://dteroofing.com/locations/dublin"
+        canonical="https://www.dteroofingllc.com/locations/dublin"
       />
 
       <section className="relative bg-gradient-to-br from-charcoal-900 via-charcoal-800 to-charcoal-900 text-white py-20">
