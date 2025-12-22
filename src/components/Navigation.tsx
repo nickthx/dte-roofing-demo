@@ -115,6 +115,9 @@ export default function Navigation() {
             <Link to="/blog" className="text-charcoal-700 hover:text-primary-700 font-medium transition-colors">
               Blog
             </Link>
+            <Link to="/locations" className="text-charcoal-700 hover:text-primary-700 font-medium transition-colors">
+              Service Areas
+            </Link>
             <Link to="/faq" className="text-charcoal-700 hover:text-primary-700 font-medium transition-colors">
               FAQ
             </Link>
@@ -186,6 +189,9 @@ export default function Navigation() {
               </Link>
               <Link to="/blog" className="text-charcoal-700 hover:text-primary-700 font-medium transition-colors py-2" onClick={() => setIsMobileMenuOpen(false)}>
                 Blog
+              </Link>
+              <Link to="/locations" className="text-charcoal-700 hover:text-primary-700 font-medium transition-colors py-2" onClick={() => setIsMobileMenuOpen(false)}>
+                Service Areas
               </Link>
               <Link to="/faq" className="text-charcoal-700 hover:text-primary-700 font-medium transition-colors py-2" onClick={() => setIsMobileMenuOpen(false)}>
                 FAQ

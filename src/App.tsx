@@ -23,6 +23,7 @@ import RoofMaintenance from './pages/services/RoofMaintenance';
 import PreventativeMaintenance from './pages/services/PreventativeMaintenance';
 import Siding from './pages/services/Siding';
 import CommercialRoofing from './pages/services/CommercialRoofing';
+import Locations from './pages/Locations';
 import Columbus from './pages/locations/Columbus';
 import Hilliard from './pages/locations/Hilliard';
 import Dublin from './pages/locations/Dublin';
@@ -68,6 +69,7 @@ function App() {
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/locations" element={<Locations />} />
             <Route path="/locations/columbus" element={<Columbus />} />
             <Route path="/locations/hilliard" element={<Hilliard />} />
             <Route path="/locations/dublin" element={<Dublin />} />
