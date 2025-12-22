@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -39,6 +39,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/team" element={<Navigate to="/services" replace />} />
             <Route path="/services/roof-installation" element={<RoofInstallation />} />
             <Route path="/services/roof-repair" element={<RoofRepair />} />
             <Route path="/services/roof-replacement" element={<RoofReplacement />} />
