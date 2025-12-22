@@ -508,7 +508,7 @@ export default function Home() {
                   <Star key={i} className="w-6 h-6 text-yellow-500 fill-current" />
                 ))}
               </div>
-              <span className="text-charcoal-700 font-semibold text-lg">5.0 Rating on Google</span>
+              <span className="text-charcoal-700 font-semibold text-lg">{reviewData?.averageRating || 5.0} Rating on Google</span>
             </div>
           </div>
         </div>
