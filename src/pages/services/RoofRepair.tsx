@@ -27,7 +27,73 @@ export default function RoofRepair() {
 
 At DTE Roofing, we take a different approach. Founded by two brothers, Donovan and Mitchell, who were both raised in Hilliard Ohio and graduated from Hilliard Davidson High School. They built DTE Roofing to deliver honest diagnostics and precision repairs.
 
-We personally inspect every roof, identify the root cause of your problem (not just the symptoms), and fix only what's needed. Whether it's damaged flashing, worn shingles, or a stubborn leak, we use premium materials and proven techniques to restore your roof's integrity. Our repairs blend seamlessly with your existing roof and come with comprehensive workmanship warranties.`}
+We personally inspect every roof, identify the root cause of your problem (not just the symptoms), and fix only what's needed. Whether it's damaged flashing, worn shingles, or a stubborn leak, we use premium materials and proven techniques to restore your roof's integrity. Our repairs blend seamlessly with your existing roof and come with comprehensive workmanship warranties.
+
+COMMON ROOF REPAIRS IN COLUMBUS
+
+Central Ohio's weather puts unique stress on roofing systems. From severe summer storms to winter ice dams, Columbus-area homes face challenges that require specific repair expertise.
+
+Leak Repair: Roof leaks rarely happen where water appears inside your home. Water can travel along rafters and decking before becoming visible. Our leak detection process traces water back to its true entry point—often damaged flashing around chimneys or vents, worn valley areas, or compromised pipe boots. We address the source, not just the symptom, ensuring leaks don't return.
+
+Shingle Replacement: Missing or damaged shingles expose your roof deck to moisture. Whether caused by wind, hail, or age, Columbus homeowners need prompt shingle replacement to prevent water infiltration. We carefully match your existing shingles in color and style, lifting surrounding shingles to weave in new ones for a seamless repair that maintains your roof's integrity and appearance.
+
+Flashing Repair: Flashing—the metal strips sealing roof transitions around chimneys, skylights, vents, and walls—is where many Columbus roofs develop leaks. Improper installation or deterioration from temperature extremes causes flashing to separate from roofing materials. Our technicians remove old flashing, address any underlying damage, and install new flashing using proper techniques and high-quality materials designed for Ohio's climate.
+
+Vent Boot Replacement: Plumbing vent boots deteriorate from sun exposure and temperature fluctuations. The rubber seal cracks, allowing water into your home. In Dublin and Hilliard, we regularly replace failed vent boots, removing the old unit, inspecting the surrounding area for water damage, and installing a new boot with a weather-resistant rubber seal.
+
+Gutter-Related Damage: Clogged or damaged gutters cause water to back up under shingles, leading to fascia and soffit rot. We repair not only the immediate damage but also address the underlying gutter issues that caused the problem, protecting your roof edge from future water damage.
+
+REPAIR VS. REPLACEMENT: MAKING THE RIGHT DECISION
+
+One of the most important decisions Columbus homeowners face is whether to repair or replace their roof. Understanding the key factors helps you make an informed choice.
+
+When Repairs Are Sufficient:
+• Your roof is under 15 years old and damage is localized to specific areas
+• Only a few shingles are damaged or missing
+• Leak sources are identifiable and affect small sections
+• Storm damage is limited to specific impact zones
+• The roof deck structure remains sound without widespread deterioration
+• Your budget requires addressing immediate concerns before a full replacement
+
+Warning Signs That Indicate Replacement:
+• Your roof is over 20 years old with multiple problem areas
+• Shingles are curling, cupping, or losing significant granules across the entire roof
+• You're experiencing leaks in multiple locations
+• Daylight is visible through your attic roof boards
+• The roof has sagging sections indicating structural issues
+• Previous repairs have failed or new problems continue emerging
+• Energy bills have increased due to poor insulation and ventilation
+
+Cost-Benefit Analysis: In Central Ohio, a minor repair might cost $500-$1,500, while a major repair could run $2,000-$4,000. If your roof is nearing the end of its lifespan and requires repairs approaching 30% of replacement cost, replacement becomes more cost-effective. We provide honest assessments comparing repair costs to replacement benefits, helping you make the best long-term decision.
+
+For a comprehensive evaluation, consider scheduling a professional roof inspection to get a complete picture of your roof's condition.
+
+ROOF REPAIR COSTS IN CENTRAL OHIO
+
+Understanding typical repair costs helps Columbus homeowners budget appropriately and recognize fair pricing.
+
+Typical Price Ranges:
+• Minor shingle repairs (5-10 shingles): $300-$800
+• Flashing repairs: $400-$1,200 depending on location and extent
+• Vent boot replacement: $200-$500 per boot
+• Valley repairs: $500-$1,500 depending on length and materials
+• Small leak repairs: $400-$1,000
+• Moderate repairs with decking replacement: $1,500-$3,000
+• Extensive repairs covering multiple issues: $3,000-$6,000
+
+Factors Influencing Pricing:
+
+Materials: Premium architectural shingles cost more than basic 3-tab shingles. Copper flashing costs more than aluminum. Quality materials last longer and provide better protection in Ohio's weather, making them worth the investment.
+
+Labor Complexity: Steep-pitch roofs in Grove City require additional safety equipment and time. Homes with multiple levels, complex architecture, or numerous roof penetrations increase labor hours. Second-story repairs take longer than single-story work.
+
+Accessibility: Homes surrounded by landscaping, with limited roof access, or in areas requiring special equipment incur higher costs. Hillside properties in Dublin or homes with attached structures affecting access may require additional preparation time.
+
+Extent of Damage: A simple shingle replacement is straightforward. However, if water has damaged underlying decking, repairs become more involved. Storm damage often reveals hidden issues once we remove damaged materials, requiring adjustments to the repair scope.
+
+Seasonal Considerations: Emergency repairs during winter storms or after major weather events may involve emergency service fees. Planning non-urgent repairs during our moderate seasons (spring and fall) can sometimes offer scheduling flexibility.
+
+For Hilliard and Columbus homeowners dealing with storm damage, our storm damage assessment can help determine if insurance coverage applies, potentially reducing your out-of-pocket costs significantly.`}
       whatWeDo={[
         'Emergency leak detection and repair',
         'Damaged or missing shingle replacement',
@@ -84,6 +150,18 @@ We personally inspect every roof, identify the root cause of your problem (not j
         {
           question: 'Can you match my existing shingles?',
           answer: 'In most cases, yes. We carry a wide range of shingles from leading manufacturers and can usually find an exact or very close match to your existing roof. For older roofs where exact matches are no longer available, we source the closest possible match to ensure repairs blend seamlessly.'
+        },
+        {
+          question: 'Can you repair a roof in winter?',
+          answer: 'Yes, we perform roof repairs year-round in Columbus, including winter months. However, winter repairs require special considerations. Temperatures below 40°F affect shingle adhesive properties, so we use cold-weather installation techniques and specialized materials when necessary. For emergency leaks causing active water damage, we respond regardless of weather conditions to prevent further harm to your home. Non-urgent repairs may be temporarily weatherproofed until spring when conditions are ideal for permanent repairs. We assess each situation individually and provide honest recommendations about timing. If you need emergency service during winter, our emergency services team is available to protect your home.'
+        },
+        {
+          question: 'How long do roof repairs last?',
+          answer: 'When done properly with quality materials, roof repairs should last as long as the surrounding original roofing—typically 10-20+ years depending on your roof\'s age and condition. The longevity of repairs depends on several factors: the quality of materials used, proper installation techniques, the severity of Central Ohio weather exposure, and regular maintenance. Minor shingle replacements and flashing repairs performed correctly should match your roof\'s remaining lifespan. We use premium materials and proven techniques to ensure repairs don\'t become recurring problems. All our work includes comprehensive workmanship warranties, demonstrating our confidence in repair longevity. Regular inspections every few years help identify small issues before they become major problems, extending both repair and roof lifespan.'
+        },
+        {
+          question: 'Should I repair or replace before selling my home?',
+          answer: 'This depends on your roof\'s condition, the local Columbus market, and your selling timeline. If your roof has minor damage that\'s visible or known to buyers, repairs are usually the cost-effective choice. Most home inspectors will flag roof issues, and buyers often request repairs or price reductions. Addressing problems proactively gives you control over costs and prevents last-minute negotiations. However, if your roof is over 20 years old or has widespread issues, potential buyers may factor full replacement into their offers anyway. In that case, you might negotiate the price rather than investing in extensive repairs. For homes in competitive Columbus neighborhoods like Dublin and Hilliard, a new or well-maintained roof can be a strong selling point that justifies premium pricing. We provide honest assessments for homeowners preparing to sell, helping you understand whether minor repairs, major repairs, or full replacement makes the most financial sense for your situation. Consider scheduling a pre-listing roof inspection to understand exactly what buyers\' inspectors will find, allowing you to address issues strategically.'
         }
       ]}
       relatedServices={[
