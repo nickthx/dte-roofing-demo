@@ -51,8 +51,8 @@ export default function Reviews() {
   ];
 
   const averageRating = reviewData?.averageRating || 5.0;
-  const totalReviews = reviewData?.totalReviews || 89;
-  const fiveStarCount = reviewData?.ratingBreakdown[5] || 89;
+  const totalReviews = reviewData?.totalReviews || 92;
+  const fiveStarCount = reviewData?.ratingBreakdown[5] || 92;
   const fiveStarPercentage = 100;
 
   const renderStars = (rating: number) => {

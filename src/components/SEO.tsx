@@ -122,7 +122,7 @@ export default function SEO({
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": String(reviewData?.averageRating || 5),
-        "reviewCount": String(reviewData?.totalReviews || 89),
+        "reviewCount": String(reviewData?.totalReviews || 92),
         "bestRating": "5",
         "worstRating": "1"
       },

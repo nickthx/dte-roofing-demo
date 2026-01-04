@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabase';
 
-const DEFAULT_REVIEW_COUNT = 89;
+const DEFAULT_REVIEW_COUNT = 92;
 
 interface ReviewData {
   totalReviews: number;
