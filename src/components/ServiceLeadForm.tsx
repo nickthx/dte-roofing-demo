@@ -201,7 +201,7 @@ export default function ServiceLeadForm() {
         <div className="flex flex-col gap-3 text-sm">
           <div className="flex items-center gap-2 text-charcoal-700">
             <Star className="w-5 h-5 text-yellow-400 fill-yellow-400 flex-shrink-0" />
-            <span className="font-semibold">{reviewData?.totalReviews || 86} Five-Star Reviews</span>
+            <span className="font-semibold">{reviewData?.totalReviews || 89} Five-Star Reviews</span>
           </div>
           <div className="flex items-center gap-2 text-charcoal-700">
             <Shield className="w-5 h-5 text-primary-600 flex-shrink-0" />

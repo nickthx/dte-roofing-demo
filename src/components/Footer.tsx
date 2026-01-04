@@ -87,7 +87,7 @@ export default function Footer() {
                 <Star className="w-6 h-6 text-yellow-400 fill-yellow-400 flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
                 <div>
                   <h5 className="font-bold text-white text-sm mb-1">Five-Star Reputation</h5>
-                  <p className="text-sm">{reviewData?.totalReviews || 86} verified 5-star reviews and counting</p>
+                  <p className="text-sm">{reviewData?.totalReviews || 89} verified 5-star reviews and counting</p>
                 </div>
               </a>
             </div>

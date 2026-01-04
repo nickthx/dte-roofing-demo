@@ -14,14 +14,14 @@ export default function RoofRepair() {
           url: '/services/roof-repair'
         }}
         pageTitle="Roof Repair Columbus OH - Expert Leak & Storm Damage Repair"
-        pageDescription={`Honest roof repair by hands-on experts in Columbus. ${reviewData?.totalReviews || 86}+ five-star reviews. Book a free inspection today.`}
+        pageDescription={`Honest roof repair by hands-on experts in Columbus. ${reviewData?.totalReviews || 89}+ five-star reviews. Book a free inspection today.`}
         pageUrl="https://www.dteroofingllc.com/services/roof-repair"
       />
       <ServicePageTemplate
         serviceName="Roof Repair"
         slug="roof-repair"
         subheadline="Honest diagnostics by hands-on experts."
-        metaDescription={`Honest roof repair by hands-on experts in Columbus. ${reviewData?.totalReviews || 86}+ five-star reviews. Book a free inspection today.`}
+        metaDescription={`Honest roof repair by hands-on experts in Columbus. ${reviewData?.totalReviews || 89}+ five-star reviews. Book a free inspection today.`}
         keywords="roof repair Columbus OH, Columbus roofing company, roof repair near me, emergency roof repair Columbus, leak repair Columbus, storm damage repair, shingle replacement Columbus, roofing contractor Columbus"
       problemPromise={`Every homeowner dreads finding a water stain on their ceiling or discovering missing shingles after a storm. Too many Columbus roofers will try to sell you a full replacement when a targeted repair would solve the problem—or worse, slap on a quick patch that fails in six months.
 

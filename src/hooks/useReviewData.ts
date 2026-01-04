@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react';
+import { supabase } from '../lib/supabase';
+
+const DEFAULT_REVIEW_COUNT = 89;
 
 interface ReviewData {
   totalReviews: number;
@@ -20,13 +23,39 @@ export const useReviewData = () => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    fetch('https://docs.google.com/spreadsheets/d/1ZZ3-sLfyRXhls8tPGe6hxK_W5vEfkO0XnHCxbwBNtCY/gviz/tq?tqx=out:json&range=A2:D2')
-      .then(res => res.text())
-      .then(text => {
+    const fetchReviewData = async () => {
+      try {
+        const { data: dbData, error: dbError } = await supabase
+          .from('review_data')
+          .select('*')
+          .order('updated_at', { ascending: false })
+          .limit(1)
+          .maybeSingle();
+
+        if (dbData && !dbError) {
+          setReviewData({
+            totalReviews: dbData.total_reviews,
+            averageRating: dbData.average_rating,
+            ratingBreakdown: {
+              5: dbData.five_star_count,
+              4: dbData.four_star_count,
+              3: dbData.three_star_count,
+              2: dbData.two_star_count,
+              1: dbData.one_star_count
+            },
+            lastUpdated: dbData.updated_at,
+            businessName: 'DTE Roofing'
+          });
+          setLoading(false);
+          return;
+        }
+
+        const res = await fetch('https://docs.google.com/spreadsheets/d/1ZZ3-sLfyRXhls8tPGe6hxK_W5vEfkO0XnHCxbwBNtCY/gviz/tq?tqx=out:json&range=A2:D2');
+        const text = await res.text();
         const parsed = JSON.parse(text.slice(47, -2));
         const row = parsed.table.rows[0].c;
 
-        const totalReviews = row[1]?.v || 86;
+        const totalReviews = row[1]?.v || DEFAULT_REVIEW_COUNT;
         const averageRating = row[2]?.v || 5.0;
 
         setReviewData({
@@ -37,19 +66,21 @@ export const useReviewData = () => {
           businessName: 'DTE Roofing'
         });
         setLoading(false);
-      })
-      .catch(err => {
+      } catch (err) {
         console.error('Failed to load reviews:', err);
         setError(true);
         setLoading(false);
         setReviewData({
-          totalReviews: 86,
+          totalReviews: DEFAULT_REVIEW_COUNT,
           averageRating: 5.0,
-          ratingBreakdown: { 5: 86, 4: 0, 3: 0, 2: 0, 1: 0 },
+          ratingBreakdown: { 5: DEFAULT_REVIEW_COUNT, 4: 0, 3: 0, 2: 0, 1: 0 },
           lastUpdated: new Date().toISOString(),
           businessName: 'DTE Roofing'
         });
-      });
+      }
+    };
+
+    fetchReviewData();
   }, []);
 
   return { reviewData, loading, error };

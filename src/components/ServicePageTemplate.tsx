@@ -158,7 +158,7 @@ export default function ServicePageTemplate({
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white p-6 rounded-xl border-2 border-gray-200 text-center">
                   <Star className="w-12 h-12 text-yellow-400 fill-yellow-400 mx-auto mb-3" />
-                  <h3 className="font-bold text-charcoal-900 mb-2">{reviewData?.totalReviews || 86} Verified Reviews</h3>
+                  <h3 className="font-bold text-charcoal-900 mb-2">{reviewData?.totalReviews || 89} Verified Reviews</h3>
                   <p className="text-sm text-charcoal-600 mb-3">Perfect 5-star rating on Google</p>
                   <Link to="/reviews" className="text-primary-700 hover:text-primary-800 font-semibold text-sm">
                     Read Reviews →

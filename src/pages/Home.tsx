@@ -63,7 +63,7 @@ export default function Home() {
             <div className="flex flex-col gap-4 mt-4">
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-3 rounded-lg border border-white/20 w-fit">
                 <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-                <span className="text-white font-semibold text-lg">⭐ {reviewData?.totalReviews || 86} Verified 5-Star Reviews</span>
+                <span className="text-white font-semibold text-lg">⭐ {reviewData?.totalReviews || 89} Verified 5-Star Reviews</span>
               </div>
 
               <div className="inline-flex items-center gap-2 text-white text-base">
@@ -300,7 +300,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-charcoal-900 mb-4">Our Reputation</h2>
             <p className="text-2xl text-charcoal-700 font-semibold mb-2">
-              With <Link to="/reviews" className="text-primary-700 hover:text-primary-800 underline decoration-2 underline-offset-2">{reviewData?.totalReviews || 86} verified five-star reviews</Link>, DTE Roofing is Columbus's highest-rated roofing company.
+              With <Link to="/reviews" className="text-primary-700 hover:text-primary-800 underline decoration-2 underline-offset-2">{reviewData?.totalReviews || 89} verified five-star reviews</Link>, DTE Roofing is Columbus's highest-rated roofing company.
             </p>
             <p className="text-lg text-charcoal-600">Hear from Columbus homeowners about our expert roofing services</p>
           </div>
@@ -385,7 +385,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="bg-primary-700 text-white px-8 py-4 rounded-lg hover:bg-primary-800 transition-all font-semibold text-lg inline-flex items-center justify-center shadow-lg hover:shadow-xl mb-4"
             >
-              See All {reviewData?.totalReviews || 86} Five-Star Reviews <ExternalLink className="ml-2 w-5 h-5" />
+              See All {reviewData?.totalReviews || 89} Five-Star Reviews <ExternalLink className="ml-2 w-5 h-5" />
             </a>
 
             <p className="text-charcoal-600 max-w-2xl mx-auto leading-relaxed">
