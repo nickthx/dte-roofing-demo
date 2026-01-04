@@ -19,7 +19,7 @@ export default function About() {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">About DTE Roofing</h1>
             <p className="text-xl text-gray-200">
-              Building trust and excellence in roofing services since 2003
+              Building trust and excellence in roofing services since 2023
             </p>
           </div>
         </div>

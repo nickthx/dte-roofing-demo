@@ -298,8 +298,8 @@ export default function Gahanna() {
                   <div className="text-gray-100">Emergency Response Time</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold mb-2">25+</div>
-                  <div className="text-gray-100">Years Excellence</div>
+                  <div className="text-4xl font-bold mb-2">5-Star</div>
+                  <div className="text-gray-100">Service Rating</div>
                 </div>
               </div>
               <Link

@@ -226,7 +226,7 @@ export default function Dublin() {
 
           <div className="bg-gradient-to-br from-primary-700 to-primary-800 text-white p-8 rounded-xl">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-4">Trusted in Dublin Since 2003</h2>
+              <h2 className="text-3xl font-bold mb-4">Trusted in Dublin Since 2023</h2>
               <p className="text-xl mb-6">
                 Exceptional roofing service to Dublin's finest homes
               </p>

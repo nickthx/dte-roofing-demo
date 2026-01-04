@@ -131,7 +131,7 @@ export default function Locations() {
               Comprehensive Coverage Throughout Central Ohio
             </h2>
             <p className="text-lg text-charcoal-600 leading-relaxed">
-              With over 25 years of experience, DTE Roofing has built a reputation for excellence across the Columbus metropolitan area. We understand the unique roofing challenges each community faces—from historic preservation requirements in established neighborhoods to storm protection needs in exposed areas. Our local expertise means we respond quickly, understand your community's specific needs, and deliver solutions that protect your home investment.
+              DTE Roofing has built a reputation for excellence across the Columbus metropolitan area. We understand the unique roofing challenges each community faces—from historic preservation requirements in established neighborhoods to storm protection needs in exposed areas. Our local expertise means we respond quickly, understand your community's specific needs, and deliver solutions that protect your home investment.
             </p>
           </div>
 
@@ -172,7 +172,7 @@ export default function Locations() {
                 <ul className="space-y-3">
                   {[
                     'Based in Hilliard - Quick response throughout Central Ohio',
-                    '25+ years of local roofing experience',
+                    'Expert local roofing knowledge and experience',
                     'Fully licensed, bonded, and insured',
                     'Expert knowledge of local building codes',
                     'Understanding of regional weather challenges',
@@ -234,8 +234,8 @@ export default function Locations() {
                 <div className="text-charcoal-600">Roofs Installed</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary-700 mb-2">25+</div>
-                <div className="text-charcoal-600">Years Experience</div>
+                <div className="text-4xl font-bold text-primary-700 mb-2">100%</div>
+                <div className="text-charcoal-600">Customer Satisfaction</div>
               </div>
             </div>
           </div>
