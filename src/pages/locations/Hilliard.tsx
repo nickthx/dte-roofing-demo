@@ -31,7 +31,7 @@ export default function Hilliard() {
             <p className="text-xl text-gray-200 mb-6">
               Your hometown roofing contractor. Founded by two Hilliard Davidson graduates, DTE Roofing delivers honest diagnostics and expert craftsmanship to our neighbors.
             </p>
-            
+            <a
               href="tel:614-971-6028"
               className="bg-primary-700 text-white px-8 py-4 rounded-lg hover:bg-primary-800 transition-all font-semibold text-lg inline-flex items-center justify-center shadow-xl"
             >
@@ -291,7 +291,7 @@ export default function Hilliard() {
             Contact DTE Roofing today for expert roofing services from your Hilliard neighbors
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            
+            <a
               href="tel:614-971-6028"
               className="bg-primary-700 text-white px-8 py-4 rounded-lg hover:bg-primary-800 transition-all font-semibold text-lg inline-flex items-center justify-center shadow-lg"
             >
