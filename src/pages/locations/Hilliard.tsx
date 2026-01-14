@@ -48,7 +48,7 @@ export default function Hilliard() {
             <div>
               <h2 className="text-3xl font-bold text-charcoal-900 mb-6">Hilliard's Hometown Roofing Company</h2>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
-                DTE Roofing isn't just another contractor serving Hilliard—we're from here. Founders Donovan and Mitchell grew up in Hilliard and graduated from Hilliard Davidson High School. Our office at 615 Hilliard Rome Road means we're minutes from anywhere in town, whether you're in Old Hilliard near the historic downtown, the established neighborhoods off Cemetery Road, or the newer developments along Cosgray Road.
+                DTE Roofing is not just another contractor serving Hilliard—we are from here. Founders Donovan and Mitchell grew up in Hilliard and graduated from Hilliard Davidson High School. Our office at 615 Hilliard Rome Road means we are minutes from anywhere in town, whether you are in Old Hilliard near the historic downtown, the established neighborhoods off Cemetery Road, or the newer developments along Cosgray Road.
               </p>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
                 Hilliard has grown tremendously over the years, transforming from a small town into one of Central Ohio's most desirable communities. This growth means diverse housing stock with different roofing needs: historic homes in Old Hilliard requiring careful preservation approaches, 1980s-90s builds in neighborhoods like Hilliard Estates and Britton Farms now reaching the age where original roofs need replacement, and newer construction in areas like Scioto Reserve where builder-grade materials may already be showing wear.
@@ -64,12 +64,12 @@ export default function Hilliard() {
                 </div>
                 <ul className="space-y-3">
                   {[
-                    'Founded by Hilliard Davidson graduates—we\'re your neighbors',
-                    'Office on Hilliard Rome Rd—fastest response times in town',
-                    'Deep knowledge of Hilliard neighborhoods and housing styles',
-                    'Experience with Hilliard HOA requirements and city permits',
-                    'Honest diagnostics—we fix only what\'s needed',
-                    'Perfect 5-star rating from Hilliard customers'
+                    "Founded by Hilliard Davidson graduates—we are your neighbors",
+                    "Office on Hilliard Rome Rd—fastest response times in town",
+                    "Deep knowledge of Hilliard neighborhoods and housing styles",
+                    "Experience with Hilliard HOA requirements and city permits",
+                    "Honest diagnostics—we fix only what is needed",
+                    "Perfect 5-star rating from Hilliard customers"
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-primary-700 flex-shrink-0 mt-0.5" />
@@ -85,17 +85,17 @@ export default function Hilliard() {
                 <h3 className="text-2xl font-bold text-charcoal-900 mb-6">Complete Roofing Services for Hilliard</h3>
                 <ul className="space-y-3">
                   {[
-                    { name: 'Free Roof Inspections', link: '/services/roof-inspection' },
-                    { name: 'Roof Repair', link: '/services/roof-repair' },
-                    { name: 'Roof Replacement', link: '/services/roof-replacement' },
-                    { name: '24/7 Emergency Services', link: '/services/emergency-services' },
-                    { name: 'Storm Damage Repair', link: '/services/emergency-services' },
-                    { name: 'Insurance Claims Assistance', link: '/contact' },
-                    { name: 'Gutter Services', link: '/services/gutters' },
-                    { name: 'Siding Installation', link: '/services/siding' },
-                    { name: 'Preventative Maintenance', link: '/services/roof-maintenance' },
-                    { name: 'Ventilation Upgrades', link: '/services/roof-repair' },
-                    { name: 'Flashing Repair', link: '/services/roof-repair' }
+                    { name: "Free Roof Inspections", link: "/services/roof-inspection" },
+                    { name: "Roof Repair", link: "/services/roof-repair" },
+                    { name: "Roof Replacement", link: "/services/roof-replacement" },
+                    { name: "24/7 Emergency Services", link: "/services/emergency-services" },
+                    { name: "Storm Damage Repair", link: "/services/emergency-services" },
+                    { name: "Insurance Claims Assistance", link: "/contact" },
+                    { name: "Gutter Services", link: "/services/gutters" },
+                    { name: "Siding Installation", link: "/services/siding" },
+                    { name: "Preventative Maintenance", link: "/services/roof-maintenance" },
+                    { name: "Ventilation Upgrades", link: "/services/roof-repair" },
+                    { name: "Flashing Repair", link: "/services/roof-repair" }
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary-700 flex-shrink-0 mt-1" />
@@ -126,22 +126,22 @@ export default function Hilliard() {
             <h2 className="text-3xl font-bold text-charcoal-900 mb-8 text-center">Hilliard Neighborhoods We Serve</h2>
             <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
               {[
-                'Old Hilliard',
-                'Hilliard Estates',
-                'Britton Farms',
-                'Heritage Lakes',
-                'Hoffman Farms',
-                'Hayden Run',
-                'Scioto Reserve',
-                'Bradley Farms',
-                'Tanglewood',
-                'Ridgewood',
-                'Homestead',
-                'Crossing at Scioto',
-                'Darby Glen',
-                'Schirm Farms',
-                'Wellington',
-                'Mill Run'
+                "Old Hilliard",
+                "Hilliard Estates",
+                "Britton Farms",
+                "Heritage Lakes",
+                "Hoffman Farms",
+                "Hayden Run",
+                "Scioto Reserve",
+                "Bradley Farms",
+                "Tanglewood",
+                "Ridgewood",
+                "Homestead",
+                "Crossing at Scioto",
+                "Darby Glen",
+                "Schirm Farms",
+                "Wellington",
+                "Mill Run"
               ].map((neighborhood, index) => (
                 <div key={index} className="bg-gray-50 p-4 rounded-lg text-center border border-gray-200 hover:border-primary-700 hover:bg-primary-50 transition-all">
                   <span className="text-charcoal-700 font-medium">{neighborhood}</span>
@@ -174,7 +174,7 @@ export default function Hilliard() {
               <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
                 <h3 className="text-xl font-bold text-charcoal-900 mb-3">Builder-Grade Materials in Newer Homes</h3>
                 <p className="text-charcoal-600">
-                  Some newer Hilliard subdivisions were built with minimum-spec roofing materials that don't hold up well to Ohio's temperature swings. We see premature wear, poor sealing, and ventilation shortcuts. If your newer home has roof issues, we can identify what went wrong and fix it properly.
+                  Some newer Hilliard subdivisions were built with minimum-spec roofing materials that do not hold up well to Ohio's temperature swings. We see premature wear, poor sealing, and ventilation shortcuts. If your newer home has roof issues, we can identify what went wrong and fix it properly.
                 </p>
               </div>
             </div>
@@ -186,28 +186,28 @@ export default function Hilliard() {
               <div className="space-y-6">
                 {[
                   {
-                    title: 'We\'re Your Neighbors',
-                    description: 'Founded by Hilliard Davidson grads with our office on Hilliard Rome Road'
+                    title: "We Are Your Neighbors",
+                    description: "Founded by Hilliard Davidson grads with our office on Hilliard Rome Road"
                   },
                   {
-                    title: 'Honest Diagnostics',
-                    description: 'We only recommend repairs that are actually needed—no upselling'
+                    title: "Honest Diagnostics",
+                    description: "We only recommend repairs that are actually needed—no upselling"
                   },
                   {
-                    title: 'Quality Materials',
-                    description: 'GAF certified contractor using premium materials built for Ohio weather'
+                    title: "Quality Materials",
+                    description: "GAF certified contractor using premium materials built for Ohio weather"
                   },
                   {
-                    title: 'Fair Pricing',
-                    description: 'Detailed written estimates with no hidden fees or surprises'
+                    title: "Fair Pricing",
+                    description: "Detailed written estimates with no hidden fees or surprises"
                   },
                   {
-                    title: 'Strong Warranties',
-                    description: 'Workmanship warranty plus manufacturer material warranties'
+                    title: "Strong Warranties",
+                    description: "Workmanship warranty plus manufacturer material warranties"
                   },
                   {
-                    title: 'Insurance Expertise',
-                    description: 'We help document storm damage and work with your insurance company'
+                    title: "Insurance Expertise",
+                    description: "We help document storm damage and work with your insurance company"
                   }
                 ].map((item, index) => (
                   <div key={index}>
@@ -226,19 +226,19 @@ export default function Hilliard() {
               <div className="space-y-6">
                 {[
                   {
-                    name: 'Tom & Karen S.',
-                    area: 'Britton Farms',
-                    text: 'DTE Roofing replaced our entire roof last year. The crew was professional, the cleanup was thorough, and the roof looks fantastic!'
+                    name: "Tom & Karen S.",
+                    area: "Britton Farms",
+                    text: "DTE Roofing replaced our entire roof last year. The crew was professional, the cleanup was thorough, and the roof looks fantastic!"
                   },
                   {
-                    name: 'James P.',
-                    area: 'Hilliard Estates',
-                    text: 'After storm damage, they came out the same day to assess and tarp our roof. The permanent repair was completed quickly and professionally.'
+                    name: "James P.",
+                    area: "Hilliard Estates",
+                    text: "After storm damage, they came out the same day to assess and tarp our roof. The permanent repair was completed quickly and professionally."
                   },
                   {
-                    name: 'Michelle T.',
-                    area: 'Old Hilliard',
-                    text: 'Honest, reliable, and fairly priced. They helped us through the insurance claim process and our new roof is beautiful!'
+                    name: "Michelle T.",
+                    area: "Old Hilliard",
+                    text: "Honest, reliable, and fairly priced. They helped us through the insurance claim process and our new roof is beautiful!"
                   }
                 ].map((review, index) => (
                   <div key={index} className="bg-white p-6 rounded-lg border border-gray-200">
