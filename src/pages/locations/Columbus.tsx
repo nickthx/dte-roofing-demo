@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CheckCircle, ArrowRight, Phone, MapPin } from 'lucide-react';
+import { CheckCircle, ArrowRight, Phone, MapPin, Shield } from 'lucide-react';
 import SEO from '../../components/SEO';
 import SchemaMarkup from '../../components/SchemaMarkup';
 
@@ -7,16 +7,16 @@ export default function Columbus() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
-        description="Professional roofing services in Columbus, OH. Local experts serving Columbus with roof repair, replacement, installation. Fast response times. Free estimates. Call 614-971-6028."
-        keywords="roofing Columbus OH, Columbus roofer, roof repair Columbus, roof replacement Columbus, Columbus roofing contractor"
+        title="BEST Roofer Columbus OH – Roof Repair & Replacement near me | DTE Roofing"
+        description="Columbus Ohio's trusted roofer. Family-owned, 5-star rated. Free inspections, honest diagnostics, expert repairs. Serving all Columbus neighborhoods. Call 614-971-6028."
+        keywords="roofing Columbus OH, Columbus roofer, roof repair Columbus, roof replacement Columbus, Columbus roofing contractor, roofer near me Columbus"
         canonical="https://www.dteroofingllc.com/locations/columbus"
       />
       <SchemaMarkup
         type="location"
         locationName="Columbus"
-        pageTitle="Roofing Services in Columbus, OH - DTE Roofing LLC"
-        pageDescription="Professional roofing services in Columbus, OH. Local experts serving Columbus with roof repair, replacement, installation. Fast response times."
+        pageTitle="BEST Roofer Columbus OH - DTE Roofing LLC"
+        pageDescription="Columbus Ohio's trusted roofing company. Family-owned, serving all Columbus neighborhoods with expert roof repair and replacement."
         pageUrl="https://www.dteroofingllc.com/locations/columbus"
       />
 
@@ -27,9 +27,9 @@ export default function Columbus() {
               <MapPin className="w-6 h-6" />
               <span className="text-lg">Serving Columbus, Ohio</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Professional Roofing Services in Columbus</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Columbus Roofers – Expert Roof Repair & Replacement</h1>
             <p className="text-xl text-gray-200 mb-6">
-              Your trusted local roofing contractor serving all Columbus neighborhoods
+              Your trusted local roofing contractor serving all Columbus neighborhoods with honest diagnostics and expert craftsmanship.
             </p>
             <a
               href="tel:614-971-6028"
@@ -46,27 +46,30 @@ export default function Columbus() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             <div>
-              <h2 className="text-3xl font-bold text-charcoal-900 mb-6">Columbus Roofing Experts</h2>
+              <h2 className="text-3xl font-bold text-charcoal-900 mb-6">Columbus's Trusted Roofing Company</h2>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
-                As a locally owned and operated roofing company, we understand the unique challenges Columbus
-                roofs face. From hot, humid summers to cold winters with ice and snow, Columbus weather demands
-                quality roofing materials and expert installation.
+                DTE Roofing is a family-owned roofing company founded by two brothers from Hilliard who built their business on a simple principle: honest diagnostics and quality work. Based at 615 Hilliard Rome Road, we serve homeowners throughout Columbus and Franklin County with the same care we would give our own homes.
               </p>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
-                DTE Roofing has been serving Columbus homeowners and businesses with dedication and expertise. We know the
-                area, we know the weather patterns, and we know how to install roofs that protect your property
-                for decades.
+                Columbus weather demands quality roofing. From hot, humid summers that accelerate shingle aging to harsh winters with ice dams and freeze-thaw cycles, your roof faces constant challenges. We understand these local conditions and install roofs built to handle them for decades.
               </p>
-              <div className="bg-primary-50 p-6 rounded-xl">
-                <h3 className="font-bold text-charcoal-900 mb-4">Why Choose a Local Roofer?</h3>
-                <ul className="space-y-2">
+              <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
+                Whether you live in a historic German Village home, a Clintonville bungalow, or a newer build in any Columbus neighborhood, we have the expertise to handle your roofing needs. We only recommend work that is actually necessary—no upselling, no unnecessary replacements.
+              </p>
+
+              <div className="bg-primary-50 p-6 rounded-xl border-2 border-primary-200">
+                <div className="flex items-center gap-3 mb-4">
+                  <Shield className="w-8 h-8 text-primary-700" />
+                  <h3 className="font-bold text-charcoal-900 text-xl">Why Columbus Homeowners Choose DTE Roofing</h3>
+                </div>
+                <ul className="space-y-3">
                   {[
-                    'Fast response times across Columbus',
-                    'Understanding of local building codes',
-                    'Familiar with Columbus weather patterns',
-                    'Established local reputation',
-                    'Support local businesses',
-                    'Available for follow-up service'
+                    "Family-owned and operated—owners on every job",
+                    "Honest diagnostics—we fix only what is needed",
+                    "Fast response times across all Columbus neighborhoods",
+                    "Deep understanding of local building codes",
+                    "GAF certified with premium material options",
+                    "Perfect 5-star rating with zero negative reviews"
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-primary-700 flex-shrink-0 mt-0.5" />
@@ -78,35 +81,36 @@ export default function Columbus() {
             </div>
 
             <div>
-              <div className="bg-gray-50 p-8 rounded-xl border border-gray-200 mb-8">
-                <h3 className="text-2xl font-bold text-charcoal-900 mb-6">Services in Columbus</h3>
+              <div className="bg-gray-50 p-8 rounded-xl border-2 border-gray-200 mb-8">
+                <h3 className="text-2xl font-bold text-charcoal-900 mb-6">Complete Roofing Services for Columbus</h3>
                 <ul className="space-y-3">
                   {[
-                    'Residential roof repair',
-                    'Roof replacement',
-                    'New roof installation',
-                    'Commercial roofing',
-                    'Emergency roof repair',
-                    'Storm damage restoration',
-                    'Roof inspections',
-                    'Gutter services',
-                    'Preventative maintenance',
-                    'Siding installation',
-                    'Insurance claim assistance',
-                    '24/7 emergency service'
+                    { name: "Free Roof Inspections", link: "/services/roof-inspection" },
+                    { name: "Roof Repair", link: "/services/roof-repair" },
+                    { name: "Roof Replacement", link: "/services/roof-replacement" },
+                    { name: "24/7 Emergency Services", link: "/services/emergency-services" },
+                    { name: "Storm Damage Repair", link: "/services/emergency-services" },
+                    { name: "Insurance Claims Assistance", link: "/contact" },
+                    { name: "Gutter Services", link: "/services/gutters" },
+                    { name: "Siding Installation", link: "/services/siding" },
+                    { name: "Preventative Maintenance", link: "/services/roof-maintenance" },
+                    { name: "Commercial Roofing", link: "/services/roof-replacement" },
+                    { name: "Historic Home Roofing", link: "/services/roof-repair" }
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary-700 flex-shrink-0 mt-1" />
-                      <span className="text-charcoal-700">{item}</span>
+                      <Link to={item.link} className="text-charcoal-700 hover:text-primary-700 transition-colors">
+                        {item.name}
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6">
-                <h3 className="font-bold text-charcoal-900 mb-2">Free Estimates</h3>
+              <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-lg">
+                <h3 className="font-bold text-charcoal-900 mb-2 text-lg">Free Roofing Estimates</h3>
                 <p className="text-charcoal-700 mb-4">
-                  We provide free, no-obligation estimates for all roofing projects in Columbus.
+                  One of our owners personally inspects every roof. No salespeople, no pressure—just honest assessments and fair pricing.
                 </p>
                 <Link
                   to="/contact"
@@ -119,63 +123,93 @@ export default function Columbus() {
           </div>
 
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-charcoal-900 mb-8 text-center">Roof Installation · Roof Repair · Inspections · Emergency Services in Columbus</h2>
+            <h2 className="text-3xl font-bold text-charcoal-900 mb-8 text-center">Columbus Neighborhoods We Serve</h2>
             <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
               {[
-                'German Village',
-                'Short North',
-                'Clintonville',
-                'Victorian Village',
-                'Brewery District',
-                'Arena District',
-                'Franklinton',
-                'Italian Village',
-                'Grandview Heights',
-                'Upper Arlington',
-                'Bexley',
-                'Whitehall',
-                'Gahanna',
-                'Reynoldsburg',
-                'Westerville',
-                'Grove City',
-                'Worthington',
-                'New Albany',
-                'Powell',
-                'Dublin'
+                "German Village",
+                "Short North",
+                "Clintonville",
+                "Victorian Village",
+                "Brewery District",
+                "Arena District",
+                "Franklinton",
+                "Italian Village",
+                "Grandview Heights",
+                "Upper Arlington",
+                "Bexley",
+                "Whitehall",
+                "Gahanna",
+                "Reynoldsburg",
+                "Westerville",
+                "Grove City",
+                "Worthington",
+                "New Albany",
+                "Powell",
+                "Dublin"
               ].map((neighborhood, index) => (
-                <div key={index} className="bg-gray-50 p-4 rounded-lg text-center">
-                  <span className="text-charcoal-700">{neighborhood}</span>
+                <div key={index} className="bg-gray-50 p-4 rounded-lg text-center border border-gray-200 hover:border-primary-700 hover:bg-primary-50 transition-all">
+                  <span className="text-charcoal-700 font-medium">{neighborhood}</span>
                 </div>
               ))}
             </div>
             <p className="text-center text-charcoal-600 mt-6">
-              Don't see your neighborhood? We serve all of Columbus and surrounding areas. Call to confirm service in your area.
+              Do not see your neighborhood? We serve all of Columbus and surrounding areas. Call to confirm service in your area.
             </p>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-charcoal-900 mb-8">Common Roofing Issues in Columbus</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h3 className="text-xl font-bold text-charcoal-900 mb-3">Summer Heat and Humidity</h3>
+                <p className="text-charcoal-600">
+                  Columbus summers bring high heat and humidity that accelerate shingle aging and cause thermal expansion. We see cracked shingles, failing sealant strips, and premature granule loss. Proper ventilation is critical to extend roof life in our climate.
+                </p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h3 className="text-xl font-bold text-charcoal-900 mb-3">Winter Ice Dams</h3>
+                <p className="text-charcoal-600">
+                  Ohio winters create ice dam risks, especially on north-facing slopes and in older homes with inadequate attic insulation. Ice dams force water under shingles, causing leaks and interior damage. We assess ventilation and insulation during every inspection.
+                </p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h3 className="text-xl font-bold text-charcoal-900 mb-3">Storm Damage</h3>
+                <p className="text-charcoal-600">
+                  Central Ohio sees severe thunderstorms, high winds, and occasional hail. We respond quickly to storm damage, document issues for insurance claims, and provide permanent repairs—not just temporary patches. Our Xactimate expertise helps ensure fair claim settlements.
+                </p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h3 className="text-xl font-bold text-charcoal-900 mb-3">Aging Roofs in Established Neighborhoods</h3>
+                <p className="text-charcoal-600">
+                  Many Columbus neighborhoods have homes built in the 1950s-1990s with roofs now at or past their expected lifespan. We help homeowners determine whether repairs make sense or if replacement is the smarter long-term investment.
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 mb-16">
             <div className="bg-gray-50 p-8 rounded-xl">
-              <h2 className="text-2xl font-bold text-charcoal-900 mb-6">Columbus Weather & Your Roof</h2>
+              <h2 className="text-2xl font-bold text-charcoal-900 mb-6">Columbus Weather and Your Roof</h2>
               <p className="text-charcoal-600 mb-6">
                 Columbus experiences four distinct seasons, each presenting unique challenges for your roof:
               </p>
               <div className="space-y-4">
                 {[
                   {
-                    season: 'Summer',
-                    challenge: 'High heat and humidity can accelerate shingle aging and cause thermal expansion'
+                    season: "Summer",
+                    challenge: "High heat and humidity can accelerate shingle aging and cause thermal expansion"
                   },
                   {
-                    season: 'Fall',
-                    challenge: 'Falling leaves can clog gutters and trap moisture, requiring regular cleaning'
+                    season: "Fall",
+                    challenge: "Falling leaves can clog gutters and trap moisture, requiring regular cleaning"
                   },
                   {
-                    season: 'Winter',
-                    challenge: 'Ice dams, snow load, and freeze-thaw cycles can cause significant damage'
+                    season: "Winter",
+                    challenge: "Ice dams, snow load, and freeze-thaw cycles can cause significant damage"
                   },
                   {
-                    season: 'Spring',
-                    challenge: 'Heavy rain and severe storms can reveal or create leaks and damage'
+                    season: "Spring",
+                    challenge: "Heavy rain and severe storms can reveal or create leaks and damage"
                   }
                 ].map((item, index) => (
                   <div key={index}>
@@ -191,22 +225,22 @@ export default function Columbus() {
               <div className="space-y-6">
                 {[
                   {
-                    name: 'Mike R.',
-                    neighborhood: 'German Village',
-                    text: 'DTE Roofing did an excellent job on our historic home. They were respectful of the neighborhood and the quality is outstanding.'
+                    name: "Mike R.",
+                    neighborhood: "German Village",
+                    text: "DTE Roofing did an excellent job on our historic home. They were respectful of the neighborhood and the quality is outstanding."
                   },
                   {
-                    name: 'Lisa M.',
-                    neighborhood: 'Clintonville',
-                    text: 'Fast response after storm damage, worked with our insurance, and had our roof repaired quickly. Very professional!'
+                    name: "Lisa M.",
+                    neighborhood: "Clintonville",
+                    text: "Fast response after storm damage, worked with our insurance, and had our roof repaired quickly. Very professional!"
                   },
                   {
-                    name: 'David K.',
-                    neighborhood: 'Upper Arlington',
-                    text: 'From estimate to completion, the entire process was smooth. Our new roof looks great and we had no issues.'
+                    name: "David K.",
+                    neighborhood: "Upper Arlington",
+                    text: "From estimate to completion, the entire process was smooth. Our new roof looks great and we had no issues."
                   }
                 ].map((review, index) => (
-                  <div key={index} className="bg-white p-6 rounded-lg">
+                  <div key={index} className="bg-white p-6 rounded-lg border border-gray-200">
                     <p className="text-charcoal-700 mb-4 italic">"{review.text}"</p>
                     <div className="font-bold text-charcoal-900">{review.name}</div>
                     <div className="text-charcoal-600 text-sm">{review.neighborhood}</div>
@@ -220,20 +254,20 @@ export default function Columbus() {
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl font-bold mb-4">Serving Columbus with Excellence</h2>
               <p className="text-xl mb-6">
-                Trusted roofing service in the Columbus community
+                Your neighbors trust us—see why DTE Roofing is Columbus's choice for quality roofing
               </p>
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div>
-                  <div className="text-4xl font-bold mb-2">5,000+</div>
-                  <div className="text-gray-100">Columbus Roofs Completed</div>
+                  <div className="text-4xl font-bold mb-2">5.0</div>
+                  <div className="text-gray-100">Google Rating</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold mb-2">24/7</div>
-                  <div className="text-gray-100">Emergency Service</div>
+                  <div className="text-4xl font-bold mb-2">92+</div>
+                  <div className="text-gray-100">5-Star Reviews</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold mb-2">100%</div>
-                  <div className="text-gray-100">Satisfaction Guarantee</div>
+                  <div className="text-4xl font-bold mb-2">0</div>
+                  <div className="text-gray-100">Negative Reviews</div>
                 </div>
               </div>
               <Link
@@ -250,10 +284,10 @@ export default function Columbus() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-charcoal-900 mb-6">
-            Ready to Get Started?
+            Schedule Your Columbus Roof Inspection
           </h2>
           <p className="text-xl text-charcoal-600 mb-8 max-w-2xl mx-auto">
-            Contact DTE Roofing today for expert roofing services in Columbus
+            Contact DTE Roofing today for expert roofing services throughout Columbus
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
