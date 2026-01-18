@@ -251,12 +251,13 @@ export default function SchemaMarkup({
   };
 
   const schemas = [
-    generateLocalBusinessSchema(),
-    generateServiceSchema(),
-    generateFAQSchema(),
-    generateBreadcrumbSchema(),
-    generateWebPageSchema()
-  ].filter(Boolean);
+  ...(type === 'home' ? [generateLocalBusinessSchema()] : []),
+  generateServiceSchema(),
+  generateFAQSchema(),
+  generateBreadcrumbSchema(),
+  generateWebPageSchema()
+].filter(Boolean);
+
 
   useEffect(() => {
     const scriptIds: string[] = [];
