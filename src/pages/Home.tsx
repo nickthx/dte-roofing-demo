@@ -4,8 +4,6 @@ import SEO from '../components/SEO';
 import MobileStickyCall from '../components/MobileStickyCall';
 import RoofQuoteButton from '../components/RoofQuoteButton';
 import SchemaMarkup from '../components/SchemaMarkup';
-import SeoSchema from '../components/seo/SeoSchema';
-import { localBusinessSchema } from '../seo/schemas';
 import { useReviewData } from '../hooks/useReviewData';
 
 export default function Home() {
@@ -26,7 +24,6 @@ export default function Home() {
         pageDescription={`Founded by two brothers from Hilliard, Ohio. Honest inspections, precision repairs, and a perfect ${reviewData?.totalReviews || 92} five-star rating.`}
         pageUrl="https://www.dteroofingllc.com/"
       />
-      <SeoSchema schema={localBusinessSchema} id="dte-localbusiness-schema" />
       <section className="relative bg-gradient-to-br from-charcoal-900 via-charcoal-800 to-charcoal-900 text-white py-32 md:py-40 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
