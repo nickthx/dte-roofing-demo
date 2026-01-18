@@ -5,6 +5,7 @@ import MobileStickyCall from '../components/MobileStickyCall';
 import RoofQuoteButton from '../components/RoofQuoteButton';
 import SchemaMarkup from '../components/SchemaMarkup';
 import { useReviewData } from '../hooks/useReviewData';
+import { CANONICAL_DOMAIN } from '../seo/constants';
 
 export default function Home() {
   const { reviewData } = useReviewData();
@@ -16,13 +17,13 @@ export default function Home() {
        title="BEST Roofer Columbus OH – Roof Repair & Replacement near me | DTE Roofing"
         description={`Founded by two brothers from Hilliard, Ohio. Honest inspections, precision repairs, and a perfect ${reviewData?.totalReviews || 92} five-star rating.`}
         keywords="roof inspection Columbus OH, Columbus roofing company, roof repair near me, roofing contractor Columbus, roof repair Columbus, roof replacement Columbus, residential roofing, commercial roofing, emergency roof repair"
-        canonical="https://www.dteroofingllc.com/"
+        canonical={`${CANONICAL_DOMAIN}/`}
       />
       <SchemaMarkup
         type="home"
         pageTitle="DTE Roofing LLC - Columbus's Highest-Rated Roofing Contractor"
         pageDescription={`Founded by two brothers from Hilliard, Ohio. Honest inspections, precision repairs, and a perfect ${reviewData?.totalReviews || 92} five-star rating.`}
-        pageUrl="https://www.dteroofingllc.com/"
+        pageUrl={`${CANONICAL_DOMAIN}/`}
       />
       <section className="relative bg-gradient-to-br from-charcoal-900 via-charcoal-800 to-charcoal-900 text-white py-32 md:py-40 overflow-hidden">
         <div

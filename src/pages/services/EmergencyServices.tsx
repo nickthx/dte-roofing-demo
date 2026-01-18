@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Phone, Clock, AlertTriangle } from 'lucide-react';
 import SEO from '../../components/SEO';
+import { CANONICAL_DOMAIN } from '../../seo/constants';
 
 export default function EmergencyServices() {
   return (
@@ -9,7 +10,7 @@ export default function EmergencyServices() {
         title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description="24/7 emergency roof repair in Columbus, OH. Immediate response for storm damage, leaks, and urgent roofing issues. Same-day service available. Call 614-971-6028 now!"
         keywords="emergency roof repair, 24/7 roofing, storm damage, emergency leak repair, urgent roof repair, Columbus emergency roofing"
-        canonical="https://dteroofing.com/services/emergency-services"
+        canonical={`${CANONICAL_DOMAIN}/services/emergency-services`}
       />
 
       <section className="relative bg-gradient-to-br from-red-900 via-red-800 to-red-900 text-white py-20">

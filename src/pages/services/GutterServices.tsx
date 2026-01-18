@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight } from 'lucide-react';
 import SEO from '../../components/SEO';
+import { CANONICAL_DOMAIN } from '../../seo/constants';
 
 export default function GutterServices() {
   return (
@@ -9,7 +10,7 @@ export default function GutterServices() {
         title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description="Professional gutter services in Columbus, OH. Seamless gutter installation, repairs, cleaning, and gutter guards. Protect your foundation. Free estimates. Call 614-971-6028."
         keywords="gutter services Columbus, gutter installation, gutter repair, gutter cleaning, seamless gutters, gutter guards, downspouts"
-        canonical="https://dteroofing.com/services/gutter-services"
+        canonical={`${CANONICAL_DOMAIN}/services/gutter-services`}
       />
 
       <section className="relative bg-gradient-to-br from-charcoal-900 via-charcoal-800 to-charcoal-900 text-white py-20">

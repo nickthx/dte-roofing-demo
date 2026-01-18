@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Phone, Cloud, Shield } from 'lucide-react';
 import SEO from '../../components/SEO';
+import { CANONICAL_DOMAIN } from '../../seo/constants';
 
 export default function StormDamage() {
   return (
@@ -9,7 +10,7 @@ export default function StormDamage() {
         title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description="Expert storm damage roof repair in Columbus, OH. Wind damage, hail damage restoration. Insurance claim assistance. 24/7 emergency service. Call 614-971-6028."
         keywords="storm damage repair, hail damage, wind damage, storm roof repair, insurance claims, Columbus storm damage"
-        canonical="https://dteroofing.com/services/storm-damage"
+        canonical={`${CANONICAL_DOMAIN}/services/storm-damage`}
       />
 
       <section className="relative bg-gradient-to-br from-charcoal-900 via-charcoal-800 to-charcoal-900 text-white py-20">

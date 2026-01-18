@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Building2, Clock, Shield } from 'lucide-react';
 import SEO from '../../components/SEO';
+import { CANONICAL_DOMAIN } from '../../seo/constants';
 
 export default function CommercialRoofing() {
   return (
@@ -9,7 +10,7 @@ export default function CommercialRoofing() {
         title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description="Expert commercial roofing services in Columbus, OH. TPO, EPDM, metal roofing. Minimal disruption, maintenance programs, emergency service. Licensed & insured. Call 614-971-6028."
         keywords="commercial roofing Columbus, business roofing, flat roof repair, TPO roofing, EPDM roofing, commercial roof replacement"
-        canonical="https://dteroofing.com/services/commercial-roofing"
+        canonical={`${CANONICAL_DOMAIN}/services/commercial-roofing`}
       />
 
       <section className="relative bg-gradient-to-br from-charcoal-900 via-charcoal-800 to-charcoal-900 text-white py-20">

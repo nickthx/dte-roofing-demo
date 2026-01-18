@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Home, DollarSign, Calendar } from 'lucide-react';
 import SEO from '../../components/SEO';
 import SchemaMarkup from '../../components/SchemaMarkup';
+import { CANONICAL_DOMAIN } from '../../seo/constants';
 
 export default function RoofReplacement() {
   return (
@@ -10,7 +11,7 @@ export default function RoofReplacement() {
         title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description="Expert roof replacement services in Columbus, OH. Complete tear-off and installation with premium materials. Financing available. Licensed & insured. Free estimates. Call 614-971-6028."
         keywords="roof replacement Columbus, complete roof replacement, tear off replacement, new roof, roof replacement cost, residential roof replacement"
-        canonical="https://dteroofing.com/services/roof-replacement"
+        canonical={`${CANONICAL_DOMAIN}/services/roof-replacement`}
       />
       <SchemaMarkup
         type="service"

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, ClipboardCheck, Camera, FileText } from 'lucide-react';
 import SEO from '../../components/SEO';
+import { CANONICAL_DOMAIN } from '../../seo/constants';
 
 export default function RoofInspection() {
   return (
@@ -9,7 +10,7 @@ export default function RoofInspection() {
         title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description="Thorough roof inspection services in Columbus, OH. Identify issues before they become expensive problems. Insurance claims, pre-purchase, annual inspections. Call 614-971-6028."
         keywords="roof inspection Columbus, roof inspection service, home inspection, pre-purchase inspection, insurance roof inspection, annual roof inspection"
-        canonical="https://dteroofing.com/services/roof-inspection"
+        canonical={`${CANONICAL_DOMAIN}/services/roof-inspection`}
       />
 
       <section className="relative bg-gradient-to-br from-charcoal-900 via-charcoal-800 to-charcoal-900 text-white py-20">

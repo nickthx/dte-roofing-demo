@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Home, Palette, Shield } from 'lucide-react';
 import SEO from '../../components/SEO';
+import { CANONICAL_DOMAIN } from '../../seo/constants';
 
 export default function Siding() {
   return (
@@ -9,7 +10,7 @@ export default function Siding() {
         title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description="Professional siding installation and repair in Columbus, OH. Vinyl siding, LP Smart Siding, storm damage repair. Enhance curb appeal and protection. Free estimates. Call 614-971-6028."
         keywords="siding installation Columbus, vinyl siding, LP Smart Siding, siding repair, siding replacement, Columbus siding contractor"
-        canonical="https://dteroofing.com/services/siding"
+        canonical={`${CANONICAL_DOMAIN}/services/siding`}
       />
 
       <section className="relative bg-gradient-to-br from-charcoal-900 via-charcoal-800 to-charcoal-900 text-white py-20">

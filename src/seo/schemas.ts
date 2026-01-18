@@ -2,15 +2,17 @@
  * Schema.org structured data definitions for DTE Roofing
  */
 
+import { CANONICAL_DOMAIN } from './constants';
+
 export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "RoofingContractor",
-  "@id": "https://dteroofing.com/#business",
+  "@id": `${CANONICAL_DOMAIN}/#business`,
   "name": "DTE Roofing",
-  "url": "https://dteroofing.com/",
+  "url": `${CANONICAL_DOMAIN}/`,
   "telephone": "+1-614-971-6028",
   "priceRange": "$$",
-  "image": "https://www.dteroofingllc.com/DTE-Roofing-Logo-two-Men.png",
+  "image": `${CANONICAL_DOMAIN}/DTE-Roofing-Logo-two-Men.png`,
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "615 Hilliard Rome Rd",

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Calendar, Wrench, FileText } from 'lucide-react';
 import SEO from '../../components/SEO';
+import { CANONICAL_DOMAIN } from '../../seo/constants';
 
 export default function RoofMaintenance() {
   return (
@@ -9,7 +10,7 @@ export default function RoofMaintenance() {
         title="BEST Roofer in Columbus – if you're looking for Honest Roofing Services near me or Expert Roof Repair & Replacement near me – DTE Roofing is the place to be."
         description="Professional roof maintenance services in Columbus, OH. Extend your roof's lifespan with regular inspections, cleaning, and preventive care. Maintenance plans available. Call 614-971-6028."
         keywords="roof maintenance, preventive roof care, roof cleaning, annual roof inspection, maintenance program, Columbus roof maintenance"
-        canonical="https://dteroofing.com/services/roof-maintenance"
+        canonical={`${CANONICAL_DOMAIN}/services/roof-maintenance`}
       />
 
       <section className="relative bg-gradient-to-br from-charcoal-900 via-charcoal-800 to-charcoal-900 text-white py-20">
