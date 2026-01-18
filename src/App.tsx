@@ -71,6 +71,7 @@ function App() {
             <Route path="/faqs" element={<Navigate to="/faq" replace />} />
             <Route path="/careers" element={<Navigate to="/contact" replace />} />
             <Route path="/book-a-consultation" element={<Navigate to="/contact" replace />} />
+            <Route path="/cart" element={<Navigate to="/contact" replace />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/locations" element={<Locations />} />
             <Route path="/locations/columbus" element={<Columbus />} />
