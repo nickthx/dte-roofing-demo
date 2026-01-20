@@ -2,8 +2,11 @@ import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Phone, MapPin, Shield } from 'lucide-react';
 import SEO from '../../components/SEO';
 import SchemaMarkup from '../../components/SchemaMarkup';
+import { useReviewData } from '../../hooks/useReviewData';
 
 export default function Columbus() {
+  const { reviewData } = useReviewData();
+
   return (
     <div className="min-h-screen bg-white">
       <SEO
@@ -73,7 +76,7 @@ export default function Columbus() {
                     "Fast response times across all Columbus neighborhoods",
                     "Deep understanding of local building codes",
                     "GAF certified with premium material options",
-                    "Highly rated by Columbus homeowners with 92+ 5-star reviews"
+                    `Highly rated by Columbus homeowners (${reviewData?.totalReviews || 92}+ reviews)`
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-primary-700 flex-shrink-0 mt-0.5" />
@@ -284,16 +287,16 @@ export default function Columbus() {
               </p>
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div>
-                  <div className="text-4xl font-bold mb-2">5.0</div>
+                  <div className="text-4xl font-bold mb-2">{reviewData?.averageRating?.toFixed(1) || '5.0'}</div>
                   <div className="text-gray-100">Google Rating</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold mb-2">92+</div>
-                  <div className="text-gray-100">5-Star Reviews</div>
+                  <div className="text-4xl font-bold mb-2">{reviewData?.totalReviews || 92}+</div>
+                  <div className="text-gray-100">Customer Reviews</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold mb-2">0</div>
-                  <div className="text-gray-100">Negative Reviews</div>
+                  <div className="text-4xl font-bold mb-2">{reviewData?.totalReviews || 92}</div>
+                  <div className="text-gray-100">Verified Reviews</div>
                 </div>
               </div>
               <Link

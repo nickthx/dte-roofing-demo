@@ -2,8 +2,11 @@ import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Phone, MapPin, Shield, Home, Wrench, CloudRain, Droplets, Navigation } from 'lucide-react';
 import SEO from '../../components/SEO';
 import SchemaMarkup from '../../components/SchemaMarkup';
+import { useReviewData } from '../../hooks/useReviewData';
 
 export default function Delaware() {
+  const { reviewData } = useReviewData();
+
   return (
     <div className="min-h-screen bg-white">
       <SEO
@@ -30,6 +33,9 @@ export default function Delaware() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Roofers Delaware, OH | DTE Roofing</h1>
             <p className="text-xl text-gray-200 mb-6">
               Expert roof repair, replacement, and storm damage services for Delaware homeowners. Based in Columbus at 615 Hilliard Rome Rd, Columbus, OH 43228, we serve Delaware and all surrounding neighborhoods with the same attention to detail our owners bring to every customer conversation.
+            </p>
+            <p className="text-lg text-gray-300 mb-6">
+              ⭐ {reviewData?.totalReviews || 92} verified reviews • {reviewData?.averageRating?.toFixed(1) || '5.0'} average rating
             </p>
             <a
               href="tel:614-971-6028"
