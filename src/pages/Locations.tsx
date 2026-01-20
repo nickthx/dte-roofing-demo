@@ -224,14 +224,10 @@ export default function Locations() {
             <p className="text-lg text-charcoal-600 leading-relaxed mb-8">
               Each Central Ohio community has unique characteristics—from historic preservation requirements in Worthington and Upper Arlington, to moisture management in Big Darby and Big Walnut Creek watersheds, to storm exposure in eastern suburbs. Our experience across all these areas means we understand your neighborhood's specific challenges and deliver solutions that work.
             </p>
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="text-center">
                 <div className="text-4xl font-bold text-primary-700 mb-2">13+</div>
                 <div className="text-charcoal-600">Communities Served</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-primary-700 mb-2">3,000+</div>
-                <div className="text-charcoal-600">Roofs Installed</div>
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold text-primary-700 mb-2">100%</div>
