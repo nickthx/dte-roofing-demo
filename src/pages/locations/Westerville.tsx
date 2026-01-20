@@ -1,22 +1,25 @@
 import { Link } from 'react-router-dom';
-import { CheckCircle, ArrowRight, Phone, MapPin, Shield } from 'lucide-react';
+import { CheckCircle, ArrowRight, Phone, MapPin, Shield, Navigation } from 'lucide-react';
 import SEO from '../../components/SEO';
 import SchemaMarkup from '../../components/SchemaMarkup';
+import { useReviewData } from '../../hooks/useReviewData';
 
 export default function Westerville() {
+  const { reviewData } = useReviewData();
+
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Roofing Services in Westerville, Ohio - Expert Roof Repair & Replacement | DTE Roofing"
-        description="Professional roofing services in Westerville, OH. Local experts serving Uptown, Huber Village, Cooper Woods & all Westerville neighborhoods. Free estimates. Call 614-971-6028."
-        keywords="roofing Westerville OH, Westerville roofer, roof repair Westerville, roof replacement Westerville, Uptown Westerville roofing, Westerville roofing contractor"
+        title="Roofers Westerville, OH | DTE Roofing — Owner-Led Inspections, Columbus HQ"
+        description="Roofers serving Westerville, OH. DTE Roofing owners speak with every customer. Based at 615 Hilliard Rome Rd, Columbus, OH 43228. Expert roof repair, replacement, storm damage, gutters. Call 614-971-6028."
+        keywords="roofers westerville, roof repair westerville, roof replacement westerville, roofing company westerville, storm damage westerville, gutter services westerville, roofers columbus, roofer near me westerville"
         canonical="https://www.dteroofingllc.com/locations/westerville"
       />
       <SchemaMarkup
         type="location"
         locationName="Westerville"
-        pageTitle="Roofing Services in Westerville, OH - DTE Roofing LLC"
-        pageDescription="Professional roofing services in Westerville, OH. Local experts serving all Westerville neighborhoods with roof repair, replacement, and installation."
+        pageTitle="Roofers in Westerville, OH | DTE Roofing"
+        pageDescription="Serving Westerville, OH from 615 Hilliard Rome Rd, Columbus, OH 43228. Detail-first roof repair and replacement with owners speaking to every customer."
         pageUrl="https://www.dteroofingllc.com/locations/westerville"
       />
 
@@ -27,9 +30,12 @@ export default function Westerville() {
               <MapPin className="w-6 h-6" />
               <span className="text-lg">Serving Westerville, Ohio</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Roofing Services in Westerville, Ohio</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Roofers Westerville, OH | DTE Roofing</h1>
             <p className="text-xl text-gray-200 mb-6">
-              Your trusted local roofing contractor serving all Westerville neighborhoods with expert roof repair, replacement, and installation services
+              Expert roof repair, replacement, and storm damage services for Westerville homeowners—from Uptown Westerville to Huber Village, near Otterbein University to Hoover Reservoir areas. Based at 615 Hilliard Rome Rd, Columbus, OH 43228, our owners speak with every customer and deliver detail-first craftsmanship.
+            </p>
+            <p className="text-lg text-gray-300 mb-6">
+              ⭐ {reviewData?.totalReviews || 92} verified reviews • {reviewData?.averageRating?.toFixed(1) || '5.0'} average rating
             </p>
             <a
               href="tel:614-971-6028"
@@ -46,15 +52,15 @@ export default function Westerville() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             <div>
-              <h2 className="text-3xl font-bold text-charcoal-900 mb-6">Westerville's Trusted Roofing Experts</h2>
+              <h2 className="text-3xl font-bold text-charcoal-900 mb-6">Westerville's Trusted Roofing Professionals</h2>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
-                DTE Roofing proudly serves Westerville's vibrant community, from historic Uptown's charming 19th-century architecture to Huber Village's established neighborhoods, from Cooper Woods' family-friendly streets to the scenic Alum Creek corridor. Located just 25 miles southwest in Hilliard, our team responds quickly to Westerville's roofing needs, understanding the unique challenges facing this northeastern suburb where rich history meets modern suburban living.
+                We're based in Columbus at 615 Hilliard Rome Rd, Columbus, OH 43228, and serve Westerville regularly—typically 15-30 minutes depending on traffic and route. From historic <strong>Uptown Westerville</strong> and <strong>State Street's</strong> vibrant corridor to established neighborhoods near <strong>Otterbein University</strong>, from <strong>Hoover Reservoir</strong> areas to <strong>Blendon Woods</strong> edges, we understand Westerville's community character and diverse housing stock. Our owners personally speak with every customer—no sales teams, no runaround—just direct communication and genuine care for your home.
               </p>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
-                Founded in 1858 and known as "Dry Capital of the World" for its anti-saloon history, Westerville has evolved into a thriving community anchored by Otterbein University and characterized by tree-lined streets, strong schools, and a diverse housing stock ranging from Victorian-era homes near downtown to 1970s-1990s subdivisions throughout the city. This architectural diversity requires roofing expertise spanning historic preservation, aging subdivision updates, and modern performance standards.
+                Founded in 1858, Westerville features remarkable architectural diversity—from Victorian-era homes in Uptown dating to the late 1800s, to mid-century ranches and colonials from the 1960s-70s, to newer subdivisions throughout. This mix of older housing stock with complex rooflines and mature trees creates specific roofing challenges: original flashing that may need updating, constant debris accumulation requiring gutter maintenance, moss growth from shade, and aging roofs from 1970s-1990s development cycles now reaching replacement age.
               </p>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
-                Westerville homeowners face distinct roofing challenges including mature tree canopy management in established neighborhoods, ice dam prevention during harsh Ohio winters, and the widespread replacement cycle as 1970s-1980s subdivision roofs reach end-of-life. Our experience throughout Westerville's neighborhoods means we understand local conditions and deliver solutions protecting your home investment while respecting community character.
+                Common roofing challenges in Westerville include: mature trees causing debris and gutter clogs, older homes with chimney and step flashing leaks, wind-driven rain testing seals during storms, ventilation issues leading to ice dams in winter, and community standards requiring quality materials and careful aesthetics. We work efficiently, respect your property, and understand that Westerville homeowners expect professional service with minimal disruption around school zones and commute windows.
               </p>
 
               <div className="bg-primary-50 p-6 rounded-xl border-2 border-primary-200">
@@ -64,12 +70,14 @@ export default function Westerville() {
                 </div>
                 <ul className="space-y-3">
                   {[
-                    'Fast response from our Hilliard location - typically within 2-4 hours',
-                    'Experience with historic home preservation and diverse architectural styles',
-                    'Understanding of Westerville\'s weather patterns and roofing challenges',
-                    'Expertise with aging subdivision roof replacement cycles',
-                    'Proven track record across all Westerville neighborhoods',
-                    'Fully licensed, insured, and committed to quality craftsmanship'
+                    "Owners speak with every customer—no salespeople",
+                    "Based nearby—15-30 minutes from Westerville",
+                    "Great attention to detail on every project",
+                    "Experience with historic Uptown preservation and diverse architectural styles",
+                    "Understanding of mature tree canopy impact on roof health",
+                    "Help with HOAs and community standards where needed",
+                    "Expert at documenting storm damage for insurance",
+                    "Licensed, insured, and committed to quality craftsmanship"
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-primary-700 flex-shrink-0 mt-0.5" />
@@ -85,36 +93,32 @@ export default function Westerville() {
                 <h3 className="text-2xl font-bold text-charcoal-900 mb-6">Complete Roofing Services for Westerville</h3>
                 <ul className="space-y-3">
                   {[
-                    { name: 'Roof Replacement', link: '/services/roof-replacement' },
-                    { name: 'Roof Repair', link: '/services/roof-repair' },
-                    { name: 'Historic Home Roofing', link: '/services/roof-installation' },
-                    { name: 'Roof Inspections', link: '/services/roof-inspection' },
-                    { name: 'Storm Damage Repair', link: '/services/storm-damage' },
-                    { name: '24/7 Emergency Services', link: '/services/emergency-services' },
-                    { name: 'Gutter Installation & Repair', link: '/services/gutters' },
-                    { name: 'Siding Installation', link: '/services/siding' },
-                    { name: 'Ice Dam Prevention', link: '/services/roof-maintenance' },
-                    { name: 'Insurance Claim Assistance', link: '/contact' },
-                    { name: 'Preventative Maintenance Programs', link: '/services/roof-maintenance' }
+                    { name: "Free Roof Inspections", link: "/services/roof-inspection" },
+                    { name: "Roof Repair", link: "/services/roof-repair" },
+                    { name: "Roof Replacement", link: "/services/roof-replacement" },
+                    { name: "24/7 Emergency Services", link: "/services/emergency-services" },
+                    { name: "Storm Damage Repair", link: "/services/storm-damage" },
+                    { name: "Insurance Claims Assistance", link: "/contact" },
+                    { name: "Gutter Services", link: "/services/gutters" },
+                    { name: "Siding Installation", link: "/services/siding" },
+                    { name: "Preventative Maintenance", link: "/services/preventative-maintenance" },
+                    { name: "Ventilation Upgrades", link: "/services/roof-repair" },
+                    { name: "Flashing Repair", link: "/services/roof-repair" }
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary-700 flex-shrink-0 mt-1" />
-                      {item.link ? (
-                        <Link to={item.link} className="text-charcoal-700 hover:text-primary-700 transition-colors">
-                          {item.name}
-                        </Link>
-                      ) : (
-                        <span className="text-charcoal-700">{item.name}</span>
-                      )}
+                      <Link to={item.link} className="text-charcoal-700 hover:text-primary-700 transition-colors">
+                        {item.name}
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </div>
 
               <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-lg">
-                <h3 className="font-bold text-charcoal-900 mb-2 text-lg">Free Roofing Estimates in Westerville</h3>
+                <h3 className="font-bold text-charcoal-900 mb-2 text-lg">Free Roofing Estimates</h3>
                 <p className="text-charcoal-700 mb-4">
-                  We provide detailed, no-obligation estimates for all roofing projects in Westerville. Schedule your free inspection today.
+                  One of our owners personally inspects every roof in Westerville. No salespeople, no pressure—just honest assessments.
                 </p>
                 <Link
                   to="/contact"
@@ -127,179 +131,310 @@ export default function Westerville() {
           </div>
 
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-charcoal-900 mb-6">Westerville Roofing Challenges & Expert Solutions</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white p-6 rounded-xl border-2 border-gray-200">
-                <h3 className="text-xl font-bold text-charcoal-900 mb-4">Historic Uptown Preservation</h3>
-                <p className="text-charcoal-600 mb-4 leading-relaxed">
-                  Westerville's historic Uptown district features charming Victorian-era homes, 19th-century architecture, and buildings listed on the National Register of Historic Places. These properties showcase steep roof pitches, complex dormers, decorative trim, and architectural details requiring specialized preservation approaches. Original materials like slate or wood shake may need historically appropriate replacements that maintain authentic appearance while incorporating modern performance standards.
-                </p>
-                <p className="text-charcoal-600 leading-relaxed">
-                  Our historic home roofing expertise includes sourcing architectural shingles mimicking period-appropriate aesthetics, custom flashing fabrication preserving decorative details, proper ventilation design for homes with limited attic space, and installation techniques respecting older roof structures. During your <Link to="/services/roof-inspection" className="text-primary-700 hover:text-primary-800 font-semibold">roof inspection</Link>, we evaluate historic features worth preserving and recommend solutions maintaining character while ensuring reliable protection and meeting modern building codes for safety and energy efficiency.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl border-2 border-gray-200">
-                <h3 className="text-xl font-bold text-charcoal-900 mb-4">Aging Subdivision Roof Replacement</h3>
-                <p className="text-charcoal-600 mb-4 leading-relaxed">
-                  Large Westerville subdivisions developed in the 1970s-1990s—including Huber Village, Cooper Woods, and Spring Run—face widespread roof replacement cycles as original or first-replacement roofs reach 20-30 year lifespans. These neighborhoods feature predominantly ranch and two-story colonial homes with straightforward roof lines but often inadequate attic ventilation by modern standards, absence of ice and water shield in critical areas, and outdated insulation contributing to energy inefficiency and ice dam formation.
-                </p>
-                <p className="text-charcoal-600 leading-relaxed">
-                  Our <Link to="/services/roof-replacement" className="text-primary-700 hover:text-primary-800 font-semibold">roof replacement</Link> approach for Westerville's aging subdivisions includes comprehensive attic ventilation upgrades preventing moisture damage and ice dams, strategic ice and water shield application at eaves and valleys, enhanced insulation recommendations improving energy efficiency, and quality architectural shingles with algae resistance suitable for tree-shaded properties. Many Westerville homeowners report significant heating and cooling cost reductions after our comprehensive replacement approach addresses ventilation and insulation deficiencies.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl border-2 border-gray-200">
-                <h3 className="text-xl font-bold text-charcoal-900 mb-4">Ice Dam Prevention & Winter Weather</h3>
-                <p className="text-charcoal-600 mb-4 leading-relaxed">
-                  Westerville experiences harsh Ohio winters with substantial snowfall, prolonged freezing temperatures, and the freeze-thaw cycles that create damaging ice dams along roof eaves. Ice dams form when inadequate attic insulation and ventilation allow heat to escape, melting snow on the upper roof. Water flows to cold eaves where it refreezes, creating ice barriers that force water under shingles, causing interior damage to ceilings, walls, and insulation while stressing gutter systems.
-                </p>
-                <p className="text-charcoal-600 leading-relaxed">
-                  We prevent ice dams through comprehensive solutions including proper attic insulation maintaining consistent roof deck temperature, enhanced ventilation systems allowing cold air circulation, strategic ice and water shield installation providing backup protection, and gutter maintenance ensuring proper drainage. Our <Link to="/services/roof-maintenance" className="text-primary-700 hover:text-primary-800 font-semibold">preventative maintenance programs</Link> include pre-winter inspections, debris removal, and ventilation checks ensuring your Westerville home is prepared for harsh winter conditions before problems develop.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl border-2 border-gray-200">
-                <h3 className="text-xl font-bold text-charcoal-900 mb-4">Mature Tree Canopy Management</h3>
-                <p className="text-charcoal-600 mb-4 leading-relaxed">
-                  Westerville's established neighborhoods boast magnificent mature trees—towering oaks, maples, and ash trees that define the community's character but create roofing challenges. Heavy leaf accumulation in fall clogs gutters and traps moisture in roof valleys, overhanging branches scrape protective granules from shingles, dense shade encourages moss and algae growth particularly on north-facing slopes, and occasional storm-damaged limbs cause punctures or structural damage requiring emergency repairs.
-                </p>
-                <p className="text-charcoal-600 leading-relaxed">
-                  Our tree-canopy roofing solutions include algae-resistant shingles with copper granules inhibiting biological growth, impact-resistant materials providing protection against falling branches, comprehensive gutter systems with guards preventing debris accumulation, and bi-annual maintenance programs including debris removal and moss treatment. For Westerville's heavily tree-shaded properties, regular professional maintenance proves essential to achieving full roof lifespan—well-maintained roofs in shaded locations often match or exceed the performance of sun-exposed roofs through proactive care addressing moisture and biological growth before damage occurs.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-16">
             <h2 className="text-3xl font-bold text-charcoal-900 mb-8 text-center">Westerville Neighborhoods We Serve</h2>
-            <p className="text-center text-charcoal-600 mb-8 max-w-3xl mx-auto">
-              From historic Uptown to Huber Village's family neighborhoods, DTE Roofing provides expert roofing services throughout Westerville's diverse community.
-            </p>
             <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
               {[
-                'Uptown Westerville',
-                'Huber Village',
-                'Cooper Woods',
-                'Spring Run',
-                'Windsor Park',
-                'Cherry Bottom',
-                'Minerva Park',
-                'Annehurst',
-                'Stoneridge',
-                'Foxfire',
-                'Heritage Club',
-                'Liberty Woods',
-                'Westar',
-                'Otterbein Area',
-                'Westerville North',
-                'Alum Creek Corridor'
+                "Uptown Westerville",
+                "Annehurst",
+                "Huber Village",
+                "Cooper Woods",
+                "Highland Lakes Area",
+                "Polaris/Westerville Edge",
+                "Maxtown/County Line",
+                "Hoover Reservoir Area",
+                "Near Otterbein Area",
+                "Blendon Woods Edge",
+                "Spring Run",
+                "Windsor Park",
+                "Cherry Bottom",
+                "Stoneridge",
+                "Foxfire",
+                "Heritage Club",
+                "Liberty Woods",
+                "Westar"
               ].map((neighborhood, index) => (
                 <div key={index} className="bg-gray-50 p-4 rounded-lg text-center border border-gray-200 hover:border-primary-700 hover:bg-primary-50 transition-all">
                   <span className="text-charcoal-700 font-medium">{neighborhood}</span>
                 </div>
               ))}
             </div>
-            <p className="text-center text-charcoal-600 mt-6">
-              Serving all Westerville neighborhoods. <Link to="/contact" className="text-primary-700 hover:text-primary-800 font-semibold">Contact us</Link> to schedule your roofing consultation.
-            </p>
           </div>
 
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-charcoal-900 mb-8">Frequently Asked Questions - Westerville Roofing</h2>
-            <div className="space-y-4">
-              <details className="bg-white p-6 rounded-xl border-2 border-gray-200 group">
-                <summary className="font-bold text-charcoal-900 cursor-pointer text-lg flex items-center justify-between">
-                  What does roof replacement cost in Westerville?
-                  <ArrowRight className="w-5 h-5 text-primary-700 transform group-open:rotate-90 transition-transform" />
-                </summary>
-                <div className="text-charcoal-700 leading-relaxed mt-4 space-y-3">
-                  <p>
-                    Westerville roof replacement costs typically range from $8,000 to $15,000 for most single-family homes, depending on size, architectural complexity, and material selection. Ranch homes common in 1970s-1980s subdivisions like Huber Village often fall toward the lower end due to simpler roof lines and easier access, while two-story colonials with multiple dormers or complex features approach the higher range. Historic Uptown properties may exceed these estimates when preservation requirements demand specialty materials or additional structural work.
-                  </p>
-                  <p>
-                    Several factors influence costs: home size (most Westerville homes range from 1,500-2,500 square feet), roof pitch and complexity (steeper pitches and multiple planes increase labor), material quality (standard architectural shingles vs. premium impact-resistant products), existing condition (extensive rotted decking requiring replacement adds costs), and ventilation upgrades addressing common deficiencies in older homes. We always provide transparent, itemized estimates explaining exactly what your investment includes.
-                  </p>
-                  <p>
-                    Consider roof replacement an investment protecting your Westerville home's value and preventing costly interior damage from leaks or ice dams. Quality installations with proper ventilation and materials typically last 25-30 years, provide improved energy efficiency reducing heating and cooling costs, enhance curb appeal benefiting property values, and include comprehensive warranties protecting your investment. Our <Link to="/services/roof-replacement" className="text-primary-700 hover:text-primary-800 font-semibold">roof replacement services</Link> focus on long-term value rather than lowest initial cost—proper installation and quality materials prevent premature failures requiring expensive repairs.
-                  </p>
+            <h2 className="text-3xl font-bold text-charcoal-900 mb-8">Common Roofing Issues in Westerville</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h3 className="text-xl font-bold text-charcoal-900 mb-3">Mature Trees: Debris and Gutter Overflow</h3>
+                <p className="text-charcoal-600">
+                  Westerville's established neighborhoods feature magnificent mature oaks, maples, and ash trees that define the community's character but create constant roofing challenges. Heavy leaf accumulation clogs gutters causing overflow that damages fascia and soffit. Dense shade encourages moss and algae growth on north-facing slopes. Overhanging branches scrape protective granules from shingles and occasionally drop during storms causing punctures. We address these challenges through algae-resistant shingles, gutter maintenance, and regular debris removal.
+                </p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h3 className="text-xl font-bold text-charcoal-900 mb-3">Older Housing: Chimney and Step Flashing Leaks</h3>
+                <p className="text-charcoal-600">
+                  Many Westerville homes—especially in Uptown and 1960s-70s neighborhoods—feature complex rooflines with chimneys, dormers, and valleys. Original flashing around these vulnerable areas degrades over decades of exposure to weather. Wind-driven rain tests compromised seals during storms, leading to leaks that damage interior ceilings and walls. We inspect flashing carefully during every assessment and repair or replace it with high-quality materials designed for decades of protection.
+                </p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h3 className="text-xl font-bold text-charcoal-900 mb-3">Storm and Hail Exposure: Insurance Documentation</h3>
+                <p className="text-charcoal-600">
+                  Central Ohio's weather patterns bring frequent storms with wind-driven rain, hail, and occasional severe events. Older roofs in Westerville neighborhoods require thorough documentation after storms for successful insurance claims. We provide detailed photo evidence, shingle samples showing hail impact, measurements, and written reports that meet insurance requirements. As insurers tighten claim requirements in 2025-2026, proper documentation has never been more important for protecting your investment.
+                </p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h3 className="text-xl font-bold text-charcoal-900 mb-3">Ventilation Issues and Ice Dam Prevention</h3>
+                <p className="text-charcoal-600">
+                  Ohio winters bring harsh freeze-thaw cycles that stress roofing systems. Poor attic ventilation—common in older Westerville homes—causes warm air to melt snow unevenly, leading to ice dams at eaves and water backup under shingles. We assess ventilation during every inspection, install ice and water shield at vulnerable areas during replacements, and recommend ventilation improvements when needed to prevent winter damage and improve energy efficiency.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-charcoal-900 mb-8 text-center">Proximity Proof: Serving Westerville from our Columbus HQ</h2>
+            <div className="bg-gray-50 p-8 rounded-xl border-2 border-gray-200">
+              <div className="max-w-3xl mx-auto">
+                <div className="flex items-center gap-3 mb-6">
+                  <Navigation className="w-8 h-8 text-primary-700" />
+                  <h3 className="text-2xl font-bold text-charcoal-900">Office Location</h3>
                 </div>
+                <p className="text-lg text-charcoal-600 mb-4">
+                  <strong>615 Hilliard Rome Rd, Columbus, OH 43228</strong>
+                </p>
+                <p className="text-lg text-charcoal-600 mb-6">
+                  We're based on the west side of Columbus and serve Westerville regularly—typically 15-30 minutes depending on traffic and route. Access from Westerville: I-270 east side exits, I-71 north/south corridors, SR-3/State Street routes, or via Polaris area. Whether you're in Uptown, Huber Village, near Otterbein, or anywhere in Westerville, we provide prompt, professional service.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a
+                    href="https://www.google.com/maps/dir/?api=1&origin=Westerville,+OH&destination=615+Hilliard+Rome+Rd,+Columbus,+OH+43228"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-primary-700 text-white px-6 py-3 rounded-lg hover:bg-primary-800 transition-all font-semibold inline-flex items-center justify-center"
+                  >
+                    <Navigation className="mr-2 w-5 h-5" />
+                    Get Directions from Westerville
+                  </a>
+                  <Link
+                    to="/contact"
+                    className="bg-charcoal-900 text-white px-6 py-3 rounded-lg hover:bg-charcoal-800 transition-all font-semibold inline-flex items-center justify-center"
+                  >
+                    Schedule Estimate <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-charcoal-900 mb-8 text-center">Map: DTE Roofing Serving Westerville</h2>
+            <div className="bg-gray-50 p-4 rounded-xl border-2 border-gray-200">
+              <div className="aspect-video w-full">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.8779986954747!2d-83.16920092346665!3d39.99827597151532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388e4a4b0be8a3%3A0x6a7a18f7f4b7e8a0!2s615%20Hilliard%20Rome%20Rd%2C%20Columbus%2C%20OH%2043228!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="DTE Roofing serving Westerville - 615 Hilliard Rome Rd, Columbus, OH 43228"
+                  className="rounded-lg"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-charcoal-900 mb-8 text-center">Westerville Roofing FAQs</h2>
+            <div className="max-w-3xl mx-auto space-y-4">
+              <details className="bg-gray-50 p-6 rounded-xl border border-gray-200 group">
+                <summary className="font-bold text-charcoal-900 cursor-pointer list-none flex items-center justify-between">
+                  <span>Do you serve Westerville if your HQ is in Columbus?</span>
+                  <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-charcoal-600 mt-4 leading-relaxed">
+                  Absolutely. We're based at 615 Hilliard Rome Rd, Columbus, OH 43228, and Westerville is typically 15-30 minutes away depending on traffic and route. We serve Westerville regularly and understand the community's mix of historic Uptown architecture, mature neighborhoods, and diverse housing stock. Distance has never been an issue, and our scheduling is efficient and reliable for all Westerville areas.
+                </p>
               </details>
 
-              <details className="bg-white p-6 rounded-xl border-2 border-gray-200 group">
-                <summary className="font-bold text-charcoal-900 cursor-pointer text-lg flex items-center justify-between">
-                  Do I need a building permit for roofing work in Westerville?
-                  <ArrowRight className="w-5 h-5 text-primary-700 transform group-open:rotate-90 transition-transform" />
+              <details className="bg-gray-50 p-6 rounded-xl border border-gray-200 group">
+                <summary className="font-bold text-charcoal-900 cursor-pointer list-none flex items-center justify-between">
+                  <span>How do you protect landscaping and driveways during work?</span>
+                  <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
-                <div className="text-charcoal-700 leading-relaxed mt-4 space-y-3">
-                  <p>
-                    Yes, the City of Westerville requires building permits for roof replacements and most significant roof repairs. Permits ensure work meets current building codes, proper installation techniques are followed, adequate structural support exists for roofing materials, and appropriate fire resistance and ventilation standards are maintained. The permitting process protects homeowners by requiring inspections verifying quality workmanship and code compliance before projects are finalized.
-                  </p>
-                  <p>
-                    DTE Roofing handles the entire permit process for Westerville projects as part of our comprehensive service—we prepare and submit permit applications with required documentation, coordinate inspection schedules with the city, ensure installations meet all current code requirements, and obtain final approval confirming compliant completion. This service saves homeowners the complexity of navigating municipal processes while guaranteeing their roofing project is properly documented and code-compliant.
-                  </p>
-                  <p>
-                    Permit requirements exist for homeowners' protection—unpermitted work can create issues when selling your home (buyers' inspectors often check permit records), may void homeowners insurance if undisclosed work leads to claims, and can result in fines requiring expensive corrective work if discovered. We always obtain proper permits, providing documentation you can reference during future home sales, maintaining your property's clear title and compliance history. Never work with contractors who suggest skipping permits—this shortcut exposes you to significant legal and financial risks.
-                  </p>
-                </div>
+                <p className="text-charcoal-600 mt-4 leading-relaxed">
+                  We use tarps to protect landscaping, position dumpsters on driveways with protective boards underneath, and conduct thorough cleanup with magnetic rollers to collect nails and debris. We make multiple passes across your driveway, walkways, and yard before we leave. Clean job sites and property protection are part of our detail-first approach—you shouldn't have to worry about damage to your landscaping or nails in your driveway after we're done.
+                </p>
               </details>
 
-              <details className="bg-white p-6 rounded-xl border-2 border-gray-200 group">
-                <summary className="font-bold text-charcoal-900 cursor-pointer text-lg flex items-center justify-between">
-                  How long does a typical Westerville roof replacement take?
-                  <ArrowRight className="w-5 h-5 text-primary-700 transform group-open:rotate-90 transition-transform" />
+              <details className="bg-gray-50 p-6 rounded-xl border border-gray-200 group">
+                <summary className="font-bold text-charcoal-900 cursor-pointer list-none flex items-center justify-between">
+                  <span>Do you work with HOAs or community standards?</span>
+                  <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
-                <div className="text-charcoal-700 leading-relaxed mt-4 space-y-3">
-                  <p>
-                    Most Westerville roof replacements complete in 1-3 days depending on home size and architectural complexity. Single-story ranch homes common in subdivisions like Cooper Woods or Spring Run typically complete in 1-2 days—straightforward roof lines, easy material access, and efficient workflow allow our experienced crews to work quickly without compromising quality. Two-story homes with multiple roof planes, dormers, or complex features generally require 2-3 days for meticulous installation ensuring proper flashing, ventilation, and weatherproofing at all transitions and penetrations.
-                  </p>
-                  <p>
-                    Historic Uptown properties occasionally extend to 3-4 days when preservation considerations demand additional care—steep Victorian pitches require enhanced safety measures, decorative trim and architectural details need custom flashing fabrication, and older roof structures may require repairs or reinforcement before new materials can be installed. Weather also influences timelines—we never compromise quality by working in rain or dangerous conditions, prioritizing proper installation over arbitrary schedule adherence.
-                  </p>
-                  <p>
-                    Throughout your project, our professional crews arrive on schedule, work efficiently through all installation phases, perform comprehensive daily cleanup maintaining your property's appearance, and conduct thorough final inspections before considering work complete. Most Westerville homeowners express surprise at how quickly projects finish and how minimal disruption proves to their daily routines—professional planning, experienced crews, and respectful job site management ensure efficient completion without sacrificing the quality craftsmanship your home deserves.
-                  </p>
-                </div>
+                <p className="text-charcoal-600 mt-4 leading-relaxed">
+                  Yes. Some Westerville neighborhoods have HOA requirements or architectural guidelines for exterior work. We're experienced in matching existing shingle styles and colors, providing documentation for HOA submissions where needed, and ensuring work meets community standards. We can help you understand what approvals may be required and provide the information necessary. Our goal is to make the process smooth while respecting Westerville's community character.
+                </p>
               </details>
 
-              <details className="bg-white p-6 rounded-xl border-2 border-gray-200 group">
-                <summary className="font-bold text-charcoal-900 cursor-pointer text-lg flex items-center justify-between">
-                  Should I proactively replace my roof or wait for problems?
-                  <ArrowRight className="w-5 h-5 text-primary-700 transform group-open:rotate-90 transition-transform" />
+              <details className="bg-gray-50 p-6 rounded-xl border border-gray-200 group">
+                <summary className="font-bold text-charcoal-900 cursor-pointer list-none flex items-center justify-between">
+                  <span>What causes chimney and step flashing leaks?</span>
+                  <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
-                <div className="text-charcoal-700 leading-relaxed mt-4 space-y-3">
-                  <p>
-                    Proactive roof replacement before obvious failures develop proves far more cost-effective and less stressful than reactive emergency replacement after leaks cause interior damage. Roofs reaching 20-25 years old in Westerville—particularly common in 1970s-1990s subdivisions—show warning signs including curling or missing shingles, granule loss exposing asphalt substrate, cracked or damaged flashing, and visible sagging or unevenness. These indicators suggest compromised waterproofing and structural concerns requiring professional evaluation.
-                  </p>
-                  <p>
-                    Waiting for active leaks creates multiple problems: interior water damage to ceilings, walls, insulation, and potentially electrical systems far exceeds roof replacement costs, emergency repairs during harsh Ohio winters prove difficult and expensive, compromised roof decking requires replacement adding substantial costs, and stress of coordinating emergency contractors while managing interior damage proves overwhelming. Additionally, severe deterioration sometimes voids insurance coverage when insurers determine neglected maintenance contributed to damage.
-                  </p>
-                  <p>
-                    We recommend scheduling a professional <Link to="/services/roof-inspection" className="text-primary-700 hover:text-primary-800 font-semibold">roof inspection</Link> when your Westerville home's roof reaches 18-20 years old or shows any warning signs. Comprehensive inspections identify current condition, predict remaining lifespan, reveal developing problems addressable through targeted repairs, and provide information supporting informed replacement timing decisions. Proactive replacement during favorable weather on your schedule—rather than emergency replacement during winter storms on contractors' schedules—ensures quality installation, better pricing, and peace of mind protecting your home investment before problems escalate.
-                  </p>
-                </div>
+                <p className="text-charcoal-600 mt-4 leading-relaxed">
+                  Flashing around chimneys, skylights, and dormers (step flashing) is designed to direct water away from these vulnerable intersections. Over time, flashing seals degrade from weather exposure—especially wind-driven rain common in Central Ohio. Many older Westerville homes have original flashing from decades ago that has lost its seal. We inspect flashing carefully during every assessment and repair or replace it with high-quality materials that provide decades of protection.
+                </p>
               </details>
+
+              <details className="bg-gray-50 p-6 rounded-xl border border-gray-200 group">
+                <summary className="font-bold text-charcoal-900 cursor-pointer list-none flex items-center justify-between">
+                  <span>Is ice and water shield worth it in this climate?</span>
+                  <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-charcoal-600 mt-4 leading-relaxed">
+                  Absolutely. Ice and water shield is a self-sealing underlayment installed at vulnerable areas like eaves, valleys, and around penetrations. Ohio winters bring harsh freeze-thaw cycles that can cause ice dams, especially on north-facing slopes or homes with inadequate ventilation. Ice and water shield provides critical protection against water backup under shingles. We recommend it for all roof replacements in this climate—it's an affordable upgrade that prevents expensive water damage.
+                </p>
+              </details>
+
+              <details className="bg-gray-50 p-6 rounded-xl border border-gray-200 group">
+                <summary className="font-bold text-charcoal-900 cursor-pointer list-none flex items-center justify-between">
+                  <span>Do you document storm damage for insurance?</span>
+                  <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-charcoal-600 mt-4 leading-relaxed">
+                  Yes. If your roof damage is from wind, hail, or storm events, your homeowner's insurance may cover repairs or replacement. We document storm damage with detailed photos, shingle samples showing hail impact, measurements, and written reports that meet insurance requirements. We can meet with adjusters on-site if needed and explain the claims process. With insurers tightening claim requirements in 2025-2026, proper documentation has never been more important. We work with all major insurance companies.
+                </p>
+              </details>
+
+              <details className="bg-gray-50 p-6 rounded-xl border border-gray-200 group">
+                <summary className="font-bold text-charcoal-900 cursor-pointer list-none flex items-center justify-between">
+                  <span>Do you offer emergency tarping and response?</span>
+                  <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-charcoal-600 mt-4 leading-relaxed">
+                  Yes. We provide 24/7 emergency services including temporary tarping after storms or sudden damage. If you experience a leak or visible damage, call 614-971-6028 immediately. We prioritize emergency calls and often respond same-day for active leaks. Emergency tarping prevents additional water intrusion while permanent repairs are scheduled, protecting your home's interior and valuable belongings from further damage.
+                </p>
+              </details>
+
+              <details className="bg-gray-50 p-6 rounded-xl border border-gray-200 group">
+                <summary className="font-bold text-charcoal-900 cursor-pointer list-none flex items-center justify-between">
+                  <span>Do you handle gutters and fascia/soffit?</span>
+                  <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-charcoal-600 mt-4 leading-relaxed">
+                  Yes. Westerville's mature tree canopy means constant debris accumulation in gutters. Clogged gutters overflow during rains, damaging fascia, soffit, and foundation drainage. We provide gutter cleaning, repairs, and full gutter replacement. We can also install gutter guards in areas with heavy leaf accumulation. If tree debris has caused damage to your fascia or soffit, we assess and repair all related issues comprehensively.
+                </p>
+              </details>
+
+              <details className="bg-gray-50 p-6 rounded-xl border border-gray-200 group">
+                <summary className="font-bold text-charcoal-900 cursor-pointer list-none flex items-center justify-between">
+                  <span>What's the fastest way to schedule?</span>
+                  <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-charcoal-600 mt-4 leading-relaxed">
+                  Call us directly at 614-971-6028. You'll speak with one of our owners—no phone trees or call centers. We'll ask a few questions about your roof, schedule an inspection at your convenience, and one of our owners will come personally to assess your roof and discuss your options. Most inspections are scheduled within 2-3 days, and emergency situations get same-day or next-day priority response.
+                </p>
+              </details>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 mb-16">
+            <div className="bg-gray-50 p-8 rounded-xl">
+              <h2 className="text-2xl font-bold text-charcoal-900 mb-6">Why Westerville Residents Choose Us</h2>
+              <div className="space-y-6">
+                {[
+                  {
+                    title: "Owner-Led Inspections",
+                    description: "One of our owners personally inspects every roof and speaks with every customer"
+                  },
+                  {
+                    title: "Historic Uptown Experience",
+                    description: "Expertise with older architecture, Victorian-era homes, and preservation"
+                  },
+                  {
+                    title: "Honest Diagnostics",
+                    description: "We only recommend repairs that are actually needed—no upselling"
+                  },
+                  {
+                    title: "Quality Materials",
+                    description: "Premium materials appropriate for Westerville homes and Ohio weather"
+                  },
+                  {
+                    title: "Attention to Detail",
+                    description: "Thorough cleanup, property protection, and meticulous craftsmanship"
+                  },
+                  {
+                    title: "Community Respect",
+                    description: "Scheduling sensitivity around school zones and minimal disruption"
+                  },
+                  {
+                    title: "Insurance Expertise",
+                    description: "We help document storm damage and work with your insurance company"
+                  }
+                ].map((item, index) => (
+                  <div key={index}>
+                    <h3 className="font-bold text-charcoal-900 mb-2 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-primary-700" />
+                      {item.title}
+                    </h3>
+                    <p className="text-charcoal-600 pl-7">{item.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-primary-50 p-8 rounded-xl">
+              <h2 className="text-2xl font-bold text-charcoal-900 mb-6">Westerville Customer Reviews</h2>
+              <div className="space-y-6">
+                {[
+                  {
+                    name: "Jennifer & Mark T.",
+                    area: "Uptown Westerville",
+                    text: "Our Victorian home needed careful attention to preserve its character. DTE did excellent work with our complex roof and historic details."
+                  },
+                  {
+                    name: "Brian S.",
+                    area: "Huber Village",
+                    text: "After hail damage, they documented everything thoroughly for our insurance claim and completed the replacement quickly. Very professional!"
+                  },
+                  {
+                    name: "Sarah M.",
+                    area: "Near Otterbein",
+                    text: "Honest pricing, quality work, and great communication. They worked around our schedule and left the property spotless!"
+                  }
+                ].map((review, index) => (
+                  <div key={index} className="bg-white p-6 rounded-lg border border-gray-200">
+                    <p className="text-charcoal-700 mb-4 italic">"{review.text}"</p>
+                    <div className="font-bold text-charcoal-900">{review.name}</div>
+                    <div className="text-charcoal-600 text-sm">{review.area}</div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
           <div className="bg-gradient-to-br from-primary-700 to-primary-800 text-white p-8 rounded-xl">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-4">Ready to Protect Your Westerville Home?</h2>
-              <p className="text-xl mb-6">
-                Join hundreds of satisfied Westerville homeowners who trust DTE Roofing for quality, reliability, and exceptional service
+              <h2 className="text-3xl font-bold mb-4">Protect Your Westerville Home</h2>
+              <p className="text-xl mb-4">
+                Join satisfied Westerville homeowners who trust DTE Roofing for quality roofing and exceptional service.
               </p>
-              <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <p className="text-lg mb-2 opacity-90">
+                Serving Westerville from 615 Hilliard Rome Rd, Columbus, OH 43228
+              </p>
+              <div className="grid md:grid-cols-3 gap-6 my-8">
                 <div>
-                  <div className="text-4xl font-bold mb-2">500+</div>
-                  <div className="text-gray-100">Westerville Roofs Installed</div>
+                  <div className="text-4xl font-bold mb-2">{reviewData?.averageRating?.toFixed(1) || '5.0'}</div>
+                  <div className="text-gray-100">Google Rating</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold mb-2">24/7</div>
-                  <div className="text-gray-100">Emergency Response</div>
+                  <div className="text-4xl font-bold mb-2">{reviewData?.totalReviews || 92}</div>
+                  <div className="text-gray-100">Verified Reviews</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold mb-2">25+</div>
-                  <div className="text-gray-100">Years Excellence</div>
+                  <div className="text-4xl font-bold mb-2">Owner-Led</div>
+                  <div className="text-gray-100">Every Estimate</div>
                 </div>
               </div>
               <Link
@@ -318,8 +453,11 @@ export default function Westerville() {
           <h2 className="text-4xl md:text-5xl font-bold text-charcoal-900 mb-6">
             Schedule Your Westerville Roof Inspection
           </h2>
-          <p className="text-xl text-charcoal-600 mb-8 max-w-2xl mx-auto">
-            Contact DTE Roofing today for expert roofing services throughout Westerville
+          <p className="text-xl text-charcoal-600 mb-4 max-w-2xl mx-auto">
+            Contact DTE Roofing today for expert roofing services in Westerville
+          </p>
+          <p className="text-lg text-charcoal-600 mb-8 max-w-2xl mx-auto">
+            Based at 615 Hilliard Rome Rd, Columbus, OH 43228 • Call 614-971-6028
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -336,9 +474,6 @@ export default function Westerville() {
               Request Estimate <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
           </div>
-          <p className="text-charcoal-600 mt-6">
-            Serving Westerville and all surrounding Central Ohio communities
-          </p>
         </div>
       </section>
     </div>
