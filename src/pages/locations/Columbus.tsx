@@ -7,16 +7,16 @@ export default function Columbus() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="BEST Roofer Columbus OH – Roof Repair & Replacement near me | DTE Roofing"
-        description="Columbus Ohio's trusted roofer. Family-owned, 5-star rated. Free inspections, honest diagnostics, expert repairs. Serving all Columbus neighborhoods. Call 614-971-6028."
-        keywords="roofing Columbus OH, Columbus roofer, roof repair Columbus, roof replacement Columbus, Columbus roofing contractor, roofer near me Columbus"
+        title="Roofers Columbus, OH | DTE Roofing — Roof Repair & Replacement"
+        description="Looking for roofers in Columbus, OH? DTE Roofing is based at 615 Hilliard Rome Rd, Columbus, OH 43228. Owners speak with every customer. Free inspections, detail-first repairs & replacements. Call 614-971-6028."
+        keywords="roofers columbus, roofers columbus oh, roofing company columbus, roof repair columbus, roof replacement columbus, storm damage columbus, gutter services columbus, roofer near me columbus"
         canonical="https://www.dteroofingllc.com/locations/columbus"
       />
       <SchemaMarkup
         type="location"
         locationName="Columbus"
-        pageTitle="BEST Roofer Columbus OH - DTE Roofing LLC"
-        pageDescription="Columbus Ohio's trusted roofing company. Family-owned, serving all Columbus neighborhoods with expert roof repair and replacement."
+        pageTitle="Roofers in Columbus, OH | DTE Roofing (Columbus HQ)"
+        pageDescription="DTE Roofing serves Columbus, OH from 615 Hilliard Rome Rd, Columbus, OH 43228. Owners speak with every customer. Detail-first roof repair, replacement, and storm damage help."
         pageUrl="https://www.dteroofingllc.com/locations/columbus"
       />
 
@@ -48,13 +48,16 @@ export default function Columbus() {
             <div>
               <h2 className="text-3xl font-bold text-charcoal-900 mb-6">Columbus's Trusted Roofing Company</h2>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
-                DTE Roofing is a family-owned roofing company founded by two brothers from Hilliard who built their business on a simple principle: honest diagnostics and quality work. Based at 615 Hilliard Rome Road, we serve homeowners throughout Columbus and Franklin County with the same care we would give our own homes.
+                DTE Roofing is headquartered in Columbus at 615 Hilliard Rome Rd, Columbus, OH 43228. Founded by two brothers from Hilliard, we built our business on a simple principle: honest diagnostics and quality work. Our owners speak with every customer personally—no handoffs, no middlemen. We serve homeowners throughout Columbus and Franklin County with great attention to detail and the same care we would give our own homes.
               </p>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
-                Columbus weather demands quality roofing. From hot, humid summers that accelerate shingle aging to harsh winters with ice dams and freeze-thaw cycles, your roof faces constant challenges. We understand these local conditions and install roofs built to handle them for decades.
+                Columbus weather demands quality roofing. From hot, humid summers that accelerate shingle aging to harsh winters with ice dams and freeze-thaw cycles, your roof faces constant challenges. We understand these local conditions and install roofs built to handle them for decades, with careful attention to flashing, ventilation, and proper installation details.
               </p>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
-                Whether you live in a historic German Village home, a Clintonville bungalow, or a newer build in any Columbus neighborhood, we have the expertise to handle your roofing needs. We only recommend work that is actually necessary—no upselling, no unnecessary replacements.
+                Whether you live in a historic German Village home, a Clintonville bungalow near The Ohio State University campus, a downtown loft in the Arena District, or a newer build in Franklinton or any Columbus neighborhood, we have the expertise to handle your roofing needs. Columbus has diverse housing stock—from older homes that need careful assessment to newer construction requiring warranty-compliant work. We only recommend work that is actually necessary—no upselling, no unnecessary replacements.
+              </p>
+              <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
+                We understand Columbus homeowners lead busy lives—commuting on I-270, I-71, or US-33, juggling work and family. That's why we provide clear communication, reliable arrival windows, and efficient scheduling. We respect your time and your property, completing work professionally with thorough cleanup.
               </p>
 
               <div className="bg-primary-50 p-6 rounded-xl border-2 border-primary-200">
@@ -64,12 +67,13 @@ export default function Columbus() {
                 </div>
                 <ul className="space-y-3">
                   {[
-                    "Family-owned and operated—owners on every job",
+                    "Owners speak with every customer (no handoffs)",
+                    "Great attention to detail on flashing, ventilation, and cleanup",
                     "Honest diagnostics—we fix only what is needed",
                     "Fast response times across all Columbus neighborhoods",
                     "Deep understanding of local building codes",
                     "GAF certified with premium material options",
-                    "Perfect 5-star rating with zero negative reviews"
+                    "Highly rated by Columbus homeowners with 92+ 5-star reviews"
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-primary-700 flex-shrink-0 mt-0.5" />
@@ -89,12 +93,12 @@ export default function Columbus() {
                     { name: "Roof Repair", link: "/services/roof-repair" },
                     { name: "Roof Replacement", link: "/services/roof-replacement" },
                     { name: "24/7 Emergency Services", link: "/services/emergency-services" },
-                    { name: "Storm Damage Repair", link: "/services/emergency-services" },
+                    { name: "Storm Damage Repair", link: "/services/storm-damage" },
                     { name: "Insurance Claims Assistance", link: "/contact" },
                     { name: "Gutter Services", link: "/services/gutters" },
                     { name: "Siding Installation", link: "/services/siding" },
-                    { name: "Preventative Maintenance", link: "/services/roof-maintenance" },
-                    { name: "Commercial Roofing", link: "/services/roof-replacement" },
+                    { name: "Preventative Maintenance", link: "/services/preventative-maintenance" },
+                    { name: "Commercial Roofing", link: "/services/commercial-roofing" },
                     { name: "Historic Home Roofing", link: "/services/roof-repair" }
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-3">
@@ -247,6 +251,28 @@ export default function Columbus() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-charcoal-900 mb-6">Visit Our Columbus HQ</h2>
+            <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
+              <div className="aspect-video rounded-lg overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.4428715447744!2d-83.15987!3d39.957915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDU3JzI4LjUiTiA4M8KwMDknMzUuNSJX!5e0!3m2!1sen!2sus!4v1642000000000!5m2!1sen!2sus"
+                  width="100%"
+                  height="450"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Map showing DTE Roofing headquarters at 615 Hilliard Rome Rd, Columbus, OH 43228"
+                  className="rounded-lg"
+                ></iframe>
+              </div>
+              <p className="text-sm text-charcoal-600 mt-4 text-center">
+                DTE Roofing headquarters — 615 Hilliard Rome Rd, Columbus, OH 43228
+              </p>
             </div>
           </div>
 
