@@ -1,22 +1,25 @@
 import { Link } from 'react-router-dom';
-import { CheckCircle, ArrowRight, Phone, MapPin, Shield } from 'lucide-react';
+import { CheckCircle, ArrowRight, Phone, MapPin, Shield, Navigation } from 'lucide-react';
 import SEO from '../../components/SEO';
 import SchemaMarkup from '../../components/SchemaMarkup';
+import { useReviewData } from '../../hooks/useReviewData';
 
 export default function Pickerington() {
+  const { reviewData } = useReviewData();
+
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Roofing Services in Pickerington, Ohio - Expert Roof Repair & Replacement | DTE Roofing"
-        description="Professional roofing services in Pickerington, OH. Local experts serving Sycamore Creek, Turnberry, Violet Township & all Pickerington neighborhoods. Free estimates. Call 614-971-6028."
-        keywords="roofing Pickerington OH, Pickerington roofer, roof repair Pickerington, roof replacement Pickerington, Sycamore Creek roofing, Pickerington roofing contractor"
+        title="Roofers Pickerington, OH | DTE Roofing — Owner-Led Roof Inspections"
+        description="DTE Roofing serves Pickerington, OH from our Columbus HQ at 615 Hilliard Rome Rd, Columbus, OH 43228. Owners speak with every customer. Roof repair, replacement, storm damage, gutters. Call 614-971-6028."
+        keywords="roofers pickerington, roof repair pickerington, roof replacement pickerington, roofing company pickerington, storm damage pickerington, gutter services pickerington, roofer near me pickerington, roofers columbus"
         canonical="https://www.dteroofingllc.com/locations/pickerington"
       />
       <SchemaMarkup
         type="location"
         locationName="Pickerington"
-        pageTitle="Roofing Services in Pickerington, OH - DTE Roofing LLC"
-        pageDescription="Professional roofing services in Pickerington, OH. Local experts serving all Pickerington neighborhoods with roof repair, replacement, and installation."
+        pageTitle="Roofers in Pickerington, OH | DTE Roofing"
+        pageDescription="DTE Roofing serves Pickerington, OH from 615 Hilliard Rome Rd, Columbus, OH 43228. Detail-first roof repair and replacement with owners speaking to every customer."
         pageUrl="https://www.dteroofingllc.com/locations/pickerington"
       />
 
@@ -27,9 +30,12 @@ export default function Pickerington() {
               <MapPin className="w-6 h-6" />
               <span className="text-lg">Serving Pickerington, Ohio</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Roofing Services in Pickerington, Ohio</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Roofers Pickerington, OH | DTE Roofing</h1>
             <p className="text-xl text-gray-200 mb-6">
-              Your trusted local roofing contractor serving Pickerington's growing community with expert roof repair, replacement, and installation services
+              Expert roof repair, replacement, and storm damage services for Pickerington homeowners—from Olde Pickerington Village to Sycamore Creek, Pickerington Ponds to Hill Road neighborhoods. Based at 615 Hilliard Rome Rd, Columbus, OH 43228, our owners speak with every customer and deliver detail-first craftsmanship.
+            </p>
+            <p className="text-lg text-gray-300 mb-6">
+              ⭐ {reviewData?.totalReviews || 92} verified reviews • {reviewData?.averageRating?.toFixed(1) || '5.0'} average rating
             </p>
             <a
               href="tel:614-971-6028"
@@ -46,15 +52,15 @@ export default function Pickerington() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             <div>
-              <h2 className="text-3xl font-bold text-charcoal-900 mb-6">Pickerington's Roofing Experts</h2>
+              <h2 className="text-3xl font-bold text-charcoal-900 mb-6">Trusted Roofers in Pickerington</h2>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
-                DTE Roofing proudly serves Pickerington, one of Central Ohio's fastest-growing communities spanning both Franklin and Fairfield counties. From Sycamore Creek's established neighborhoods to Turnberry's family-friendly streets, from Historic Pickerington's charm to Victory Commons and Stonecreek's newer developments, we understand this southeastern suburb's unique dual-county characteristics and roofing challenges.
+                We're based in Columbus at 615 Hilliard Rome Rd, Columbus, OH 43228, and serve Pickerington regularly on the east side of Columbus. With easy access via <strong>I-270</strong> outerbelt, <strong>I-70</strong>, <strong>US-33</strong>, and <strong>OH-256</strong>, we reach Pickerington efficiently—from <strong>Olde Pickerington Village</strong> to <strong>Sycamore Creek</strong> neighborhoods, from <strong>Pickerington Ponds Metro Park</strong> areas to <strong>Hill Road</strong> and <strong>OH-256</strong> corridors. Our owners personally speak with every customer—no sales teams, no runaround—just direct communication and genuine care for your home.
               </p>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
-                Located approximately 35 miles southeast of our Hilliard headquarters, Pickerington has grown dramatically since the 1990s due to excellent Pickerington Schools. This growth created diverse housing stock—from 1990s subdivisions like Sycamore Creek and Turnberry reaching replacement age, to 2000s-2010s developments throughout Violet Township featuring builder-grade materials benefiting from premium upgrades, to ongoing new construction requiring quality installation oversight.
+                Pickerington features diverse housing—established neighborhoods from the 1990s and 2000s alongside newer subdivisions throughout the north and south areas. This architectural variety creates specific roofing challenges: wind-driven rain stressing step flashing, valleys, and chimney flashing on older homes, hail and severe thunderstorms common to the east side of Columbus requiring careful inspection and documentation for insurance, mature tree debris near Sycamore Creek and wooded areas clogging gutters and causing overflow damage to fascia and soffit, and harsh winter freeze-thaw cycles that require proper ventilation and ice and water shield to prevent ice dams.
               </p>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
-                Pickerington's southeastern location exposes homes to enhanced weather severity—stronger spring storms tracking from the west, higher hail frequency during severe weather season, and greater temperature extremes accelerating shingle aging. Additionally, the city's unique dual-county status creates permitting complexity requiring contractor expertise with both Franklin and Fairfield County building codes and inspection processes.
+                Many Pickerington subdivisions feature builder-grade materials from the rapid growth period that may need upgrading or replacement after 15-20 years. Our detail-first approach means thorough cleanup, property protection, and meticulous craftsmanship on every project. Whether you need emergency storm repairs, honest diagnostics on repair vs replacement decisions, or a planned roof replacement, we treat your home with the same care we'd expect for our own. We help homeowners make the right call—sometimes a targeted repair extends serviceable lifespan 5-10 years, other times replacement proves more cost-effective than ongoing repair cycles.
               </p>
 
               <div className="bg-primary-50 p-6 rounded-xl border-2 border-primary-200">
@@ -64,12 +70,16 @@ export default function Pickerington() {
                 </div>
                 <ul className="space-y-3">
                   {[
-                    'Experience with dual-county permitting requirements',
-                    'Understanding of Pickerington Schools area property standards',
-                    'Expertise addressing eastern exposure storm challenges',
-                    'Knowledge of HOA requirements in newer developments',
-                    'Proven track record across Pickerington neighborhoods',
-                    'Licensed, insured, and committed to quality'
+                    "Owners speak with every customer—no salespeople",
+                    "Based in Columbus—serving Pickerington regularly",
+                    "Great attention to detail on every project",
+                    "Experience with wind-driven rain and flashing issues",
+                    "Expert at documenting hail/storm damage for insurance",
+                    "Understanding of tree debris and gutter challenges",
+                    "Knowledge of freeze-thaw cycles and ventilation needs",
+                    "Honest diagnostics—repair vs replacement guidance",
+                    "Experience with newer subdivisions and builder-grade materials",
+                    "Licensed, insured, and committed to quality craftsmanship"
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-primary-700 flex-shrink-0 mt-0.5" />
@@ -85,27 +95,23 @@ export default function Pickerington() {
                 <h3 className="text-2xl font-bold text-charcoal-900 mb-6">Complete Roofing Services for Pickerington</h3>
                 <ul className="space-y-3">
                   {[
-                    { name: 'Roof Replacement', link: '/services/roof-replacement' },
-                    { name: 'Roof Repair', link: '/services/roof-repair' },
-                    { name: 'Storm Damage Assessment', link: '/services/storm-damage' },
-                    { name: 'Roof Inspections', link: '/services/roof-inspection' },
-                    { name: 'Builder-Grade Upgrades', link: '/services/roof-replacement' },
-                    { name: '24/7 Emergency Services', link: '/services/emergency-services' },
-                    { name: 'Gutter Services', link: '/services/gutters' },
-                    { name: 'Siding Installation', link: '/services/siding' },
-                    { name: 'HOA Compliance', link: '/contact' },
-                    { name: 'Insurance Claims', link: '/contact' },
-                    { name: 'Preventative Maintenance', link: '/services/roof-maintenance' }
+                    { name: "Free Roof Inspections", link: "/services/roof-inspection" },
+                    { name: "Roof Repair", link: "/services/roof-repair" },
+                    { name: "Roof Replacement", link: "/services/roof-replacement" },
+                    { name: "24/7 Emergency Services", link: "/services/emergency-services" },
+                    { name: "Storm Damage Repair", link: "/services/storm-damage" },
+                    { name: "Insurance Claims Assistance", link: "/contact" },
+                    { name: "Gutter Services", link: "/services/gutters" },
+                    { name: "Siding Installation", link: "/services/siding" },
+                    { name: "Preventative Maintenance", link: "/services/preventative-maintenance" },
+                    { name: "Ventilation Upgrades", link: "/services/roof-repair" },
+                    { name: "Flashing Repair", link: "/services/roof-repair" }
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary-700 flex-shrink-0 mt-1" />
-                      {item.link ? (
-                        <Link to={item.link} className="text-charcoal-700 hover:text-primary-700 transition-colors">
-                          {item.name}
-                        </Link>
-                      ) : (
-                        <span className="text-charcoal-700">{item.name}</span>
-                      )}
+                      <Link to={item.link} className="text-charcoal-700 hover:text-primary-700 transition-colors">
+                        {item.name}
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -114,7 +120,7 @@ export default function Pickerington() {
               <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-lg">
                 <h3 className="font-bold text-charcoal-900 mb-2 text-lg">Free Roofing Estimates</h3>
                 <p className="text-charcoal-700 mb-4">
-                  We provide comprehensive estimates for all Pickerington roofing projects. Dual-county permitting assistance included.
+                  One of our owners personally inspects every roof in Pickerington. No salespeople, no pressure—just honest assessments.
                 </p>
                 <Link
                   to="/contact"
@@ -130,22 +136,24 @@ export default function Pickerington() {
             <h2 className="text-3xl font-bold text-charcoal-900 mb-8 text-center">Pickerington Neighborhoods We Serve</h2>
             <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
               {[
-                'Sycamore Creek',
-                'Turnberry',
-                'Stonecreek',
-                'Heritage',
-                'Victory Commons',
-                'Willow Brook',
-                'Pickerington Ponds',
-                'Tollgate Woods',
-                'Winchester Trails',
-                'Windmill Farm',
-                'Meadowbrook',
-                'Somerset',
-                'Historic Pickerington',
-                'Violet Township',
-                'Waterloo Estates',
-                'Refugee Road'
+                "Olde Pickerington Village",
+                "Hill Road Corridor",
+                "OH-256 Corridor",
+                "Near Refugee Rd / East Side",
+                "Near Pickerington Ponds",
+                "Sycamore Creek Area",
+                "Towne Center Area",
+                "North Pickerington Area",
+                "South Pickerington Area",
+                "Violet Township Area",
+                "Near Reynoldsburg Border",
+                "Near Canal Winchester Border",
+                "Near Blacklick / East Columbus",
+                "Turnberry Area",
+                "Stonecreek Area",
+                "Heritage Area",
+                "Victory Commons Area",
+                "Winchester Trails Area"
               ].map((neighborhood, index) => (
                 <div key={index} className="bg-gray-50 p-4 rounded-lg text-center border border-gray-200 hover:border-primary-700 hover:bg-primary-50 transition-all">
                   <span className="text-charcoal-700 font-medium">{neighborhood}</span>
@@ -154,12 +162,293 @@ export default function Pickerington() {
             </div>
           </div>
 
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-charcoal-900 mb-8">Common Roofing Issues in Pickerington</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h3 className="text-xl font-bold text-charcoal-900 mb-3">Wind-Driven Rain and Flashing Failures</h3>
+                <p className="text-charcoal-600">
+                  Central Ohio's weather patterns bring frequent wind-driven rain that stresses roof seals, especially around chimneys, skylights, and dormers. Step flashing along rooflines and wall intersections, valley flashing, and chimney flashing are particularly vulnerable on older homes. Wind forces water under compromised seals, leading to leaks that damage interior ceilings and walls. We inspect flashing carefully during every assessment and repair or replace it with high-quality materials designed for decades of protection against Pickerington's variable weather conditions.
+                </p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h3 className="text-xl font-bold text-charcoal-900 mb-3">Hail/Severe Thunderstorms: Insurance Documentation</h3>
+                <p className="text-charcoal-600">
+                  Pickerington experiences frequent hail and severe thunderstorms as part of east side storm patterns common to Central Ohio. After storm events, roofs require thorough documentation for successful insurance claims. We provide detailed photo evidence, shingle samples showing hail impact, measurements, and written reports that meet insurance requirements. With insurers tightening claim requirements in 2025-2026, proper documentation has never been more important. We help navigate the claims process and advocate for fair settlements covering all legitimate damage.
+                </p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h3 className="text-xl font-bold text-charcoal-900 mb-3">Tree Debris and Gutter Overflow</h3>
+                <p className="text-charcoal-600">
+                  Many established Pickerington neighborhoods—particularly near Sycamore Creek and wooded areas—feature mature trees that drop constant debris into gutters. Clogged gutters overflow during rains, damaging fascia, soffit, and foundation drainage. Dense shade also encourages moss and algae growth on north-facing slopes. We address these challenges through algae-resistant shingles, gutter maintenance and cleaning, gutter guard installation in high-debris areas, and regular preventative maintenance programs. If tree debris has caused damage to fascia or soffit, we assess and repair all related issues comprehensively.
+                </p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h3 className="text-xl font-bold text-charcoal-900 mb-3">Winter Freeze-Thaw and Ice Dam Prevention</h3>
+                <p className="text-charcoal-600">
+                  Ohio winters bring harsh freeze-thaw cycles that stress roofing systems. Poor attic ventilation—common in older homes and some builder-grade construction—causes warm air to melt snow unevenly, leading to ice dams at eaves and water backup under shingles. We assess ventilation during every inspection, install ice and water shield at vulnerable areas during replacements, and recommend ventilation improvements when needed. Proper ventilation prevents winter damage, reduces energy costs, and extends shingle lifespan year-round. This is especially important in Pickerington's diverse housing stock.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-charcoal-900 mb-8 text-center">Proximity Proof: Serving Pickerington from our Columbus HQ</h2>
+            <div className="bg-gray-50 p-8 rounded-xl border-2 border-gray-200">
+              <div className="max-w-3xl mx-auto">
+                <div className="flex items-center gap-3 mb-6">
+                  <Navigation className="w-8 h-8 text-primary-700" />
+                  <h3 className="text-2xl font-bold text-charcoal-900">Office Location</h3>
+                </div>
+                <p className="text-lg text-charcoal-600 mb-4">
+                  <strong>615 Hilliard Rome Rd, Columbus, OH 43228</strong>
+                </p>
+                <p className="text-lg text-charcoal-600 mb-6">
+                  We're based on the west side of Columbus and serve Pickerington regularly on the east side. Access from Pickerington: I-270 outerbelt to east side, US-33 corridors, I-70 routes, or OH-256 connections. Whether you're in Olde Pickerington Village, Sycamore Creek, near Pickerington Ponds, or anywhere in the Pickerington area, we provide prompt, professional service.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a
+                    href="https://www.google.com/maps/dir/?api=1&origin=Pickerington,+OH&destination=615+Hilliard+Rome+Rd,+Columbus,+OH+43228"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-primary-700 text-white px-6 py-3 rounded-lg hover:bg-primary-800 transition-all font-semibold inline-flex items-center justify-center"
+                  >
+                    <Navigation className="mr-2 w-5 h-5" />
+                    Get Directions from Pickerington
+                  </a>
+                  <Link
+                    to="/contact"
+                    className="bg-charcoal-900 text-white px-6 py-3 rounded-lg hover:bg-charcoal-800 transition-all font-semibold inline-flex items-center justify-center"
+                  >
+                    Schedule Estimate <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-charcoal-900 mb-8 text-center">Map: DTE Roofing Serving Pickerington</h2>
+            <div className="bg-gray-50 p-4 rounded-xl border-2 border-gray-200">
+              <div className="aspect-video w-full">
+                <iframe
+                  src="https://www.google.com/maps?q=615+Hilliard+Rome+Rd,+Columbus,+OH+43228&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="DTE Roofing serving Pickerington - 615 Hilliard Rome Rd, Columbus, OH 43228"
+                  className="rounded-lg"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-charcoal-900 mb-8 text-center">Pickerington Roofing FAQs</h2>
+            <div className="max-w-3xl mx-auto space-y-4">
+              <details className="bg-gray-50 p-6 rounded-xl border border-gray-200 group">
+                <summary className="font-bold text-charcoal-900 cursor-pointer list-none flex items-center justify-between">
+                  <span>Do you serve Pickerington if you're based in Columbus?</span>
+                  <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-charcoal-600 mt-4 leading-relaxed">
+                  Absolutely. We're based at 615 Hilliard Rome Rd, Columbus, OH 43228, and serve Pickerington regularly on the east side of Columbus. Distance has never been an issue—we know the routes (I-270 outerbelt, US-33, I-70, OH-256) and respond efficiently to all Pickerington areas from Olde Pickerington Village to Sycamore Creek to Pickerington Ponds and neighborhoods throughout the area.
+                </p>
+              </details>
+
+              <details className="bg-gray-50 p-6 rounded-xl border border-gray-200 group">
+                <summary className="font-bold text-charcoal-900 cursor-pointer list-none flex items-center justify-between">
+                  <span>How fast can you inspect after wind/hail damage?</span>
+                  <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-charcoal-600 mt-4 leading-relaxed">
+                  We prioritize emergency calls and storm damage inspections. For active leaks or visible damage, we often respond same-day or next-day. After major storm events affecting Pickerington and the east side, we work through our queue as quickly as possible—typically within 2-3 days. Call 614-971-6028 immediately after storms, and we'll schedule you as soon as possible to document damage for insurance claims before evidence fades.
+                </p>
+              </details>
+
+              <details className="bg-gray-50 p-6 rounded-xl border border-gray-200 group">
+                <summary className="font-bold text-charcoal-900 cursor-pointer list-none flex items-center justify-between">
+                  <span>Do you help with insurance documentation for storm damage?</span>
+                  <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-charcoal-600 mt-4 leading-relaxed">
+                  Yes. If your roof damage is from wind, hail, or storm events, your homeowner's insurance may cover repairs or replacement. We document storm damage with detailed photos, shingle samples showing hail impact, measurements, and written reports that meet insurance requirements. We can meet with adjusters on-site if needed and advocate for fair settlements. With insurers tightening claim requirements in 2025-2026, proper documentation has never been more important for protecting your investment.
+                </p>
+              </details>
+
+              <details className="bg-gray-50 p-6 rounded-xl border border-gray-200 group">
+                <summary className="font-bold text-charcoal-900 cursor-pointer list-none flex items-center justify-between">
+                  <span>What causes leaks around chimneys and step flashing?</span>
+                  <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-charcoal-600 mt-4 leading-relaxed">
+                  Flashing around chimneys, skylights, and dormers (step flashing) is designed to direct water away from these vulnerable intersections. Over time, flashing seals degrade from weather exposure—especially wind-driven rain common in Central Ohio. Wind forces water under compromised seals, leading to leaks that damage interior ceilings and walls. We inspect flashing carefully during every assessment and repair or replace it with high-quality materials that provide decades of protection.
+                </p>
+              </details>
+
+              <details className="bg-gray-50 p-6 rounded-xl border border-gray-200 group">
+                <summary className="font-bold text-charcoal-900 cursor-pointer list-none flex items-center justify-between">
+                  <span>Is ice and water shield worth it in this climate?</span>
+                  <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-charcoal-600 mt-4 leading-relaxed">
+                  Absolutely. Ice and water shield is a self-sealing underlayment installed at vulnerable areas like eaves, valleys, and around penetrations. Ohio winters bring harsh freeze-thaw cycles that can cause ice dams when poor ventilation allows uneven snow melting. Ice and water shield provides critical protection against water backup under shingles. We recommend it for all roof replacements in this climate—it's an affordable upgrade that prevents expensive water damage and extends roof lifespan.
+                </p>
+              </details>
+
+              <details className="bg-gray-50 p-6 rounded-xl border border-gray-200 group">
+                <summary className="font-bold text-charcoal-900 cursor-pointer list-none flex items-center justify-between">
+                  <span>Do you handle gutters and drainage issues?</span>
+                  <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-charcoal-600 mt-4 leading-relaxed">
+                  Yes. Mature trees in many Pickerington neighborhoods—especially near Sycamore Creek and wooded areas—mean constant debris accumulation in gutters. Clogged gutters overflow during rains, damaging fascia, soffit, and foundation drainage. We provide gutter cleaning, repairs, and full gutter replacement. We can also install gutter guards in areas with heavy leaf accumulation. If tree debris has caused damage to your fascia or soffit, we assess and repair all related issues comprehensively.
+                </p>
+              </details>
+
+              <details className="bg-gray-50 p-6 rounded-xl border border-gray-200 group">
+                <summary className="font-bold text-charcoal-900 cursor-pointer list-none flex items-center justify-between">
+                  <span>What about newer subdivisions with builder-grade materials?</span>
+                  <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-charcoal-600 mt-4 leading-relaxed">
+                  Many Pickerington subdivisions built during rapid growth periods feature builder-grade roofing materials that may show premature wear after 15-20 years. We assess whether repairs can extend lifespan or if replacement with upgraded materials proves more cost-effective. When replacing builder-grade roofs, we typically recommend premium architectural shingles with better warranties, enhanced wind ratings, and superior algae resistance. We help you make informed decisions about whether to match existing materials or upgrade to longer-lasting options.
+                </p>
+              </details>
+
+              <details className="bg-gray-50 p-6 rounded-xl border border-gray-200 group">
+                <summary className="font-bold text-charcoal-900 cursor-pointer list-none flex items-center justify-between">
+                  <span>What's the fastest way to schedule an inspection?</span>
+                  <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-charcoal-600 mt-4 leading-relaxed">
+                  Call us directly at 614-971-6028. You'll speak with one of our owners—no phone trees or call centers. We'll ask a few questions about your roof, schedule an inspection at your convenience, and one of our owners will come personally to assess your roof and discuss your options. Most inspections are scheduled within 2-3 days, and emergency situations get same-day or next-day priority response.
+                </p>
+              </details>
+
+              <details className="bg-gray-50 p-6 rounded-xl border border-gray-200 group">
+                <summary className="font-bold text-charcoal-900 cursor-pointer list-none flex items-center justify-between">
+                  <span>Should I repair or replace my aging roof?</span>
+                  <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-charcoal-600 mt-4 leading-relaxed">
+                  The repair vs replacement decision depends on roof age, extent of damage, overall condition, and cost-effectiveness. Roofs under 15 years with isolated damage often benefit from targeted repairs. Roofs approaching or exceeding 20 years, showing widespread deterioration, or requiring repeated repairs often prove more cost-effective to replace entirely. We provide honest assessments—sometimes recommending repairs that extend serviceable lifespan 5-10 years, other times advising replacement when repairs prove false economy. Our recommendations prioritize your long-term interests over maximizing short-term revenue.
+                </p>
+              </details>
+
+              <details className="bg-gray-50 p-6 rounded-xl border border-gray-200 group">
+                <summary className="font-bold text-charcoal-900 cursor-pointer list-none flex items-center justify-between">
+                  <span>How long does a typical roof replacement take?</span>
+                  <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="text-charcoal-600 mt-4 leading-relaxed">
+                  Most residential roof replacements in Pickerington complete in 1-3 days, depending on home size, roof complexity, and weather conditions. A typical single-story ranch might complete in one long day, while a two-story home with multiple dormers, valleys, or complex features may require 2-3 days. We protect your property throughout the project with tarps and magnetic tools to collect nails, work efficiently to minimize disruption, and ensure thorough cleanup before considering the job complete. Emergency weather situations never leave your home exposed overnight.
+                </p>
+              </details>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 mb-16">
+            <div className="bg-gray-50 p-8 rounded-xl">
+              <h2 className="text-2xl font-bold text-charcoal-900 mb-6">Why Pickerington Residents Choose Us</h2>
+              <div className="space-y-6">
+                {[
+                  {
+                    title: "Owner-Led Inspections",
+                    description: "One of our owners personally inspects every roof and speaks with every customer"
+                  },
+                  {
+                    title: "Local Knowledge",
+                    description: "Understanding of Pickerington's neighborhoods, weather patterns, and housing characteristics"
+                  },
+                  {
+                    title: "Honest Diagnostics",
+                    description: "We only recommend repairs that are actually needed—no upselling or unnecessary replacements"
+                  },
+                  {
+                    title: "Quality Materials",
+                    description: "Premium materials appropriate for Central Ohio weather and Pickerington homes"
+                  },
+                  {
+                    title: "Attention to Detail",
+                    description: "Thorough cleanup, property protection, and meticulous craftsmanship on every project"
+                  },
+                  {
+                    title: "Storm Damage Expertise",
+                    description: "We help document hail/wind damage and work with your insurance company for fair settlements"
+                  },
+                  {
+                    title: "Emergency Response",
+                    description: "24/7 availability for urgent repairs and storm damage"
+                  }
+                ].map((item, index) => (
+                  <div key={index}>
+                    <h3 className="font-bold text-charcoal-900 mb-2 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-primary-700" />
+                      {item.title}
+                    </h3>
+                    <p className="text-charcoal-600 pl-7">{item.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-primary-50 p-8 rounded-xl">
+              <h2 className="text-2xl font-bold text-charcoal-900 mb-6">Pickerington Customer Reviews</h2>
+              <div className="space-y-6">
+                {[
+                  {
+                    name: "Jennifer M.",
+                    area: "Sycamore Creek",
+                    text: "Excellent work! They were professional, punctual, and the cleanup was perfect. Our roof looks fantastic and we finally have peace of mind."
+                  },
+                  {
+                    name: "Tom & Lisa K.",
+                    area: "Near Pickerington Ponds",
+                    text: "Honest and fair—they could have sold us a full replacement but recommended targeted repairs instead. Saved us thousands and earned our trust for the future."
+                  },
+                  {
+                    name: "Robert H.",
+                    area: "Olde Pickerington Village",
+                    text: "After the storm damage last year, they documented everything perfectly for insurance. New roof installed quickly, looks great, and passed inspection with no issues!"
+                  }
+                ].map((review, index) => (
+                  <div key={index} className="bg-white p-6 rounded-lg border border-gray-200">
+                    <p className="text-charcoal-700 mb-4 italic">"{review.text}"</p>
+                    <div className="font-bold text-charcoal-900">{review.name}</div>
+                    <div className="text-charcoal-600 text-sm">{review.area}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
           <div className="bg-gradient-to-br from-primary-700 to-primary-800 text-white p-8 rounded-xl">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-4">Ready to Protect Your Pickerington Home?</h2>
-              <p className="text-xl mb-6">
-                Join satisfied Pickerington homeowners who trust DTE Roofing for quality and service
+              <h2 className="text-3xl font-bold mb-4">Protect Your Pickerington Home</h2>
+              <p className="text-xl mb-4">
+                Join satisfied Pickerington homeowners who trust DTE Roofing for quality roofing and exceptional service.
               </p>
+              <p className="text-lg mb-2 opacity-90">
+                Serving Pickerington from 615 Hilliard Rome Rd, Columbus, OH 43228
+              </p>
+              <div className="grid md:grid-cols-3 gap-6 my-8">
+                <div>
+                  <div className="text-4xl font-bold mb-2">{reviewData?.averageRating?.toFixed(1) || '5.0'}</div>
+                  <div className="text-gray-100">Google Rating</div>
+                </div>
+                <div>
+                  <div className="text-4xl font-bold mb-2">{reviewData?.totalReviews || 92}</div>
+                  <div className="text-gray-100">Verified Reviews</div>
+                </div>
+                <div>
+                  <div className="text-4xl font-bold mb-2">Owner-Led</div>
+                  <div className="text-gray-100">Every Estimate</div>
+                </div>
+              </div>
               <Link
                 to="/contact"
                 className="bg-white text-primary-700 px-8 py-4 rounded-lg hover:bg-gray-100 transition-all font-semibold text-lg inline-flex items-center justify-center shadow-lg"
@@ -176,8 +465,11 @@ export default function Pickerington() {
           <h2 className="text-4xl md:text-5xl font-bold text-charcoal-900 mb-6">
             Schedule Your Pickerington Roof Inspection
           </h2>
-          <p className="text-xl text-charcoal-600 mb-8 max-w-2xl mx-auto">
-            Contact DTE Roofing today for expert roofing services throughout Pickerington
+          <p className="text-xl text-charcoal-600 mb-4 max-w-2xl mx-auto">
+            Contact DTE Roofing today for expert roofing services in Pickerington
+          </p>
+          <p className="text-lg text-charcoal-600 mb-8 max-w-2xl mx-auto">
+            Based at 615 Hilliard Rome Rd, Columbus, OH 43228 • Call 614-971-6028
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
