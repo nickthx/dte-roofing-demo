@@ -15,8 +15,8 @@ export default function Delaware() {
       <SchemaMarkup
         type="location"
         locationName="Delaware"
-        pageTitle="Roofing Services in Delaware, OH - DTE Roofing LLC"
-        pageDescription="Professional roofing services in Delaware, OH. Local experts serving all Delaware neighborhoods with roof repair, replacement, and installation."
+        pageTitle="Roofers in Delaware, OH | DTE Roofing (Columbus HQ at 615 Hilliard Rome Rd)"
+        pageDescription="DTE Roofing serves Delaware, OH (~30 miles) from 615 Hilliard Rome Rd, Columbus, OH 43228. Detail-first roof repair and replacement with owners speaking to every customer."
         pageUrl="https://www.dteroofingllc.com/locations/delaware"
       />
 
@@ -29,7 +29,7 @@ export default function Delaware() {
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Roofers Delaware, OH | DTE Roofing</h1>
             <p className="text-xl text-gray-200 mb-6">
-              Expert roof repair, replacement, and storm damage services for Delaware homeowners. Based in Columbus (615 Hilliard Rome Rd, Columbus, OH 43228), we serve Delaware and all surrounding neighborhoods with the same attention to detail our owners bring to every customer conversation.
+              Expert roof repair, replacement, and storm damage services for Delaware homeowners. Based in Columbus at 615 Hilliard Rome Rd, Columbus, OH 43228, we serve Delaware and all surrounding neighborhoods with the same attention to detail our owners bring to every customer conversation.
             </p>
             <a
               href="tel:614-971-6028"
@@ -283,7 +283,7 @@ export default function Delaware() {
                 <strong>Our Columbus headquarters:</strong> 615 Hilliard Rome Rd, Columbus, OH 43228
               </p>
               <p className="text-lg text-charcoal-700 mb-4">
-                <strong>Distance to Delaware:</strong> Approximately 30 miles (about 35–40 minutes via US-23 North)
+                <strong>Distance to Delaware:</strong> Approximately 30 miles (via US-23 North)
               </p>
               <p className="text-lg text-charcoal-700 mb-6">
                 We routinely serve Delaware, whether you're near Historic Downtown, OWU, the Fairgrounds, or newer developments off US-36/SR-37. Our team knows the routes, the neighborhoods, and the local building codes. We schedule efficiently, arrive on time, and treat your property with the same respect we'd give our own homes.
@@ -311,7 +311,7 @@ export default function Delaware() {
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-charcoal-900 mb-6">Map: DTE Roofing (Columbus HQ) Serving Delaware</h2>
             <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
-              <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+              <div className="aspect-video rounded-lg overflow-hidden">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d196754.5897144285!2d-83.1577!3d40.1945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x883889c1b990de71%3A0x351d61f8b3555634!2sDelaware%2C%20OH!3m2!1d40.298683!2d-83.067938!4m5!1s0x8838f36c5f8d7f45%3A0x7b4d8f8f8f8f8f8f!2s615%20Hilliard%20Rome%20Rd%2C%20Columbus%2C%20OH%2043228!3m2!1d39.957915!2d-83.1577!5e0!3m2!1sen!2sus!4v1642000000000!5m2!1sen!2sus"
                   width="100%"
@@ -339,7 +339,7 @@ export default function Delaware() {
                   <span className="text-primary-700 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <p className="text-charcoal-600 mt-4">
-                  Absolutely. We're based at 615 Hilliard Rome Rd in Columbus, and Delaware is about 30 miles north—roughly 35–40 minutes via US-23. We routinely serve Delaware homeowners, from Historic Downtown to OWU to the newer neighborhoods. Distance has never been an issue, and our scheduling is efficient and reliable.
+                  Absolutely. We're based at 615 Hilliard Rome Rd, Columbus, OH 43228, and Delaware is about 30 miles north via US-23. We routinely serve Delaware homeowners, from Historic Downtown to OWU to the newer neighborhoods. Distance has never been an issue, and our scheduling is efficient and reliable.
                 </p>
               </details>
 
