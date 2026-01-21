@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-charcoal-900 text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-5 gap-8 mb-8">
           <div>
             <img
               src="/DTE-Roofing-Logo-two-Men.png"
@@ -40,6 +40,18 @@ export default function Footer() {
               <li><Link to="/blog" className="hover:text-white transition-colors">Blog</Link></li>
               <li><Link to="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
               <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-lg mb-4">Areas We Serve</h4>
+            <ul className="space-y-2 text-gray-400">
+              <li><Link to="/locations/hilliard" className="hover:text-white transition-colors">Hilliard</Link></li>
+              <li><Link to="/locations/dublin" className="hover:text-white transition-colors">Dublin</Link></li>
+              <li><Link to="/locations/columbus" className="hover:text-white transition-colors">Columbus</Link></li>
+              <li><Link to="/locations/westerville" className="hover:text-white transition-colors">Westerville</Link></li>
+              <li><Link to="/locations/powell" className="hover:text-white transition-colors">Powell</Link></li>
+              <li><Link to="/locations" className="hover:text-white transition-colors">All Service Areas →</Link></li>
             </ul>
           </div>
 
