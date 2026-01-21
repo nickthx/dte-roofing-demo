@@ -48,7 +48,7 @@ export default function StormDamage() {
               <h2 className="text-3xl font-bold text-charcoal-900 mb-6">Storm Damage Restoration in Columbus & Surrounding Areas</h2>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
                 Central Ohio's unpredictable weather—from severe thunderstorms to damaging hail—can take a serious
-                toll on your roof. Serving Columbus, Hilliard, Dublin, and Grove City, DTE Roofing has helped
+                toll on your roof. Serving <Link to="/locations/columbus" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Columbus</Link>, <Link to="/locations/hilliard" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Hilliard</Link>, <Link to="/locations/dublin" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Dublin</Link>, and <Link to="/locations/grove-city" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Grove City</Link>, DTE Roofing has helped
                 hundreds of local homeowners recover from storm damage and navigate the insurance claims process.
                 We know Ohio weather, and we know exactly what to look for after a storm passes through.
               </p>

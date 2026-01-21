@@ -31,7 +31,7 @@ export default function RoofMaintenance() {
               <h2 className="text-3xl font-bold text-charcoal-900 mb-6">Why Roof Maintenance Matters</h2>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
                 Regular roof maintenance is the key to maximizing your roof's lifespan and avoiding costly
-                emergency repairs. Just like your car needs oil changes, your roof needs regular care to
+                emergency repairs. Whether you're <Link to="/locations/westerville" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">in Westerville</Link>, <Link to="/locations/powell" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Powell</Link>, or <Link to="/locations/gahanna" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">throughout Gahanna</Link>, just like your car needs oil changes, your roof needs regular care to
                 perform at its best and protect your property for decades.
               </p>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">

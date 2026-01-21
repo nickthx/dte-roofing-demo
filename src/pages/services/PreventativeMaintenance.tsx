@@ -31,7 +31,7 @@ export default function PreventativeMaintenance() {
               Preventative Roof Maintenance for Columbus Homeowners
             </h2>
             <p className="text-xl text-charcoal-600 leading-relaxed">
-              Serving Columbus, Hilliard, Dublin, and Grove City, DTE Roofing helps local homeowners protect
+              Serving <Link to="/locations/columbus" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Columbus</Link>, <Link to="/locations/hilliard" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Hilliard homeowners</Link>, <Link to="/locations/dublin" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Dublin</Link>, and Grove City, DTE Roofing helps local homeowners protect
               their investment through regular maintenance. Ohio's harsh weather—from winter ice to summer
               storms—takes a toll on roofs. Our proactive approach catches small issues before they become
               expensive emergencies, extending your roof's lifespan and saving you thousands in the long run.

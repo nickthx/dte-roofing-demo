@@ -35,7 +35,7 @@ export default function GutterServices() {
                 and help maintain your landscaping.
               </p>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
-                At DTE Roofing, we provide comprehensive gutter services including installation of seamless
+                At DTE Roofing, we provide comprehensive gutter services for <Link to="/locations/new-albany" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">New Albany</Link>, <Link to="/locations/worthington" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Worthington</Link>, and <Link to="/locations/delaware" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Delaware homeowners</Link> including installation of seamless
                 gutters, repairs, cleaning, and gutter guard systems. Our expert team ensures your gutters
                 function properly to protect your investment.
               </p>

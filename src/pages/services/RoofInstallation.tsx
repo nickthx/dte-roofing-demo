@@ -49,7 +49,7 @@ export default function RoofInstallation() {
               <div className="bg-gray-50 p-6 rounded-lg mb-4">
                 <h4 className="font-bold text-charcoal-900 mb-3">New Construction Installation</h4>
                 <p className="text-charcoal-600 mb-3 leading-relaxed">
-                  Installing roofs on new builds in growing Columbus suburbs like Dublin and Hilliard involves working
+                  Installing roofs on new builds in growing <Link to="/locations/columbus" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Columbus suburbs</Link> like <Link to="/locations/dublin" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Dublin</Link> and <Link to="/locations/hilliard" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Hilliard</Link> involves working
                   on fresh decking without the complexities of removal. We coordinate with builders to ensure proper
                   ventilation design, integrate with new gutter systems, and align with construction timelines. New
                   construction allows us to implement ideal ventilation systems and ensure perfect integration with

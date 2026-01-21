@@ -30,7 +30,7 @@ export default function Gutters() {
             <div>
               <h2 className="text-3xl font-bold text-charcoal-900 mb-6">Seamless Gutters for Columbus Homes</h2>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
-                Serving Columbus, Hilliard, Dublin, and Grove City, DTE Roofing specializes in custom seamless
+                Serving <Link to="/locations/columbus" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Columbus-area homes</Link>, <Link to="/locations/hilliard" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Hilliard</Link>, <Link to="/locations/dublin" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">families in Dublin</Link>, and Grove City, DTE Roofing specializes in custom seamless
                 gutter systems that protect your home from Ohio's heavy rains and seasonal weather. Unlike
                 sectional gutters that leak at the seams, our seamless gutters are fabricated on-site to fit
                 your home perfectly—with no joints to fail and superior water management that protects your
