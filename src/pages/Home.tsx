@@ -469,18 +469,54 @@ export default function Home() {
               />
             </div>
             <div className="mt-6 text-center">
-              <p className="text-charcoal-600 mb-4">
-                Serving Columbus, Hilliard, Dublin, and surrounding areas
-              </p>
               <a
                 href="https://www.google.com/maps/place/DTE+Roofing+LLC/@39.9637636,-83.1476323,17z/data=!3m1!4b1!4m6!3m5!1s0x883897c3548f20bf:0xdd1da18d4d7ccf43!8m2!3d39.9637636!4d-83.1476323!16s%2Fg%2F11vrcm8sdz"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center text-primary-700 hover:text-primary-800 font-semibold transition-colors"
+                className="inline-flex items-center text-primary-700 hover:text-primary-800 font-semibold transition-colors mb-4"
               >
                 <MapPin className="w-5 h-5 mr-2" />
                 View on Google Maps
               </a>
+            </div>
+
+            <div className="mt-8">
+              <h3 className="text-2xl font-bold text-charcoal-900 mb-4">Areas We Serve</h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                <Link to="/locations/hilliard" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  Hilliard
+                </Link>
+                <Link to="/locations/dublin" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  Dublin
+                </Link>
+                <Link to="/locations/columbus" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  Columbus
+                </Link>
+                <Link to="/locations/westerville" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  Westerville
+                </Link>
+                <Link to="/locations/powell" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  Powell
+                </Link>
+                <Link to="/locations/delaware" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  Delaware
+                </Link>
+                <Link to="/locations/gahanna" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  Gahanna
+                </Link>
+                <Link to="/locations/grove-city" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  Grove City
+                </Link>
+                <Link to="/locations/new-albany" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  New Albany
+                </Link>
+                <Link to="/locations/worthington" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  Worthington
+                </Link>
+                <Link to="/locations" className="text-primary-700 hover:text-primary-800 font-bold hover:underline transition-colors">
+                  View All Areas →
+                </Link>
+              </div>
             </div>
           </div>
 
