@@ -273,15 +273,6 @@ export default function ServicePageTemplate({
                   </span>
                   <ChevronRight className="w-5 h-5 text-primary-700 transform group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <Link
-                  to="/locations"
-                  className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-primary-600 transition-all hover:shadow-lg group flex items-center justify-between"
-                >
-                  <span className="font-semibold text-charcoal-900 group-hover:text-primary-700">
-                    All Service Areas →
-                  </span>
-                  <ChevronRight className="w-5 h-5 text-primary-700 transform group-hover:translate-x-1 transition-transform" />
-                </Link>
               </div>
             </section>
 
