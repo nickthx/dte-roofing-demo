@@ -223,6 +223,68 @@ export default function ServicePageTemplate({
               </section>
             )}
 
+            <section>
+              <h2 className="text-3xl md:text-4xl font-bold text-charcoal-900 mb-6">
+                We Serve These Areas
+              </h2>
+              <div className="grid md:grid-cols-3 gap-4">
+                <Link
+                  to="/locations/hilliard"
+                  className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-primary-600 transition-all hover:shadow-lg group flex items-center justify-between"
+                >
+                  <span className="font-semibold text-charcoal-900 group-hover:text-primary-700">
+                    Hilliard
+                  </span>
+                  <ChevronRight className="w-5 h-5 text-primary-700 transform group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link
+                  to="/locations/dublin"
+                  className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-primary-600 transition-all hover:shadow-lg group flex items-center justify-between"
+                >
+                  <span className="font-semibold text-charcoal-900 group-hover:text-primary-700">
+                    Dublin
+                  </span>
+                  <ChevronRight className="w-5 h-5 text-primary-700 transform group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link
+                  to="/locations/columbus"
+                  className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-primary-600 transition-all hover:shadow-lg group flex items-center justify-between"
+                >
+                  <span className="font-semibold text-charcoal-900 group-hover:text-primary-700">
+                    Columbus
+                  </span>
+                  <ChevronRight className="w-5 h-5 text-primary-700 transform group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link
+                  to="/locations/westerville"
+                  className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-primary-600 transition-all hover:shadow-lg group flex items-center justify-between"
+                >
+                  <span className="font-semibold text-charcoal-900 group-hover:text-primary-700">
+                    Westerville
+                  </span>
+                  <ChevronRight className="w-5 h-5 text-primary-700 transform group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link
+                  to="/locations/powell"
+                  className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-primary-600 transition-all hover:shadow-lg group flex items-center justify-between"
+                >
+                  <span className="font-semibold text-charcoal-900 group-hover:text-primary-700">
+                    Powell
+                  </span>
+                  <ChevronRight className="w-5 h-5 text-primary-700 transform group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link
+                  to="/locations"
+                  className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-primary-600 transition-all hover:shadow-lg group flex items-center justify-between"
+                >
+                  <span className="font-semibold text-charcoal-900 group-hover:text-primary-700">
+                    All Service Areas →
+                  </span>
+                  <ChevronRight className="w-5 h-5 text-primary-700 transform group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+            </section>
+
             <section className="bg-gradient-to-r from-primary-700 to-primary-800 text-white p-8 md:p-12 rounded-2xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Ready for an Expert Roof Assessment?
