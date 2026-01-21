@@ -42,7 +42,7 @@ export default function RoofReplacement() {
             <div>
               <h2 className="text-3xl font-bold text-charcoal-900 mb-6">Complete Roof Replacement in Columbus, OH</h2>
               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
-                Serving homeowners throughout Columbus, Hilliard, Dublin, and Grove City, DTE Roofing specializes in
+                Serving homeowners throughout <Link to="/locations/columbus" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Columbus</Link>, <Link to="/locations/hilliard" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Hilliard</Link>, <Link to="/locations/dublin" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Dublin</Link>, and <Link to="/locations/grove-city" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Grove City</Link>, DTE Roofing specializes in
                 installing beautiful, long-lasting roofs. We understand that a new roof is a
                 major investment—that's why we focus on quality workmanship, premium materials designed for Ohio's
                 climate, and transparent pricing with no surprises.
@@ -103,7 +103,7 @@ export default function RoofReplacement() {
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-charcoal-900 mb-8">Understanding Roof Replacement Costs in Columbus, OH</h2>
             <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
-              One of the first questions homeowners ask is about cost. In Columbus and throughout Central Ohio,
+              One of the first questions homeowners ask is about cost. In <Link to="/locations/columbus" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Columbus</Link> and throughout Central Ohio,
               residential roof replacement typically ranges from $8,000 to $25,000 or more, depending on several key factors.
               Understanding these variables helps you budget appropriately and make informed decisions about your investment.
             </p>
@@ -159,7 +159,7 @@ export default function RoofReplacement() {
                   <div>
                     <h4 className="font-bold text-charcoal-800 mb-2">Permits and Inspections</h4>
                     <p className="text-charcoal-600 text-sm">
-                      In Columbus, Hilliard, and Dublin, residential roof replacements require building permits,
+                      In <Link to="/locations/columbus" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Columbus</Link>, <Link to="/locations/hilliard" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Hilliard</Link>, and <Link to="/locations/dublin" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Dublin</Link>, residential roof replacements require building permits,
                       typically costing $100-300. We handle all permitting and inspections to ensure your project
                       meets local code requirements.
                     </p>
@@ -212,7 +212,7 @@ export default function RoofReplacement() {
               <div className="bg-gray-50 p-8 rounded-xl border-l-4 border-primary-700">
                 <h3 className="text-2xl font-bold text-charcoal-900 mb-4">Asphalt Shingles (3-Tab)</h3>
                 <p className="text-charcoal-600 mb-4 leading-relaxed">
-                  The most economical option, 3-tab asphalt shingles have served Columbus homeowners for decades.
+                  The most economical option, 3-tab asphalt shingles have served <Link to="/locations/columbus" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Columbus</Link> homeowners for decades.
                   These single-layer shingles provide basic protection at an accessible price point, making them
                   popular for rental properties and budget-conscious homeowners.
                 </p>
@@ -323,7 +323,7 @@ export default function RoofReplacement() {
                 </div>
                 <div className="mt-4 p-4 bg-primary-50 rounded-lg">
                   <p className="text-charcoal-700 text-sm">
-                    <strong>Our recommendation:</strong> For most Columbus area homes, architectural shingles offer
+                    <strong>Our recommendation:</strong> For most <Link to="/locations/columbus" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Columbus</Link> area homes, architectural shingles offer
                     the best balance of performance, longevity, and value. They handle our climate extremes well and
                     typically pay for themselves through extended service life and reduced maintenance needs.
                   </p>
@@ -458,7 +458,7 @@ export default function RoofReplacement() {
               <div className="bg-gray-50 p-8 rounded-xl">
                 <h3 className="text-2xl font-bold text-charcoal-900 mb-4">How long does a roof replacement take?</h3>
                 <p className="text-charcoal-600 mb-4 leading-relaxed">
-                  Most residential roof replacements in Columbus take 1-3 days to complete, depending on roof size,
+                  Most residential roof replacements in <Link to="/locations/columbus" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Columbus</Link> take 1-3 days to complete, depending on roof size,
                   complexity, and weather conditions. A typical single-family home with a straightforward design
                   usually takes 1-2 days from tear-off to final cleanup.
                 </p>
@@ -466,7 +466,7 @@ export default function RoofReplacement() {
                   Factors that can extend the timeline include complex roof designs with multiple levels, valleys,
                   or dormers, larger square footage requiring more material and labor, significant deck repair needs
                   discovered during tear-off, or weather delays due to rain or extreme temperatures. Homes in
-                  Hilliard and Dublin with multi-story designs or steep pitches may require an additional day for
+                  <Link to="/locations/hilliard" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Hilliard</Link> and <Link to="/locations/dublin" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Dublin</Link> with multi-story designs or steep pitches may require an additional day for
                   safe, quality installation.
                 </p>
                 <p className="text-charcoal-600 leading-relaxed">
@@ -487,7 +487,7 @@ export default function RoofReplacement() {
                   hours maximize productivity.
                 </p>
                 <p className="text-charcoal-600 mb-4 leading-relaxed">
-                  Fall (September-October) is particularly popular among Columbus homeowners. Cooler temperatures
+                  Fall (September-October) is particularly popular among <Link to="/locations/columbus" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Columbus</Link> homeowners. Cooler temperatures
                   make for comfortable working conditions, there's typically less rain than spring, and completing
                   the project before winter ensures your home is protected from snow and ice. However, this
                   increased demand means scheduling requires more advance notice.
@@ -510,7 +510,7 @@ export default function RoofReplacement() {
                 <h3 className="text-2xl font-bold text-charcoal-900 mb-4">Do I need a permit for roof replacement?</h3>
                 <p className="text-charcoal-600 mb-4 leading-relaxed">
                   Yes, most municipalities in Central Ohio require building permits for roof replacement projects.
-                  Columbus, Hilliard, Dublin, and surrounding communities mandate permits to ensure work meets
+                  <Link to="/locations/columbus" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Columbus</Link>, <Link to="/locations/hilliard" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Hilliard</Link>, <Link to="/locations/dublin" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Dublin</Link>, and surrounding communities mandate permits to ensure work meets
                   current building codes and safety standards. Permit costs typically range from $100-300 depending
                   on your specific location and project scope.
                 </p>
@@ -521,7 +521,7 @@ export default function RoofReplacement() {
                   permitting process yourself.
                 </p>
                 <p className="text-charcoal-600 mb-4 leading-relaxed">
-                  The permitting process typically takes 1-3 business days for approval in most Columbus area
+                  The permitting process typically takes 1-3 business days for approval in most <Link to="/locations/columbus" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Columbus</Link> area
                   municipalities. Once work begins, a building inspector will visit to verify proper installation
                   methods, material quality, and code compliance. This inspection protects your investment by
                   ensuring everything meets official standards.
@@ -540,7 +540,7 @@ export default function RoofReplacement() {
                 <p className="text-charcoal-600 mb-4 leading-relaxed">
                   Insurance coverage depends primarily on the cause of damage. Storm-related damage from wind, hail,
                   fallen trees, or severe weather events is typically covered under standard homeowners policies,
-                  subject to your deductible. Columbus area homes frequently experience hail damage and wind events
+                  subject to your deductible. <Link to="/locations/columbus" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Columbus</Link> area homes frequently experience hail damage and wind events
                   that qualify for insurance claims.
                 </p>
                 <p className="text-charcoal-600 mb-4 leading-relaxed">
@@ -556,7 +556,7 @@ export default function RoofReplacement() {
                   communicate directly with your insurance company to ensure all damage is properly documented.
                 </p>
                 <p className="text-charcoal-600 mb-4 leading-relaxed">
-                  Many Columbus area homeowners don't realize they have covered damage. If you've experienced recent
+                  Many <Link to="/locations/columbus" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Columbus</Link> area homeowners don't realize they have covered damage. If you've experienced recent
                   severe weather, it's worth having us conduct a thorough inspection. We identify storm damage that
                   may not be obvious from the ground, including hail impacts, wind damage, and related issues. Our
                   detailed documentation helps support valid insurance claims.
