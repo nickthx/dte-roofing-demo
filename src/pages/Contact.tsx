@@ -1,4 +1,5 @@
 import { useState, FormEvent } from 'react';
+import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, CheckCircle, AlertCircle } from 'lucide-react';
 import SEO from '../components/SEO';
 import MobileStickyCall from '../components/MobileStickyCall';
@@ -499,6 +500,55 @@ export default function Contact() {
                 <MapPin className="w-5 h-5 mr-2" />
                 Get Directions
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Areas We Serve Section */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="mt-12 bg-gray-50 p-8 rounded-xl border border-gray-200">
+              <h3 className="text-2xl font-bold text-charcoal-900 mb-4 text-center">Areas We Serve in Central Ohio</h3>
+              <p className="text-charcoal-600 mb-6 text-center">
+                DTE Roofing proudly serves homeowners and businesses throughout the Columbus metropolitan area.
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                <Link to="/locations/hilliard" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  Hilliard
+                </Link>
+                <Link to="/locations/dublin" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  Dublin
+                </Link>
+                <Link to="/locations/columbus" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  Columbus
+                </Link>
+                <Link to="/locations/westerville" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  Westerville
+                </Link>
+                <Link to="/locations/powell" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  Powell
+                </Link>
+                <Link to="/locations/delaware" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  Delaware
+                </Link>
+                <Link to="/locations/gahanna" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  Gahanna
+                </Link>
+                <Link to="/locations/grove-city" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  Grove City
+                </Link>
+                <Link to="/locations/new-albany" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  New Albany
+                </Link>
+                <Link to="/locations/worthington" className="text-primary-700 hover:text-primary-800 font-semibold hover:underline transition-colors">
+                  Worthington
+                </Link>
+                <Link to="/locations" className="text-primary-700 hover:text-primary-800 font-bold hover:underline transition-colors">
+                  View All Areas →
+                </Link>
+              </div>
             </div>
           </div>
         </div>
