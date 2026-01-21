@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import ServicePageTemplate from '../../components/ServicePageTemplate';
 import SchemaMarkup from '../../components/SchemaMarkup';
 import { useReviewData } from '../../hooks/useReviewData';
@@ -23,77 +24,97 @@ export default function RoofRepair() {
         subheadline="Honest diagnostics by hands-on experts."
         metaDescription={`Honest roof repair by hands-on experts in Columbus. ${reviewData?.totalReviews || 92}+ five-star reviews. Book a free inspection today.`}
         keywords="roof repair Columbus OH, Columbus roofing company, roof repair near me, emergency roof repair Columbus, leak repair Columbus, storm damage repair, shingle replacement Columbus, roofing contractor Columbus"
-      problemPromise={`Every homeowner dreads finding a water stain on their ceiling or discovering missing shingles after a storm. Too many Columbus roofers will try to sell you a full replacement when a targeted repair would solve the problem—or worse, slap on a quick patch that fails in six months.
-
+      problemPromise={<>Every homeowner dreads finding a water stain on their ceiling or discovering missing shingles after a storm. Too many Columbus roofers will try to sell you a full replacement when a targeted repair would solve the problem—or worse, slap on a quick patch that fails in six months.
+{'\n\n'}
 At DTE Roofing, we take a different approach. Founded by two brothers, Donovan and Mitchell, who were both raised in Hilliard Ohio and graduated from Hilliard Davidson High School. They built DTE Roofing to deliver honest diagnostics and precision repairs.
-
+{'\n\n'}
 We personally inspect every roof, identify the root cause of your problem (not just the symptoms), and fix only what's needed. Whether it's damaged flashing, worn shingles, or a stubborn leak, we use premium materials and proven techniques to restore your roof's integrity. Our repairs blend seamlessly with your existing roof and come with comprehensive workmanship warranties.
-
+{'\n\n'}
 COMMON ROOF REPAIRS IN COLUMBUS
-
+{'\n\n'}
 Central Ohio's weather puts unique stress on roofing systems. From severe summer storms to winter ice dams, Columbus-area homes face challenges that require specific repair expertise.
-
+{'\n\n'}
 Leak Repair: Roof leaks rarely happen where water appears inside your home. Water can travel along rafters and decking before becoming visible. Our leak detection process traces water back to its true entry point—often damaged flashing around chimneys or vents, worn valley areas, or compromised pipe boots. We address the source, not just the symptom, ensuring leaks don't return.
-
+{'\n\n'}
 Shingle Replacement: Missing or damaged shingles expose your roof deck to moisture. Whether caused by wind, hail, or age, Columbus homeowners need prompt shingle replacement to prevent water infiltration. We carefully match your existing shingles in color and style, lifting surrounding shingles to weave in new ones for a seamless repair that maintains your roof's integrity and appearance.
-
+{'\n\n'}
 Flashing Repair: Flashing—the metal strips sealing roof transitions around chimneys, skylights, vents, and walls—is where many Columbus roofs develop leaks. Improper installation or deterioration from temperature extremes causes flashing to separate from roofing materials. Our technicians remove old flashing, address any underlying damage, and install new flashing using proper techniques and high-quality materials designed for Ohio's climate.
-
-Vent Boot Replacement: Plumbing vent boots deteriorate from sun exposure and temperature fluctuations. The rubber seal cracks, allowing water into your home. In Dublin and Hilliard, we regularly replace failed vent boots, removing the old unit, inspecting the surrounding area for water damage, and installing a new boot with a weather-resistant rubber seal.
-
+{'\n\n'}
+Vent Boot Replacement: Plumbing vent boots deteriorate from sun exposure and temperature fluctuations. The rubber seal cracks, allowing water into your home. In <Link to="/locations/dublin" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Dublin</Link> and <Link to="/locations/hilliard" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Hilliard</Link>, we regularly replace failed vent boots, removing the old unit, inspecting the surrounding area for water damage, and installing a new boot with a weather-resistant rubber seal.
+{'\n\n'}
 Gutter-Related Damage: Clogged or damaged gutters cause water to back up under shingles, leading to fascia and soffit rot. We repair not only the immediate damage but also address the underlying gutter issues that caused the problem, protecting your roof edge from future water damage.
-
+{'\n\n'}
 REPAIR VS. REPLACEMENT: MAKING THE RIGHT DECISION
-
+{'\n\n'}
 One of the most important decisions Columbus homeowners face is whether to repair or replace their roof. Understanding the key factors helps you make an informed choice.
-
+{'\n\n'}
 When Repairs Are Sufficient:
+{'\n'}
 • Your roof is under 15 years old and damage is localized to specific areas
+{'\n'}
 • Only a few shingles are damaged or missing
+{'\n'}
 • Leak sources are identifiable and affect small sections
+{'\n'}
 • Storm damage is limited to specific impact zones
+{'\n'}
 • The roof deck structure remains sound without widespread deterioration
+{'\n'}
 • Your budget requires addressing immediate concerns before a full replacement
-
+{'\n\n'}
 Warning Signs That Indicate Replacement:
+{'\n'}
 • Your roof is over 20 years old with multiple problem areas
+{'\n'}
 • Shingles are curling, cupping, or losing significant granules across the entire roof
+{'\n'}
 • You're experiencing leaks in multiple locations
+{'\n'}
 • Daylight is visible through your attic roof boards
+{'\n'}
 • The roof has sagging sections indicating structural issues
+{'\n'}
 • Previous repairs have failed or new problems continue emerging
+{'\n'}
 • Energy bills have increased due to poor insulation and ventilation
-
+{'\n\n'}
 Cost-Benefit Analysis: In Central Ohio, a minor repair might cost $500-$1,500, while a major repair could run $2,000-$4,000. If your roof is nearing the end of its lifespan and requires repairs approaching 30% of replacement cost, replacement becomes more cost-effective. We provide honest assessments comparing repair costs to replacement benefits, helping you make the best long-term decision.
-
+{'\n\n'}
 For a comprehensive evaluation, consider scheduling a professional roof inspection to get a complete picture of your roof's condition.
-
+{'\n\n'}
 ROOF REPAIR COSTS IN CENTRAL OHIO
-
+{'\n\n'}
 Understanding typical repair costs helps Columbus homeowners budget appropriately and recognize fair pricing.
-
+{'\n\n'}
 Typical Price Ranges:
+{'\n'}
 • Minor shingle repairs (5-10 shingles): $300-$800
+{'\n'}
 • Flashing repairs: $400-$1,200 depending on location and extent
+{'\n'}
 • Vent boot replacement: $200-$500 per boot
+{'\n'}
 • Valley repairs: $500-$1,500 depending on length and materials
+{'\n'}
 • Small leak repairs: $400-$1,000
+{'\n'}
 • Moderate repairs with decking replacement: $1,500-$3,000
+{'\n'}
 • Extensive repairs covering multiple issues: $3,000-$6,000
-
+{'\n\n'}
 Factors Influencing Pricing:
-
+{'\n\n'}
 Materials: Premium architectural shingles cost more than basic 3-tab shingles. Copper flashing costs more than aluminum. Quality materials last longer and provide better protection in Ohio's weather, making them worth the investment.
-
+{'\n\n'}
 Labor Complexity: Steep-pitch roofs in Grove City require additional safety equipment and time. Homes with multiple levels, complex architecture, or numerous roof penetrations increase labor hours. Second-story repairs take longer than single-story work.
-
+{'\n\n'}
 Accessibility: Homes surrounded by landscaping, with limited roof access, or in areas requiring special equipment incur higher costs. Hillside properties in Dublin or homes with attached structures affecting access may require additional preparation time.
-
+{'\n\n'}
 Extent of Damage: A simple shingle replacement is straightforward. However, if water has damaged underlying decking, repairs become more involved. Storm damage often reveals hidden issues once we remove damaged materials, requiring adjustments to the repair scope.
-
+{'\n\n'}
 Seasonal Considerations: Emergency repairs during winter storms or after major weather events may involve emergency service fees. Planning non-urgent repairs during our moderate seasons (spring and fall) can sometimes offer scheduling flexibility.
-
-For Hilliard and Columbus homeowners dealing with storm damage, our storm damage assessment can help determine if insurance coverage applies, potentially reducing your out-of-pocket costs significantly.`}
+{'\n\n'}
+For <Link to="/locations/hilliard" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Hilliard</Link> and <Link to="/locations/columbus" className="text-primary-700 hover:text-primary-800 font-semibold underline decoration-2 underline-offset-2">Columbus</Link> homeowners dealing with storm damage, our storm damage assessment can help determine if insurance coverage applies, potentially reducing your out-of-pocket costs significantly.</>}
       whatWeDo={[
         'Emergency leak detection and repair',
         'Damaged or missing shingle replacement',
